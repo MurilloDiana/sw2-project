@@ -3,7 +3,8 @@ import { Navigate } from "react-router-dom";
 
 /****Layouts*****/
 const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
-
+//const AppBa = lazy(() => import("../components/login/AppBa.js"));
+const EmptyLayout = lazy(() => import('../layouts/EmptyLayout.js'));
 /***** Pages ****/
 
 const Starter = lazy(() => import("../views/Starter.js"));
@@ -16,6 +17,7 @@ const Grid = lazy(() => import("../views/ui/Grid"));
 const Tables = lazy(() => import("../views/ui/Tables"));
 const Forms = lazy(() => import("../views/ui/Forms"));
 const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
+const Login = lazy(() => import("../views/login/Login.js"));
 
 /*****Routes******/
 
@@ -24,6 +26,8 @@ const ThemeRoutes = [
     path: "/",
     element: <FullLayout />,
     children: [
+        // Agrega la ruta para el inicio de sesión aquí
+      //
       { path: "/", element: <Navigate to="/starter" /> },
       { path: "/starter", exact: true, element: <Starter /> },
       { path: "/about", exact: true, element: <About /> },
@@ -36,6 +40,11 @@ const ThemeRoutes = [
       { path: "/forms", exact: true, element: <Forms /> },
       { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
     ],
+  },
+  { path: '/login',
+  element: <EmptyLayout />,
+  children: [
+    { path: '', exact: true, element: <Login /> },],
   },
 ];
 
