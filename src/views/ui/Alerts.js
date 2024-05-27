@@ -9,18 +9,36 @@ import {
 
 const Alerts = () => {
   // For Dismiss Button with Alert
-  const [visible, setVisible] = useState(true);
+  /*const [visible, setVisible] = useState(true);
 
   const onDismiss = () => {
     setVisible(false);
-  };
+  };*/
 
   return (
     <div>
+      {/*----- new cardilla para usuarios*/}
+      <Card>
+      <CardTitle tag="h6" className="border-bottom p-3 mb-0">
+        <i className="bi bi-people me-2"> </i> Usuarios Dueños
+      </CardTitle>
+      </Card>
+            {/*----- new cardilla para usuarios*/}
+      <Card>
+      <CardTitle tag="h6" className="border-bottom p-3 mb-0">
+        <i className="bi bi-heart"> </i> Usuarios Mascotas
+      </CardTitle>
+      </Card>
+            {/*----- new cardilla para usuarios*/}
+      <Card>
+      <CardTitle tag="h6" className="border-bottom p-3 mb-0">
+        <i className="bi bi-person me-2"> </i> Usuarios Veterinario
+      </CardTitle>
+      </Card>
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-1*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Card>
+      {/*<Card>
         <CardTitle tag="h6" className="border-bottom p-3 mb-0">
           <i className="bi bi-bell me-2"> </i>
           Alert
@@ -45,11 +63,11 @@ const Alerts = () => {
             <Alert color="dark">This is a dark alert</Alert>
           </div>
         </CardBody>
-      </Card>
+  </Card>*/}
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-2*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Card>
+     {/* <Card>
         <CardTitle tag="h6" className="border-bottom p-3 mb-0">
           <i className="bi bi-bell me-2" />
           Alert with Links
@@ -114,11 +132,11 @@ const Alerts = () => {
             </Alert>
           </div>
         </CardBody>
-      </Card>
+</Card>*/}
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-3*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Card>
+      {/*<Card>
         <CardTitle tag="h6" className="border-bottom p-3 mb-0">
           <i className="bi bi-bell me-2" />
           Alert with Additional content
@@ -140,11 +158,11 @@ const Alerts = () => {
             </Alert>
           </div>
         </CardBody>
-      </Card>
+</Card>*/}
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-4*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Card>
+      {/*<Card>
         <CardTitle tag="h6" className="border-bottom p-3 mb-0">
           <i className="bi bi-bell me-2" />
           Alert with Dissmissing
@@ -156,11 +174,11 @@ const Alerts = () => {
             </Alert>
           </div>
         </CardBody>
-      </Card>
+</Card>*/}
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-5*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Card>
+      {/*<Card>
         <CardTitle tag="h6" className="border-bottom p-3 mb-0">
           <i className="bi bi-bell me-2" />
           Alert with Uncontrolled [disable] Alerts
@@ -172,11 +190,11 @@ const Alerts = () => {
             </UncontrolledAlert>
           </div>
         </CardBody>
-      </Card>
+</Card>*/}
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-6*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Card>
+{/*      <Card>
         <CardTitle tag="h6" className="border-bottom p-3 mb-0">
           <i className="bi bi-bell me-2" />
           Alerts without fade
@@ -196,7 +214,7 @@ const Alerts = () => {
             </UncontrolledAlert>
           </div>
         </CardBody>
-      </Card>
+</Card>*/}
 
       {/* --------------------------------------------------------------------------------*/}
       {/* End Inner Div*/}

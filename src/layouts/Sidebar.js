@@ -8,10 +8,15 @@ const navigation = [
     href: "/starter",
     icon: "bi bi-speedometer2",
   },
-  {
+ /* {
     title: "Alert",
     href: "/alerts",
     icon: "bi bi-bell",
+  },*/
+  {
+    title: "User",
+    href: "/usuarios",
+    icon: "bi bi-person",
   },
   {
     title: "Badges",
