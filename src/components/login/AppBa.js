@@ -11,7 +11,7 @@ import { FaDog } from 'react-icons/fa';
 
 const AppBa = () => {
     return(
-        <Navbar color="light" light expand="md">
+        <Navbar color="white" light expand="md">
         <NavbarBrand href="">
           <FaDog style={{ marginRight: '10px' }} />
           Veterinaria "El Cristo"

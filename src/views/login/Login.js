@@ -45,7 +45,11 @@ const Login = () => {
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </FormGroup>
-              <Button type="submit" color="primary">Login</Button>
+                <Row>
+                    <Col className="text-center">
+                        <Button type="submit" color="primary" className="mt-3">Login</Button>
+                    </Col>
+                </Row>
             </Form>
           </Col>
         </Row>
