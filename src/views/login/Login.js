@@ -25,7 +25,7 @@ const Login = () => {
         </Row>
         <Row>
           <Col md={{ size: 6, offset: 3 }}>
-            <h2>Login</h2>
+            <h2 className="text-center">Login</h2>
             <Form onSubmit={handleSubmit}>
               <FormGroup>
                 <Label for="email">Email</Label>

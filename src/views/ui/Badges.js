@@ -1,17 +1,46 @@
-import { Badge, Button, Card, CardBody, CardTitle, Row, Col } from "reactstrap";
+import { Badge, Table,Button, Card, CardBody, CardTitle, Row, Col } from "reactstrap";
 
 const Badges = () => {
   return (
     <div>
+    <h2>Control de Citas</h2>
+    <h3>Mascotas</h3>
+    <Card>
+      <CardBody>
+        <Button color="danger" style={{ marginRight: '10px' }} >Reservar Cita</Button> 
+        <Button color="danger">Reservar Cita</Button>
+      </CardBody>
+    </Card>
       {/* --------------------------------------------------------------------------------*/}
       {/* Row*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Row>
-        <Col xs="12" md="12" sm="12">
+     {/*<Row>
+        <Col xs="12" md="12" sm="12">*/}
+        <Card>
+          <CardBody>
+          <CardTitle>
+              <h4>Listado de Citas</h4>
+          </CardTitle>
+          <Table responsive>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombre Mascota</th>
+                <th>Fecha Reserva</th>
+                <th>Descripcion</th>
+                <th>Dueño</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </Table>
+          </CardBody>
+        </Card>
           {/* --------------------------------------------------------------------------------*/}
           {/* Card-1*/}
           {/* --------------------------------------------------------------------------------*/}
-          <Card>
+          {/*<Card>
             <CardTitle tag="h6" className="border-bottom p-3 mb-0">
               Badges
             </CardTitle>
@@ -39,11 +68,11 @@ const Badges = () => {
             </CardBody>
           </Card>
         </Col>
-        <Col xs="12" md="12" sm="12">
+        <Col xs="12" md="12" sm="12">*/}
           {/* --------------------------------------------------------------------------------*/}
           {/* Card-2*/}
           {/* --------------------------------------------------------------------------------*/}
-          <Card>
+         {/*<Card>
             <CardTitle tag="h6" className="border-bottom p-3 mb-0">
               Badges with Button
             </CardTitle>
@@ -66,13 +95,13 @@ const Badges = () => {
                 </Button>
               </div>
             </CardBody>
-          </Card>
-        </Col>
-        <Col xs="12" md="6">
+          </Card>*/}
+        {/*</Col>
+        <Col xs="12" md="6">*/}
           {/* --------------------------------------------------------------------------------*/}
           {/* Card-3*/}
           {/* --------------------------------------------------------------------------------*/}
-          <Card>
+          {/*<Card>
             <CardTitle tag="h6" className="border-bottom p-3 mb-0">
               Badges with Contextual variations
             </CardTitle>
@@ -104,11 +133,11 @@ const Badges = () => {
             </CardBody>
           </Card>
         </Col>
-        <Col xs="12" md="6">
+        <Col xs="12" md="6">*/}
           {/* --------------------------------------------------------------------------------*/}
           {/* Card-4*/}
           {/* --------------------------------------------------------------------------------*/}
-          <Card>
+          {/*<Card>
             <CardTitle tag="h6" className="border-bottom p-3 mb-0">
               Badges with Pills
             </CardTitle>
@@ -141,12 +170,12 @@ const Badges = () => {
               </div>
             </CardBody>
           </Card>
-        </Col>
-        <Col xs="12" md="6">
+        </Col>*/}
+        {/*<Col xs="12" md="6">*/}
           {/* --------------------------------------------------------------------------------*/}
           {/* Card-5*/}
           {/* --------------------------------------------------------------------------------*/}
-          <Card>
+          {/*<Card>
             <CardTitle tag="h6" className="border-bottom p-3 mb-0">
               Badges with Links
             </CardTitle>
@@ -178,9 +207,9 @@ const Badges = () => {
                 </Badge>
               </div>
             </CardBody>
-          </Card>
-        </Col>
-      </Row>
+          </Card>*/}
+        {/*</Col>*/}
+      {/*</Row>*/}
       {/* --------------------------------------------------------------------------------*/}
       {/* Row*/}
       {/* --------------------------------------------------------------------------------*/}

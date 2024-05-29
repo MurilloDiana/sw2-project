@@ -11,14 +11,14 @@ import {
   Col,
 } from "reactstrap";
 import Blog from "../../components/dashboard/Blog";
-import bg1 from "../../assets/images/bg/bg1.jpg";
-import bg2 from "../../assets/images/bg/bg2.jpg";
-import bg3 from "../../assets/images/bg/bg3.jpg";
-import bg4 from "../../assets/images/bg/bg4.jpg";
-
+//import bg1 from "../../assets/images/bg/bg1.jpg";
+//import bg2 from "../../assets/images/bg/bg2.jpg";
+//import bg3 from "../../assets/images/bg/bg3.jpg";
+//import bg4 from "../../assets/images/bg/bg4.jpg";
+import  bg5 from "../../assets/images/logo_n.png";
 const BlogData = [
   {
-    image: bg1,
+    image: bg5,
     title: "This is simple blog",
     subtitle: "2 comments, 1 Like",
     description:
@@ -26,7 +26,7 @@ const BlogData = [
     btnbg: "primary",
   },
   {
-    image: bg2,
+    image: bg5,
     title: "Lets be simple blog",
     subtitle: "2 comments, 1 Like",
     description:
@@ -34,7 +34,7 @@ const BlogData = [
     btnbg: "primary",
   },
   {
-    image: bg3,
+    image: bg5,
     title: "Don't Lamp blog",
     subtitle: "2 comments, 1 Like",
     description:
@@ -42,7 +42,7 @@ const BlogData = [
     btnbg: "primary",
   },
   {
-    image: bg4,
+    image: bg5,
     title: "Simple is beautiful",
     subtitle: "2 comments, 1 Like",
     description:
@@ -52,12 +52,15 @@ const BlogData = [
 ];
 
 const Cards = () => {
+  
+  
   return (
     <div>
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-1*/}
       {/* --------------------------------------------------------------------------------*/}
-      <h5 className="mb-3">Basic Card</h5>
+      <h3 className="mb-3">Historial Clinico</h3>
+      <h5 className="mb-3">Tarjetas Mascotas</h5>
       <Row>
         {BlogData.map((blg, index) => (
           <Col sm="6" lg="6" xl="3" key={index}>
@@ -115,7 +118,7 @@ const Cards = () => {
       </Row>
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-2*/}
-      {/* --------------------------------------------------------------------------------*/}
+      {/* --------------------------------------------------------------------------------
       <Row>
         <h5 className="mb-3 mt-3">Colored Card</h5>
         <Col md="6" lg="3">
@@ -214,10 +217,10 @@ const Cards = () => {
             </div>
           </Card>
         </Col>
-      </Row>
+      </Row>*/}
       {/* --------------------------------------------------------------------------------*/}
       {/* Card-Group*/}
-      {/* --------------------------------------------------------------------------------*/}
+      {/* --------------------------------------------------------------------------------
       <Row>
         <h5 className="mb-3 mt-3">Card Group</h5>
         <Col>
@@ -268,7 +271,7 @@ const Cards = () => {
             </Card>
           </CardGroup>
         </Col>
-      </Row>
+      </Row>*/}
     </div>
   );
 };

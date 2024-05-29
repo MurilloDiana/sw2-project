@@ -1,6 +1,7 @@
 import { Button, Nav, NavItem } from "reactstrap";
 import Logo from "./Logo";
 import { Link, useLocation } from "react-router-dom";
+import { FaNotesMedical } from 'react-icons/fa';
 
 const navigation = [
   {
@@ -18,20 +19,30 @@ const navigation = [
     href: "/usuarios",
     icon: "bi bi-person",
   },
-  {
+  /*{
     title: "Badges",
     href: "/badges",
     icon: "bi bi-patch-check",
+  },*/
+  {
+    title: "Citas",
+    href: "/citas",
+    icon: "bi bi-calendar-plus",
   },
   {
     title: "Buttons",
     href: "/buttons",
     icon: "bi bi-hdd-stack",
   },
-  {
+  /*{
     title: "Cards",
     href: "/cards",
     icon: "bi bi-card-text",
+  },*/
+  {
+    title: "Historial",
+    href: "/historial",
+    icon: "bi bi-clipboard-heart" ,
   },
   {
     title: "Grid",

@@ -1,8 +1,11 @@
 import React from "react";
+import ico2 from '../../assets/images/ico2.jpg';
+import ico from '../../assets/images/ico.jpg';
 const Icon =() => {
 return (
     <div className = "text-center">
-       <img src="./../../../public/images/ico.png" alt="Login" style={{ maxWidth: '120%', height: 'auto' }} />
+        <br></br>
+       <img src={ico} alt="Login" style={{ maxWidth: '70%', height: 'auto' }} />
     </div>
     );
 };
