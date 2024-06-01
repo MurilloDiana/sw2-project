@@ -30,6 +30,11 @@ const navigation = [
     icon: "bi bi-calendar-plus",
   },
   {
+    title: "Atencion",
+    href: "/atencion",
+    icon: "bi bi-calendar-plus",
+  },
+  {
     title: "Buttons",
     href: "/buttons",
     icon: "bi bi-hdd-stack",

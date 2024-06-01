@@ -33,6 +33,46 @@ const Badges = () => {
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>1</td>
+                <td>Perro</td>
+                <td>2021-09-25</td>
+                <td>Consulta</td>
+                <td>Carlos</td>
+                <td>Reservado</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Gato</td>
+                <td>2021-09-25</td>
+                <td>Vacunacion</td>
+                <td>Carlos</td>
+                <td>Reservado</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Perro</td>
+                <td>2021-09-25</td>
+                <td>Consulta</td>
+                <td>Carlos</td>
+                <td>Reservado</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Gato</td>
+                <td>2021-09-25</td>
+                <td>Vacunacion</td>
+                <td>Carlos</td>
+                <td>Reservado</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Perro</td>
+                <td>2021-09-25</td>
+                <td>Consulta</td>
+                <td>Carlos</td>
+                <td>Reservado</td>
+              </tr>
             </tbody>
           </Table>
           </CardBody>
