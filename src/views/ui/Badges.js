@@ -1,15 +1,20 @@
+import React, { useState } from 'react';
 import { Badge, Table,Button, Card, CardBody, CardTitle, Row, Col } from "reactstrap";
+import AsistenciaModal from '../../components/ModelAsist';
 
 const Badges = () => {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => setModal(!modal);
   return (
     <div>
-    <h2>Control de Citas</h2>
+    <h2>Control de Asistencia Medica de </h2>
     <h3>Mascotas</h3>
-    <Card>
+    <Card style={{ marginRight: '10px' }} >
       <CardBody>
-        <Button color="danger" style={{ marginRight: '10px' }} >Reservar Cita</Button> 
+        <Button color="danger" style={{ marginRight: '10px' }} onClick={toggleModal} >Agregar Asistencia</Button> 
         <Button color="danger">Reservar Cita</Button>
-      </CardBody>
+      </CardBody><AsistenciaModal isOpen={modal} toggle={toggleModal} />
     </Card>
       {/* --------------------------------------------------------------------------------*/}
       {/* Row*/}
@@ -19,7 +24,7 @@ const Badges = () => {
         <Card>
           <CardBody>
           <CardTitle>
-              <h4>Listado de Citas</h4>
+              <h4>Listado de Atenciones</h4>
           </CardTitle>
           <Table responsive>
             <thead>
