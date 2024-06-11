@@ -1,15 +1,68 @@
+import React, { useState } from 'react';
 import { Badge, Table,Button, Card, CardBody, CardTitle, Row, Col } from "reactstrap";
+import AsistenciaModal from '../../components/ModelAsist';
+import AsistenciaModalView from '../../components/AsistenciaModalView';
+import AsignacionMedicamentosModal from '../../components/AsignacionMedicamentosModal';
 
 const Badges = () => {
+  const [modal, setModal] = useState(false);
+  const [modalView, setModalView] = useState(false);
+  const [modalAsignacion, setModalAsignacion] = useState(false);
+  const [selectedAtencion, setSelectedAtencion] = useState(null);
+
+  const toggleModal = () => setModal(!modal);
+  const toggleModalView = () => setModalView(!modalView);
+  const toggleModalAsignacion = () => setModalAsignacion(!modalAsignacion);
+
+  const [atenciones, setAtenciones] = useState([
+    {
+      id: 1,
+      nombreMascota: 'Firulais',
+      fechaReserva: '2023-06-01',
+      descripcion: 'Consulta general',
+      dueno: 'Juan Perez',
+      estado: 'Pendiente'
+    }
+  ]);
+
+  const [newAtencion, setNewAtencion] = useState({
+    id: '',
+    nombreMascota: '',
+    fechaReserva: '',
+    descripcion: '',
+    dueno: '',
+    estado: ''
+  });
+
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setNewAtencion({ ...newAtencion, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setAtenciones([...atenciones, { ...newAtencion, id: atenciones.length + 1 }]);
+    toggleModal();
+  };
+  const handleViewClick = (atencion) => {
+    setSelectedAtencion(atencion);
+    toggleModalView();
+  };
+  const handleAsignacionClick = (atencion) => {
+    setSelectedAtencion(atencion);
+    toggleModalAsignacion();
+  };
+
   return (
     <div>
-    <h2>Control de Citas</h2>
+    <h2>Control de Asistencia Medica de </h2>
     <h3>Mascotas</h3>
-    <Card>
+    <Card style={{ marginRight: '10px' }} >
       <CardBody>
-        <Button color="danger" style={{ marginRight: '10px' }} >Reservar Cita</Button> 
+        <Button color="danger" style={{ marginRight: '10px' }} onClick={toggleModal} >Agregar Asistencia</Button> 
         <Button color="danger">Reservar Cita</Button>
-      </CardBody>
+      </CardBody><AsistenciaModal isOpen={modal} toggle={toggleModal} />
     </Card>
       {/* --------------------------------------------------------------------------------*/}
       {/* Row*/}
@@ -19,7 +72,7 @@ const Badges = () => {
         <Card>
           <CardBody>
           <CardTitle>
-              <h4>Listado de Citas</h4>
+              <h4>Listado de Atenciones</h4>
           </CardTitle>
           <Table responsive>
             <thead>
@@ -33,226 +86,41 @@ const Badges = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Perro</td>
-                <td>2021-09-25</td>
-                <td>Consulta</td>
-                <td>Carlos</td>
-                <td>Reservado</td>
+            {atenciones.map((atencion) => (
+              <tr key={atencion.id}>
+                <td>{atencion.id}</td>
+                <td>{atencion.nombreMascota}</td>
+                <td>{atencion.fechaReserva}</td>
+                <td>{atencion.descripcion}</td>
+                <td>{atencion.dueno}</td>
+                <td>{atencion.estado}</td>
+                <td>
+                <Button color="primary" style={{ marginRight: '10px' }} onClick={() => handleViewClick(atencion)}>Ver Valoración</Button>
+                <Button color="secondary" o onClick={() => handleAsignacionClick(atencion)}>Asignacion de Medicamentos</Button>
+                </td>
               </tr>
-              <tr>
-                <td>2</td>
-                <td>Gato</td>
-                <td>2021-09-25</td>
-                <td>Vacunacion</td>
-                <td>Carlos</td>
-                <td>Reservado</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Perro</td>
-                <td>2021-09-25</td>
-                <td>Consulta</td>
-                <td>Carlos</td>
-                <td>Reservado</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Gato</td>
-                <td>2021-09-25</td>
-                <td>Vacunacion</td>
-                <td>Carlos</td>
-                <td>Reservado</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Perro</td>
-                <td>2021-09-25</td>
-                <td>Consulta</td>
-                <td>Carlos</td>
-                <td>Reservado</td>
-              </tr>
+            ))}
             </tbody>
           </Table>
+         
           </CardBody>
+        
         </Card>
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-1*/}
-          {/* --------------------------------------------------------------------------------*/}
-          {/*<Card>
-            <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges
-            </CardTitle>
-            <CardBody className="">
-              <div>
-                <h1>
-                  Heading <Badge color="secondary">New</Badge>
-                </h1>
-                <h2>
-                  Heading <Badge color="secondary">New</Badge>
-                </h2>
-                <h3>
-                  Heading <Badge color="secondary">New</Badge>
-                </h3>
-                <h4>
-                  Heading <Badge color="secondary">New</Badge>
-                </h4>
-                <h5>
-                  Heading <Badge color="secondary">New</Badge>
-                </h5>
-                <h6>
-                  Heading <Badge color="secondary">New</Badge>
-                </h6>
-              </div>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col xs="12" md="12" sm="12">*/}
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-2*/}
-          {/* --------------------------------------------------------------------------------*/}
-         {/*<Card>
-            <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges with Button
-            </CardTitle>
-            <CardBody className="">
-              <div>
-                <Button color="primary" outline>
-                  Notifications <Badge color="secondary">1</Badge>
-                </Button>
-                <Button color="secondary" className="ms-3" outline>
-                  Notifications <Badge color="secondary">2</Badge>
-                </Button>
-                <Button color="info" className="ms-3" outline>
-                  Notifications <Badge color="secondary">3</Badge>
-                </Button>
-                <Button color="warning" className="ms-3" outline>
-                  Notifications <Badge color="secondary">4</Badge>
-                </Button>
-                <Button color="danger" className="ms-3" outline>
-                  Notifications <Badge color="secondary">5</Badge>
-                </Button>
-              </div>
-            </CardBody>
-          </Card>*/}
-        {/*</Col>
-        <Col xs="12" md="6">*/}
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-3*/}
-          {/* --------------------------------------------------------------------------------*/}
-          {/*<Card>
-            <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges with Contextual variations
-            </CardTitle>
-            <CardBody className="">
-              <div>
-                <Badge color="primary">Primary</Badge>
-                <Badge color="secondary" className="ms-3">
-                  Secondary
-                </Badge>
-                <Badge color="success" className="ms-3">
-                  Success
-                </Badge>
-                <Badge color="danger" className="ms-3">
-                  Danger
-                </Badge>
-                <Badge color="warning" className="ms-3">
-                  Warning
-                </Badge>
-                <Badge color="info" className="ms-3">
-                  Info
-                </Badge>
-                <Badge color="light" className="ms-3">
-                  Light
-                </Badge>
-                <Badge color="dark" className="ms-3">
-                  Dark
-                </Badge>
-              </div>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col xs="12" md="6">*/}
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-4*/}
-          {/* --------------------------------------------------------------------------------*/}
-          {/*<Card>
-            <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges with Pills
-            </CardTitle>
-            <CardBody className="">
-              <div>
-                <Badge color="primary" pill>
-                  Primary
-                </Badge>
-                <Badge color="secondary" className="ms-3" pill>
-                  Secondary
-                </Badge>
-                <Badge color="success" className="ms-3" pill>
-                  Success
-                </Badge>
-                <Badge color="danger" className="ms-3" pill>
-                  Danger
-                </Badge>
-                <Badge color="warning" className="ms-3" pill>
-                  Warning
-                </Badge>
-                <Badge color="info" className="ms-3" pill>
-                  Info
-                </Badge>
-                <Badge color="light" className="ms-3" pill>
-                  Light
-                </Badge>
-                <Badge color="dark" className="ms-3" pill>
-                  Dark
-                </Badge>
-              </div>
-            </CardBody>
-          </Card>
-        </Col>*/}
-        {/*<Col xs="12" md="6">*/}
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-5*/}
-          {/* --------------------------------------------------------------------------------*/}
-          {/*<Card>
-            <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges with Links
-            </CardTitle>
-            <CardBody className="">
-              <div>
-                <Badge href="" color="primary">
-                  Primary
-                </Badge>
-                <Badge href="" color="secondary" className="ms-3">
-                  Secondary
-                </Badge>
-                <Badge href="" color="success" className="ms-3">
-                  Success
-                </Badge>
-                <Badge href="" color="danger" className="ms-3">
-                  Danger
-                </Badge>
-                <Badge href="" color="warning" className="ms-3">
-                  Warning
-                </Badge>
-                <Badge href="" color="info" className="ms-3">
-                  Info
-                </Badge>
-                <Badge href="" color="light" className="ms-3">
-                  Light
-                </Badge>
-                <Badge href="" color="dark" className="ms-3">
-                  Dark
-                </Badge>
-              </div>
-            </CardBody>
-          </Card>*/}
-        {/*</Col>*/}
-      {/*</Row>*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Row*/}
-      {/* --------------------------------------------------------------------------------*/}
+        {selectedAtencion && (
+        <>
+          <AsistenciaModalView
+            isOpen={modalView}
+            toggle={toggleModalView}
+            atencion={selectedAtencion}
+            onAsignacionClick={handleAsignacionClick}
+          />
+          <AsignacionMedicamentosModal
+            isOpen={modalAsignacion}
+            toggle={toggleModalAsignacion}
+            atencion={selectedAtencion}
+          />
+        </>
+      )}
     </div>
   );
 };

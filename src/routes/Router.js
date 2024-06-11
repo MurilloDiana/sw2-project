@@ -35,7 +35,7 @@ const ThemeRoutes = [
       { path: "/usuarios", exact: true, element: <Alerts /> },
       //{ path: "/badges", exact: true, element: <Badges /> },
       { path: "/citas", exact: true, element: <Badges /> },
-      { path: "/buttons", exact: true, element: <Buttons /> },
+      { path: "/asistencia", exact: true, element: <Buttons /> },
       //{ path: "/cards", exact: true, element: <Cards /> },
       { path: "/historial", exact: true, element: <Cards /> },
       { path: "/grid", exact: true, element: <Grid /> },
