@@ -41,7 +41,7 @@ const ThemeRoutes = [
       { path: "/grid", exact: true, element: <Grid /> },
       { path: "/table", exact: true, element: <Tables /> },
       { path: "/forms", exact: true, element: <Forms /> },
-      { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
+      //{ path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
     ],
   },
   { path: '/login',

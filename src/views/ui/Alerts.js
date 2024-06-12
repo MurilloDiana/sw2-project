@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { useQuery, useMutation } from '@apollo/client';
 import {
   Modal,
   ModalHeader,
@@ -13,18 +14,54 @@ import {
   Label,
   FormGroup,
   Input
-} from "reactstrap";
+} from 'reactstrap';
+import { 
+  GET_ALL_ROLES, 
+  GET_ALL_USERS, 
+  GET_ALL_PETS, 
+  CREATE_ROL, 
+  CREATE_USER, 
+  CREATE_PET 
+} from '../../graphql/queries';
 
 const Alerts = () => {
-  // For Dismiss Button with Alert
-  /*const [visible, setVisible] = useState(true);
-
-  const onDismiss = () => {
-    setVisible(false);
-  };*/
   const [modalType, setModalType] = useState(false);
   const [modalForm, setModalForm] = useState(false);
   const [userType, setUserType] = useState('');
+
+  // Queries
+  const { loading: rolesLoading, error: rolesError, data: rolesData } = useQuery(GET_ALL_ROLES);
+  const { loading: usersLoading, error: usersError, data: usersData } = useQuery(GET_ALL_USERS);
+  const { loading: petsLoading, error: petsError, data: petsData } = useQuery(GET_ALL_PETS);
+
+  // Mutations
+  const [createRol] = useMutation(CREATE_ROL, {
+    update(cache, { data: { createRol } }) {
+      const { getAllRoles } = cache.readQuery({ query: GET_ALL_ROLES });
+      cache.writeQuery({
+        query: GET_ALL_ROLES,
+        data: { getAllRoles: [...getAllRoles, createRol] }
+      });
+    }
+  });
+  const [createUser] = useMutation(CREATE_USER, {
+    update(cache, { data: { createUser } }) {
+      const { getAllUsers } = cache.readQuery({ query: GET_ALL_USERS });
+      cache.writeQuery({
+        query: GET_ALL_USERS,
+        data: { getAllUsers: [...getAllUsers, createUser] }
+      });
+    }
+  });
+  const [createPet] = useMutation(CREATE_PET, {
+    update(cache, { data: { createPet } }) {
+      const { getAllPets } = cache.readQuery({ query: GET_ALL_PETS });
+      cache.writeQuery({
+        query: GET_ALL_PETS,
+        data: { getAllPets: [...getAllPets, createPet] }
+      });
+    }
+  });
 
   const toggleTypeModal = () => setModalType(!modalType);
   const toggleFormModal = () => setModalForm(!modalForm);
@@ -35,66 +72,118 @@ const Alerts = () => {
     toggleFormModal();
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Tipo de usuario:', userType);
-    toggleFormModal();
+    const formData = new FormData(e.target);
+
+    try {
+      switch (userType) {
+        case 'Rol':
+          await createRol({
+            variables: {
+              rolRequest: {
+                name: formData.get('name')
+              }
+            }
+          });
+          break;
+        case 'Usuario':
+          await createUser({
+            variables: {
+              userRequest: {
+                names: formData.get('names'),
+                lastNames: formData.get('lastNames'),
+                ci: formData.get('ci'),
+                phone: formData.get('phone'),
+                address: formData.get('address'),
+                email: formData.get('email'),
+                password: formData.get('password'),
+                roleId: formData.get('roleId')
+              }
+            }
+          });
+          break;
+        case 'Mascota':
+          await createPet({
+            variables: {
+              petRequest: {
+                name: formData.get('name'),
+                species: formData.get('species'),
+                breed: formData.get('breed'),
+                age: parseInt(formData.get('age'), 10),
+                gender: formData.get('gender'),
+                color: formData.get('color'),
+                userId: formData.get('userId')
+              }
+            }
+          });
+          break;
+        default:
+          break;
+      }
+      toggleFormModal(); // Cierra el modal después de la creación exitosa
+    } catch (error) {
+      console.error("Error creando entidad:", error);
+    }
   };
-  const [owners, setOwners] = useState([
-    { id: 1, name: 'Juan Pérez' },
-    { id: 2, name: 'Ana Gómez' },
-    { id: 3, name: 'Luis Martínez' }
-  ]); // Lista de propietarios
+
+  if (rolesLoading || usersLoading || petsLoading) return <p>Loading...</p>;
+  if (rolesError || usersError || petsError) return (
+    <p>Error: {rolesError?.message || usersError?.message || petsError?.message}</p>
+  );
 
   const renderModalForm = () => {
     switch (userType) {
-      case 'Veterinario':
+      case 'Rol':
         return (
           <Form onSubmit={handleSubmit}>
             <FormGroup>
               <Label for="name">Nombre</Label>
-              <Input type="text" id="name" placeholder="Ingrese el nombre" required />
+              <Input type="text" name="name" id="name" placeholder="Ingrese el nombre" required />
             </FormGroup>
-            <FormGroup>
-              <Label for="last">Apellido</Label>
-              <Input type="text" id="last" placeholder="Ingrese el apellido" required />
-            </FormGroup>
-            <FormGroup>
-              <Label for="Specialty">Especialidad</Label>
-              <Input type="text" id="Specialty" placeholder="Ingrese el especialidad" required />
-            </FormGroup>
-            <FormGroup>
-              <Label for="date">Fecha Nacimiento</Label>
-              <Input type="date" id="date" placeholder="Ingrese el Fecha Nacimiento" required />
-            </FormGroup>
-            <FormGroup>
-              <Label for="age">Edad</Label>
-              <Input type="number" id="age" placeholder="Ingrese edad" required />
-            </FormGroup>
-            {/* Agrega aquí los campos específicos para veterinario */}
             <Button type="submit" color="primary">Registrar</Button>
           </Form>
         );
-      case 'Dueño':
+      case 'Usuario':
         return (
           <Form onSubmit={handleSubmit}>
             <FormGroup>
-              <Label for="name">Nombre</Label>
-              <Input type="text" id="name" placeholder="Ingrese el nombre" required />
+              <Label for="names">Nombres</Label>
+              <Input type="text" name="names" id="names" placeholder="Ingrese los nombres" required />
             </FormGroup>
             <FormGroup>
-              <Label for="last">Apellido</Label>
-              <Input type="text" id="last" placeholder="Ingrese el apellido" required />
+              <Label for="lastNames">Apellidos</Label>
+              <Input type="text" name="lastNames" id="lastNames" placeholder="Ingrese los apellidos" required />
             </FormGroup>
             <FormGroup>
-              <Label for="date">Fecha Nacimiento</Label>
-              <Input type="date" id="date" placeholder="Ingrese el Fecha Nacimiento" required />
+              <Label for="ci">Cédula de Identidad</Label>
+              <Input type="text" name="ci" id="ci" placeholder="Ingrese el CI" required />
             </FormGroup>
             <FormGroup>
-              <Label for="age">Edad</Label>
-              <Input type="number" id="age" placeholder="Ingrese edad" required />
+              <Label for="phone">Teléfono</Label>
+              <Input type="text" name="phone" id="phone" placeholder="Ingrese el teléfono" />
             </FormGroup>
-            {/* Agrega aquí los campos específicos para dueño */}
+            <FormGroup>
+              <Label for="address">Dirección</Label>
+              <Input type="text" name="address" id="address" placeholder="Ingrese la dirección" />
+            </FormGroup>
+            <FormGroup>
+              <Label for="email">Correo Electrónico</Label>
+              <Input type="email" name="email" id="email" placeholder="Ingrese el correo electrónico" required />
+            </FormGroup>
+            <FormGroup>
+              <Label for="password">Contraseña</Label>
+              <Input type="password" name="password" id="password" placeholder="Ingrese la contraseña" required />
+            </FormGroup>
+            <FormGroup>
+              <Label for="roleId">Rol</Label>
+              <Input type="select" name="roleId" id="roleId" required>
+                <option value="">Seleccione el rol</option>
+                {rolesData?.getAllRoles?.map(rol => (
+                  <option key={rol.id} value={rol.id}>{rol.name || "Sin nombre"}</option> // Manejo de `null`
+                ))}
+              </Input>
+            </FormGroup>
             <Button type="submit" color="primary">Registrar</Button>
           </Form>
         );
@@ -103,34 +192,37 @@ const Alerts = () => {
           <Form onSubmit={handleSubmit}>
             <FormGroup>
               <Label for="name">Nombre</Label>
-              <Input type="text" id="name" placeholder="Ingrese el nombre" required />
+              <Input type="text" name="name" id="name" placeholder="Ingrese el nombre" required />
             </FormGroup>
             <FormGroup>
-              <Label for="date">Fecha Nacimiento</Label>
-              <Input type="date" id="date" placeholder="Ingrese el Fecha Nacimiento" required />
+              <Label for="species">Especie</Label>
+              <Input type="text" name="species" id="species" placeholder="Ingrese la especie" required />
+            </FormGroup>
+            <FormGroup>
+              <Label for="breed">Raza</Label>
+              <Input type="text" name="breed" id="breed" placeholder="Ingrese la raza" required />
             </FormGroup>
             <FormGroup>
               <Label for="age">Edad</Label>
-              <Input type="number" id="age" placeholder="Ingrese edad" required />
+              <Input type="number" name="age" id="age" placeholder="Ingrese edad" required />
             </FormGroup>
             <FormGroup>
-              <Label for="especie">Especie</Label>
-              <Input type="text" id="especie" placeholder="Ingrese el nombre" required />
+              <Label for="gender">Género</Label>
+              <Input type="text" name="gender" id="gender" placeholder="Ingrese el género" required />
             </FormGroup>
             <FormGroup>
-              <Label for="genero">Genero</Label>
-              <Input type="text" id="genero" placeholder="Ingrese el nombre" required />
+              <Label for="color">Color</Label>
+              <Input type="text" name="color" id="color" placeholder="Ingrese el color" required />
             </FormGroup>
             <FormGroup>
-                <Label for="owner">Nombre del Propietario</Label>
-                <Input type="select" id="owner" required>
-                  <option value="">Seleccione el propietario</option>
-                  {owners.map(owner => (
-                    <option key={owner.id} value={owner.id}>{owner.name}</option>
-                  ))}
-                </Input>
-              </FormGroup>
-            {/* Agrega aquí los campos específicos para mascota */}
+              <Label for="userId">Propietario</Label>
+              <Input type="select" name="userId" id="userId" required>
+                <option value="">Seleccione el propietario</option>
+                {usersData?.getAllUsers?.map(user => (
+                  <option key={user.id} value={user.id}>{user.names || "Sin nombre"}</option> // Manejo de `null`
+                ))}
+              </Input>
+            </FormGroup>
             <Button type="submit" color="primary">Registrar</Button>
           </Form>
         );
@@ -138,21 +230,20 @@ const Alerts = () => {
         return null;
     }
   };
+
   return (
-    
     <div>
       <Button color="primary" className="mb-3" onClick={toggleTypeModal}>
         <i className="bi bi-plus-circle me-2"></i> Añadir Usuario
       </Button>
-       {/* Modal para seleccionar tipo de usuario */}
-       <Modal isOpen={modalType} toggle={toggleTypeModal}>
+      <Modal isOpen={modalType} toggle={toggleTypeModal}>
         <ModalHeader toggle={toggleTypeModal}>Seleccione el tipo de usuario</ModalHeader>
         <ModalBody>
-          <Button color="primary" onClick={() => handleUserTypeSelect('Dueño')} className="me-2">
-            Dueño
+          <Button color="primary" onClick={() => handleUserTypeSelect('Usuario')} className="me-2">
+            Usuario
           </Button>
-          <Button color="secondary" onClick={() => handleUserTypeSelect('Veterinario')} className="me-2">
-            Veterinario
+          <Button color="secondary" onClick={() => handleUserTypeSelect('Rol')} className="me-2">
+            Rol
           </Button>
           <Button color="info" onClick={() => handleUserTypeSelect('Mascota')}>
             Mascota
@@ -168,252 +259,118 @@ const Alerts = () => {
           <Button color="secondary" onClick={toggleFormModal}>Cancelar</Button>
         </ModalFooter>
       </Modal>
-      {/*----- new cardilla para usuarios*/}
+      {/*----- Tabla de roles */}
       <Card>
-      <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-        <i className="bi bi-people me-2"> </i> Usuarios Propietarios
-      </CardTitle>
-      <CardBody>
+        <CardTitle tag="h6" className="border-bottom p-3 mb-0">
+          <i className="bi bi-person me-2"> </i> Roles
+        </CardTitle>
+        <CardBody>
           <Table responsive>
             <thead>
               <tr>
                 <th>ID</th>
                 <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Edad</th>
               </tr>
             </thead>
             <tbody>
+            {rolesData?.getAllRoles?.length > 0 ? (
+              rolesData.getAllRoles.map((rol, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td> {/* Número incremental empezando en 1 */}
+                  <td>{rol.name || "Sin nombre"}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="2">No roles found</td>
+              </tr>
+            )}
+          </tbody>
+          </Table>
+        </CardBody>
+      </Card>
+      {/*----- Tabla de usuarios */}
+      <Card>
+        <CardTitle tag="h6" className="border-bottom p-3 mb-0">
+          <i className="bi bi-people me-2"> </i> Usuarios
+        </CardTitle>
+        <CardBody>
+          <Table responsive>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>CI</th>
+                <th>Teléfono</th>
+                <th>Correo Electrónico</th>
+                <th>Rol</th>
+              </tr>
+            </thead>
+            <tbody>
+              {usersData?.getAllUsers?.length > 0 ? (
+                usersData.getAllUsers.map((user,index) => (
+                  <tr key={index}>
+                    <td>{index + 1}</td>
+                    <td>{user.names || "Sin nombre"}</td> {/**manejo de null */}
+                    <td>{user.lastNames || "Sin apellido"}</td>
+                    <td>{user.ci || "Sin CI"}</td>
+                    <td>{user.phone || "Sin teléfono"}</td>
+                    <td>{user.email || "Sin correo"}</td>
+                    <td>{rolesData?.getAllRoles?.find(rol => rol.id === user.roleId)?.name || "Sin rol"}</td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="7">No users found</td>
+                </tr>
+              )}
             </tbody>
           </Table>
         </CardBody>
       </Card>
-            {/*----- new cardilla para usuarios*/}
+      {/*----- Tabla de mascotas */}
       <Card>
-      <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-        <i className="bi bi-heart"> </i> Usuarios Mascotas
-      </CardTitle>
-      <CardBody>
+        <CardTitle tag="h6" className="border-bottom p-3 mb-0">
+          <i className="bi bi-heart"> </i> Mascotas
+        </CardTitle>
+        <CardBody>
           <Table responsive>
             <thead>
               <tr>
                 <th>ID</th>
                 <th>Nombre</th>
-                <th>Edad</th>
-                <th>Genero</th>
                 <th>Especie</th>
+                <th>Raza</th>
+                <th>Edad</th>
+                <th>Género</th>
+                <th>Color</th>
                 <th>Propietario</th>
               </tr>
             </thead>
             <tbody>
+              {petsData?.getAllPets?.length > 0 ? (
+                petsData.getAllPets.map((pet,index) => (
+                  <tr key={index}>
+                    <td>{index +1 }</td>
+                    <td>{pet.name || "Sin nombre"}</td> {/*Manejo de `null`*/}
+                    <td>{pet.species || "Sin especie"}</td>
+                    <td>{pet.breed || "Sin raza"}</td>
+                    <td>{pet.age ?? "Desconocida"}</td>  {/*Manejo de `null` y `undefined`*/}
+                    <td>{pet.gender || "Sin género"}</td>
+                    <td>{pet.color || "Sin color"}</td>
+                    <td>{usersData?.getAllUsers?.find(user => user.id === pet.userId)?.names || "Sin propietario"}</td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="8">No pets found</td>
+                </tr>
+              )}
             </tbody>
           </Table>
         </CardBody>
       </Card>
-            {/*----- new cardilla para usuarios*/}
-      <Card>
-      <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-        <i className="bi bi-person me-2"> </i> Usuarios Veterinario
-      </CardTitle>
-      <CardBody>
-          <Table responsive>
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Especialidad</th>
-                <th>Encargado</th>
-              </tr>
-            </thead>
-            <tbody>
-            </tbody>
-          </Table>
-        </CardBody>
-      </Card>
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Card-1*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/*<Card>
-        <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-          <i className="bi bi-bell me-2"> </i>
-          Alert
-        </CardTitle>
-        <CardBody className="">
-          <div className="mt-3">
-            <Alert color="primary">
-              This is a primary alert— check it out!
-            </Alert>
-            <Alert color="secondary">
-              This is a secondary alert— check it out!
-            </Alert>
-            <Alert color="success">
-              This is a success alert— check it out!
-            </Alert>
-            <Alert color="danger">This is a danger alert— check it out!</Alert>
-            <Alert color="warning">
-              This is a warning alert— check it out!
-            </Alert>
-            <Alert color="info">This is a info alert— check it out!</Alert>
-            <Alert color="light">This is a light alert— check it out!</Alert>
-            <Alert color="dark">This is a dark alert</Alert>
-          </div>
-        </CardBody>
-  </Card>*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Card-2*/}
-      {/* --------------------------------------------------------------------------------*/}
-     {/* <Card>
-        <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-          <i className="bi bi-bell me-2" />
-          Alert with Links
-        </CardTitle>
-        <CardBody className="">
-          <div>
-            <Alert color="primary">
-              This is a primary alert with
-              <a href="/" className="alert-link">
-                an example link
-              </a>
-              . Give it a click if you like.
-            </Alert>
-            <Alert color="secondary">
-              This is a secondary alert with
-              <a href="/" className="alert-link">
-                an example link
-              </a>
-              . Give it a click if you like.
-            </Alert>
-            <Alert color="success">
-              This is a success alert with
-              <a href="/" className="alert-link">
-                an example link
-              </a>
-              . Give it a click if you like.
-            </Alert>
-            <Alert color="danger">
-              This is a danger alert with
-              <a href="/" className="alert-link">
-                an example link
-              </a>
-              . Give it a click if you like.
-            </Alert>
-            <Alert color="warning">
-              This is a warning alert with
-              <a href="/" className="alert-link">
-                an example link
-              </a>
-              . Give it a click if you like.
-            </Alert>
-            <Alert color="info">
-              This is a info alert with
-              <a href="/" className="alert-link">
-                an example link
-              </a>
-              . Give it a click if you like.
-            </Alert>
-            <Alert color="light">
-              This is a light alert with
-              <a href="/" className="alert-link">
-                an example link
-              </a>
-              . Give it a click if you like.
-            </Alert>
-            <Alert color="dark">
-              This is a dark alert with
-              <a href="/" className="alert-link">
-                an example link
-              </a>
-              . Give it a click if you like.
-            </Alert>
-          </div>
-        </CardBody>
-</Card>*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Card-3*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/*<Card>
-        <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-          <i className="bi bi-bell me-2" />
-          Alert with Additional content
-        </CardTitle>
-        <CardBody className="">
-          <div>
-            <Alert color="success">
-              <h4 className="alert-heading">Well done!</h4>
-              <p>
-                Aww yeah, you successfully read this important alert message.
-                This example text is going to run a bit longer so that you can
-                see how spacing within an alert works with this kind of content.
-              </p>
-              <hr />
-              <p className="mb-0">
-                Whenever you need to, be sure to use margin utilities to keep
-                things nice and tidy.
-              </p>
-            </Alert>
-          </div>
-        </CardBody>
-</Card>*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Card-4*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/*<Card>
-        <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-          <i className="bi bi-bell me-2" />
-          Alert with Dissmissing
-        </CardTitle>
-        <CardBody className="">
-          <div>
-            <Alert color="info" isOpen={visible} toggle={onDismiss.bind(null)}>
-              I am an alert and I can be dismissed!
-            </Alert>
-          </div>
-        </CardBody>
-</Card>*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Card-5*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/*<Card>
-        <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-          <i className="bi bi-bell me-2" />
-          Alert with Uncontrolled [disable] Alerts
-        </CardTitle>
-        <CardBody className="">
-          <div>
-            <UncontrolledAlert color="info">
-              I am an alert and I can be dismissed!
-            </UncontrolledAlert>
-          </div>
-        </CardBody>
-</Card>*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Card-6*/}
-      {/* --------------------------------------------------------------------------------*/}
-{/*      <Card>
-        <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-          <i className="bi bi-bell me-2" />
-          Alerts without fade
-        </CardTitle>
-        <CardBody className="">
-          <div>
-            <Alert
-              color="primary"
-              isOpen={visible}
-              toggle={onDismiss.bind(null)}
-              fade={false}
-            >
-              I am a primary alert and I can be dismissed without animating!
-            </Alert>
-            <UncontrolledAlert color="warning" fade={false}>
-              I am an alert and I can be dismissed without animating!
-            </UncontrolledAlert>
-          </div>
-        </CardBody>
-</Card>*/}
-
-      {/* --------------------------------------------------------------------------------*/}
-      {/* End Inner Div*/}
-      {/* --------------------------------------------------------------------------------*/}
     </div>
   );
 };
