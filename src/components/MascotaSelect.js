@@ -1,45 +1,29 @@
-// MascotaSelect.js
 import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
-//import axios from 'axios';
+import { useQuery } from '@apollo/client';
+import { GET_ALL_PETS } from '../graphql/queries';
 
 const MascotaSelect = ({ onChange }) => {
- /* const [mascotas, setMascotas] = useState([]);
+  const [options, setOptions] = useState([]);
+
+  const { data, loading, error } = useQuery(GET_ALL_PETS);
 
   useEffect(() => {
-    // Realiza la llamada a la API para obtener la lista de mascotas
-    const fetchMascotas = async () => {
-      try {
-        const response = await axios.get('/api/mascotas'); // Cambia la URL según tu endpoint
-        const mascotasData = response.data.map(mascota => ({
-          value: mascota.id,
-          label: mascota.nombre
-        }));
-        setMascotas(mascotasData);
-      } catch (error) {
-        console.error('Error fetching mascotas:', error);
-      }
-    };
+    if (data && data.getAllPets) {
+      const mascotasOptions = data.getAllPets.map(mascota => ({
+        value: mascota.id,
+        label: mascota.name
+      }));
+      setOptions(mascotasOptions);
+    }
+  }, [data]);
 
-    fetchMascotas();
-  }, []);
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading mascotas: {error.message}</p>;
 
   return (
     <Select
-      options={mascotas}
-      onChange={onChange}
-      placeholder="Seleccione una mascota"
-    />
-  );*/
-  const mascotas = [
-    { value: 1, label: 'Gato 1' },
-    { value: 2, label: 'Gato 2' },
-    { value: 3, label: 'Gato 3' }
-  ];
-
-  return (
-    <Select
-      options={mascotas}
+      options={options}
       onChange={onChange}
       placeholder="Seleccione una mascota"
     />

@@ -1,72 +1,86 @@
-// AsistenciaModal.js
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { useMutation } from '@apollo/client';
+import { CREATE_VISITS } from '../graphql/queries';
 import MascotaSelect from './MascotaSelect';
-import DuenoSelect from './DuenoSelect';
+import DoctorSelect from './DoctorSelect';
 
-const AsistenciaModal = ({ isOpen, toggle }) => {
-    const [selectedMascota, setSelectedMascota] = useState(null);
-    const [ selectedDueno, setSelectedDueno] = useState(null);
+const AsistenciaModal = ({ isOpen, toggle, onSave }) => {
+  const [selectedMascota, setSelectedMascota] = useState(null);
+  const [selectedDoctor, setSelectedDoctor] = useState(null);
+  const [descripcion, setDescripcion] = useState('');
+  const [fecha, setFecha] = useState('');
+
+  const [createVisits, { loading, error }] = useMutation(CREATE_VISITS);
 
   const handleMascotaChange = (selectedOption) => {
     setSelectedMascota(selectedOption);
   };
 
-  const handleDuenoChange = (selectedOption) => {
-    setSelectedDueno(selectedOption);
+  const handleDoctorChange = (selectedOption) => {
+    setSelectedDoctor(selectedOption);
   };
-
-  const [descripcion, setDescripcion] = useState('');
-  const [imagen, setImagen] = useState(null);
-  const [resultado, setResultado] = useState('');
 
   const handleDescripcionChange = (event) => {
     setDescripcion(event.target.value);
   };
 
-  const handleImagenChange = (event) => {
-    setImagen(event.target.files[0]);
+  const handleFechaChange = (event) => {
+    setFecha(event.target.value);
   };
 
-  const handleResultadoChange = (event) => {
-    setResultado(event.target.value);
-  };
   const handleSubmit = () => {
-    // Manejar el envío del formulario aquí
-    console.log('Mascota seleccionada:', selectedMascota);
-    console.log('Dueno seleccionada:', selectedDueno);
-    toggle();
+    // Log datos antes de enviar
+    console.log('Fecha:', fecha);
+    console.log('Descripción:', descripcion);
+    console.log('ID Paciente:', selectedMascota?.value);
+    console.log('ID Doctor:', selectedDoctor?.value);
+
+    createVisits({
+      variables: {
+        visitsRequest: {
+          date: fecha,
+          reason: descripcion,
+          idPatient: selectedMascota?.value,
+          idDoctor: selectedDoctor?.value,
+          status: 'PENDIENTE',
+          reserved: true,
+        }
+      }
+    }).then(response => {
+      console.log('Visit created:', response.data.createVisits);
+      onSave(response.data.createVisits); // Pasar la nueva visita al componente padre
+      toggle();
+    }).catch(err => {
+      console.error('Error creating visit:', err);
+    });
   };
+
   return (
     <Modal isOpen={isOpen} toggle={toggle}>
       <ModalHeader toggle={toggle}>Agregar Asistencia Médica</ModalHeader>
       <ModalBody>
-        {/* Aquí puedes colocar el formulario o cualquier contenido para la asistencia médica */}
         <form>
           <div className="form-group">
             <label htmlFor="mascota">Nombre de la Mascota</label>
             <MascotaSelect onChange={handleMascotaChange} />
           </div>
           <div className="form-group">
-            <label htmlFor="mascota">Nombre de Dueno</label>
-            <DuenoSelect onChange={handleDuenoChange} />
+            <label htmlFor="doctor">Nombre del Veterinario</label>
+            <DoctorSelect onChange={handleDoctorChange} />
           </div>
           <div className="form-group">
             <label htmlFor="descripcion">Descripción</label>
-            <textarea className="form-control" id="descripcion" rows="3" value={descripcion} onChange={handleDescripcionChange}></textarea>
+            <textarea className="form-control" id="reason" rows="3" value={descripcion} onChange={handleDescripcionChange}></textarea>
           </div>
           <div className="form-group">
-            <label htmlFor="imagen">Imagen</label>
-            <input type="file" className="form-control" id="imagen" onChange={handleImagenChange} />
-          </div>
-          <div className="form-group">
-            <label htmlFor="resultado">Resultado</label>
-            <textarea className="form-control" id="resultado" rows="3" value={resultado} onChange={handleResultadoChange}></textarea>
+            <label htmlFor="fecha">Fecha</label>
+            <input type="date" className="form-control" id="fecha" value={fecha} onChange={handleFechaChange} />
           </div>
         </form>
       </ModalBody>
       <ModalFooter>
-        <Button color="primary" onClick={toggle}>Guardar</Button>{' '}
+        <Button color="primary" onClick={handleSubmit}>Guardar</Button>{' '}
         <Button color="secondary" onClick={toggle}>Cancelar</Button>
       </ModalFooter>
     </Modal>

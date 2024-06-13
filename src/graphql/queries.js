@@ -49,10 +49,6 @@ export const GET_ALL_USERS = gql`
       address
       email
       roleId
-      rol {
-        id
-        name
-      }
     }
   }
 `;
@@ -171,6 +167,28 @@ export const GET_VACCINE_BY_ID_PATIENT = gql`
       administeredDate
       nextAdministeredDate
       doses
+    }
+  }
+`;
+
+
+export const GET_ROLE_BY_NAME = gql`
+  query GetRoleByName($name: String!) {
+    getRolByName(name: $name) {
+      id
+      name
+    }
+  }
+`;
+
+// Obtener usuarios por roleId
+export const GET_USERS_BY_ROLE_ID = gql`
+  query GetUsersByRoleId($roleId: String!) {
+    getAllUsers {
+      id
+      names
+      lastNames
+      roleId
     }
   }
 `;

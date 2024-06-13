@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
 //import axios from 'axios';
 
-const MascotaSelect = ({ onChange }) => {
+const DuenoSelect = ({ onChange }) => {
  /* const [mascotas, setMascotas] = useState([]);
 
   useEffect(() => {
@@ -33,16 +33,16 @@ const MascotaSelect = ({ onChange }) => {
   const duenos = [
     { value: 1, label: 'Gato 1' },
     { value: 2, label: 'Gato 2' },
-    { value: 3, label: 'Gato 3' }
+    { value: 3, label: 'Gato 31' }
   ];
 
   return (
     <Select
       options={duenos}
       onChange={onChange}
-      placeholder="Seleccione al dueño"
+      placeholder="Seleccione al doctor"
     />
   );
 };
 
-export default MascotaSelect;
+export default DuenoSelect;

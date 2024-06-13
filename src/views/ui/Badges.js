@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import { Badge, Table,Button, Card, CardBody, CardTitle, Row, Col } from "reactstrap";
+import React, { useState, useEffect } from 'react';
+import { Table, Button, Card, CardBody, CardTitle } from 'reactstrap';
+import { useQuery } from '@apollo/client';
+import { GET_ALL_VISITS, GET_ALL_USERS, GET_ALL_PETS } from './../../graphql/queries'; // Ajusta la ruta según tu estructura
 import AsistenciaModal from '../../components/ModelAsist';
 import AsistenciaModalView from '../../components/AsistenciaModalView';
 import AsignacionMedicamentosModal from '../../components/AsignacionMedicamentosModal';
@@ -9,110 +11,131 @@ const Badges = () => {
   const [modalView, setModalView] = useState(false);
   const [modalAsignacion, setModalAsignacion] = useState(false);
   const [selectedAtencion, setSelectedAtencion] = useState(null);
+  const [visits, setVisits] = useState([]);
+
+  const { data: visitsData, loading: visitsLoading, error: visitsError } = useQuery(GET_ALL_VISITS);
+  const { data: usersData, loading: usersLoading, error: usersError } = useQuery(GET_ALL_USERS);
+  const { data: petsData, loading: petsLoading, error: petsError } = useQuery(GET_ALL_PETS);
+
+  useEffect(() => {
+    if (visitsData && visitsData.getAllVisits) {
+      setVisits(visitsData.getAllVisits);
+    }
+  }, [visitsData]);
 
   const toggleModal = () => setModal(!modal);
   const toggleModalView = () => setModalView(!modalView);
   const toggleModalAsignacion = () => setModalAsignacion(!modalAsignacion);
 
-  const [atenciones, setAtenciones] = useState([
-    {
-      id: 1,
-      nombreMascota: 'Firulais',
-      fechaReserva: '2023-06-01',
-      descripcion: 'Consulta general',
-      dueno: 'Juan Perez',
-      estado: 'Pendiente'
-    }
-  ]);
-
-  const [newAtencion, setNewAtencion] = useState({
-    id: '',
-    nombreMascota: '',
-    fechaReserva: '',
-    descripcion: '',
-    dueno: '',
-    estado: ''
-  });
-
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setNewAtencion({ ...newAtencion, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setAtenciones([...atenciones, { ...newAtencion, id: atenciones.length + 1 }]);
-    toggleModal();
-  };
   const handleViewClick = (atencion) => {
     setSelectedAtencion(atencion);
     toggleModalView();
   };
+
   const handleAsignacionClick = (atencion) => {
     setSelectedAtencion(atencion);
     toggleModalAsignacion();
   };
 
+  const handleNewVisit = (newVisit) => {
+    setVisits([...visits, newVisit]);
+  };
+
+  const formatDate = (dateString) => {
+    if (!dateString) return 'Fecha inválida';
+    
+    try {
+      const parts = dateString.split(' ');
+      if (parts.length === 6) {
+        const [dayName, monthName, day, time, zone, year] = parts;
+        const monthIndex = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].indexOf(monthName);
+        if (monthIndex !== -1) {
+          const isoDateString = `${year}-${String(monthIndex + 1).padStart(2, '0')}-${day}T${time}`;
+          console.log('ISO Date String:', isoDateString);
+          const date = new Date(isoDateString);
+          if (isNaN(date.getTime())) {
+            console.error('Fecha inválida después de conversión:', isoDateString);
+            return 'Fecha inválida';
+          }
+          return date.toLocaleDateString('es-ES', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric'
+          });
+        } else {
+          console.error('Mes inválido en la fecha:', monthName);
+          return 'Fecha inválida';
+        }
+      } else {
+        console.error('Formato de fecha no reconocido:', dateString);
+        return 'Fecha inválida';
+      }
+    } catch (error) {
+      console.error('Error formatting date:', error, dateString);
+      return 'Fecha inválida';
+    }
+  };
+
+  if (visitsLoading || usersLoading || petsLoading) return <p>Loading...</p>;
+  if (visitsError) return <p>Error loading visits: {visitsError.message}</p>;
+  if (usersError) return <p>Error loading users: {usersError.message}</p>;
+  if (petsError) return <p>Error loading pets: {petsError.message}</p>;
+
   return (
     <div>
-    <h2>Control de Asistencia Medica de </h2>
-    <h3>Mascotas</h3>
-    <Card style={{ marginRight: '10px' }} >
-      <CardBody>
-        <Button color="danger" style={{ marginRight: '10px' }} onClick={toggleModal} >Agregar Asistencia</Button> 
-        <Button color="danger">Reservar Cita</Button>
-      </CardBody><AsistenciaModal isOpen={modal} toggle={toggleModal} />
-    </Card>
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Row*/}
-      {/* --------------------------------------------------------------------------------*/}
-     {/*<Row>
-        <Col xs="12" md="12" sm="12">*/}
-        <Card>
-          <CardBody>
+      <h2>Control de Asistencia Médica de</h2>
+      <h3>Mascotas</h3>
+      <Card style={{ marginRight: '10px' }}>
+        <CardBody>
+          <Button color="danger" style={{ marginRight: '10px' }} onClick={toggleModal}>Agregar Asistencia</Button>
+          <Button color="danger">Reservar Cita</Button>
+        </CardBody>
+        <AsistenciaModal isOpen={modal} toggle={toggleModal} onSave={handleNewVisit} />
+      </Card>
+      <Card>
+        <CardBody>
           <CardTitle>
-              <h4>Listado de Atenciones</h4>
+            <h4>Listado de Atenciones</h4>
           </CardTitle>
           <Table responsive>
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Nombre Mascota</th>
-                <th>Fecha Reserva</th>
-                <th>Descripcion</th>
-                <th>Dueño</th>
+                <th className="px-3">Fecha</th>
+                <th className="px-5">Descripción</th>
+                <th>Paciente</th>
+                <th>Doctor</th>
                 <th>Estado</th>
+                <th>Acciones</th>
               </tr>
             </thead>
             <tbody>
-            {atenciones.map((atencion) => (
-              <tr key={atencion.id}>
-                <td>{atencion.id}</td>
-                <td>{atencion.nombreMascota}</td>
-                <td>{atencion.fechaReserva}</td>
-                <td>{atencion.descripcion}</td>
-                <td>{atencion.dueno}</td>
-                <td>{atencion.estado}</td>
-                <td>
-                <Button color="primary" style={{ marginRight: '10px' }} onClick={() => handleViewClick(atencion)}>Ver Valoración</Button>
-                <Button color="secondary" o onClick={() => handleAsignacionClick(atencion)}>Asignacion de Medicamentos</Button>
-                </td>
-              </tr>
-            ))}
+              {visits.map((atencion, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td className="px-3">{formatDate(atencion.date)}</td>
+                  <td className="px-5">{atencion.reason}</td>
+                  <td>{petsData ? petsData.getAllPets.find(pet => pet.id === atencion.idPatient)?.name : 'Desconocido'}</td>
+                  <td>{usersData ? usersData.getAllUsers.find(user => user.id === atencion.idDoctor)?.names : 'Desconocido'}</td>
+                  <td>{atencion.status}</td>
+                  <td>
+                    <Button color="primary" style={{ marginRight: '10px' }} onClick={() => handleViewClick(atencion)}>Ver Valoración</Button>
+                    <Button color="secondary" onClick={() => handleAsignacionClick(atencion)}>Consulta</Button>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </Table>
-         
-          </CardBody>
-        
-        </Card>
-        {selectedAtencion && (
+        </CardBody>
+      </Card>
+      {selectedAtencion && (
         <>
           <AsistenciaModalView
             isOpen={modalView}
             toggle={toggleModalView}
             atencion={selectedAtencion}
-            onAsignacionClick={handleAsignacionClick}
+            users={usersData.getAllUsers}
+            pets={petsData.getAllPets}
           />
           <AsignacionMedicamentosModal
             isOpen={modalAsignacion}
