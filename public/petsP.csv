@@ -1,0 +1,2001 @@
+id,name,species,breed,sexo,age,owner_id
+1,Angélica,Ave,Loro de cabeza Azul,macho,19,248
+2,Gabino,Gato,Siames,macho,16,707
+3,Santiago,Perro,Pitbull,macho,19,248
+4,Dulce María,Gato,Siames,hembra,6,305
+5,Guillermo,Ave,Cacatua,macho,19,392
+6,Iván,Perro,Pitbull,hembra,12,158
+7,Inés,Ave,Perico,macho,17,874
+8,Gabino,Perro,Pitbull,hembra,12,302
+9,Elisa,Perro,Chihuahua,hembra,21,49
+10,Amador,Perro,San Bernardo,macho,5,831
+11,Natalia,Ave,Paraba Azul,hembra,6,978
+12,Pilar,Ave,Cacatua,hembra,17,530
+13,Alberto,Gato,Mestizo,hembra,14,303
+14,Ramón,Ave,Paraba Azul,hembra,20,807
+15,Ramón,Perro,San Bernardo,hembra,14,229
+16,José,Perro,San Bernardo,macho,19,829
+17,Andrés,Perro,Chihuahua,macho,11,858
+18,Elvia,Gato,Mestizo,hembra,17,220
+19,Alma,Ave,Cacatua,hembra,1,704
+20,David,Ave,Loro de cabeza Azul,macho,4,289
+21,Minerva,Gato,Egipcio,hembra,6,886
+22,Rebeca,Ave,Loro de cabeza Azul,hembra,3,290
+23,Omar,Perro,Chihuahua,hembra,21,466
+24,Jacinto,Gato,Egipcio,hembra,4,493
+25,Gerardo,Gato,Siames,macho,16,110
+26,Benjamín,Perro,Chihuahua,hembra,7,475
+27,Ruby,Ave,Cacatua,hembra,12,348
+28,Bianca,Gato,Egipcio,macho,10,705
+29,Wendolin,Perro,Pitbull,macho,19,901
+30,Laura,Perro,Mestizo,macho,8,873
+31,Amador,Perro,Pitbull,macho,15,704
+32,Adela,Ave,Cacatua,macho,3,39
+33,Jesús,Perro,Mestizo,hembra,15,947
+34,Irma,Ave,Cacatua,hembra,16,477
+35,Emilio,Ave,Cacatua,macho,7,385
+36,Fabiola,Gato,Mestizo,hembra,15,21
+37,Frida,Gato,Siames,hembra,14,154
+38,Abelardo,Gato,Egipcio,macho,18,148
+39,Dulce María,Perro,San Bernardo,hembra,4,995
+40,Luisa,Gato,Egipcio,hembra,13,143
+41,Dulce,Gato,Siames,hembra,17,223
+42,Gerónimo,Gato,Egipcio,hembra,21,686
+43,Marisela,Ave,Loro de cabeza Azul,macho,5,948
+44,Aldonza,Perro,Chihuahua,hembra,4,605
+45,Rodrigo,Gato,Persa,macho,18,392
+46,Ernesto,Gato,Siames,macho,21,24
+47,Isabela,Gato,Egipcio,hembra,2,342
+48,Reynaldo,Gato,Mestizo,hembra,20,402
+49,Ilse,Gato,Persa,macho,2,111
+50,Marco Antonio,Gato,Persa,hembra,20,275
+51,Dulce,Perro,Mestizo,hembra,4,817
+52,Armando,Ave,Loro de cabeza Azul,hembra,20,734
+53,Rosa,Perro,Pitbull,hembra,7,385
+54,Débora,Ave,Paraba Azul,macho,9,251
+55,Gustavo,Gato,Mestizo,macho,19,525
+56,Elias,Gato,Egipcio,macho,19,790
+57,Vanesa,Perro,San Bernardo,macho,12,630
+58,Leonor,Ave,Perico,hembra,13,555
+59,Luis Miguel,Gato,Siames,macho,11,625
+60,Octavio,Gato,Egipcio,hembra,18,832
+61,Rubén,Gato,Mestizo,macho,8,242
+62,Mario,Gato,Siames,hembra,4,777
+63,Salvador,Gato,Persa,macho,20,120
+64,Arcelia,Ave,Cacatua,hembra,7,431
+65,Adán,Ave,Paraba Azul,hembra,20,950
+66,Jerónimo,Perro,Pitbull,macho,13,692
+67,Lucas,Perro,Chihuahua,hembra,10,867
+68,Francisco Javier,Gato,Siames,macho,21,276
+69,Emilia,Perro,San Bernardo,macho,9,340
+70,Amalia,Gato,Egipcio,macho,12,729
+71,Renato,Perro,San Bernardo,macho,19,22
+72,Hermelinda,Perro,Mestizo,hembra,13,83
+73,Sandra,Gato,Egipcio,macho,20,95
+74,Karla,Gato,Mestizo,macho,1,865
+75,Citlali,Ave,Loro de cabeza Azul,macho,10,507
+76,Julio,Gato,Egipcio,macho,7,711
+77,Ángel,Gato,Siames,macho,10,581
+78,Reina,Perro,Chihuahua,hembra,12,402
+79,Ricardo,Gato,Mestizo,hembra,7,868
+80,Silvia,Perro,Chihuahua,macho,13,97
+81,Juan Carlos,Ave,Loro de cabeza Azul,hembra,1,841
+82,Santiago,Gato,Egipcio,hembra,3,857
+83,Daniel,Ave,Cacatua,macho,16,83
+84,José María,Gato,Persa,hembra,18,90
+85,Yolanda,Perro,San Bernardo,macho,1,445
+86,Pedro,Gato,Egipcio,hembra,16,611
+87,Vanesa,Ave,Perico,hembra,3,64
+88,Felix,Ave,Paraba Azul,macho,19,677
+89,Amalia,Perro,San Bernardo,macho,1,75
+90,Adela,Perro,Chihuahua,hembra,3,927
+91,Carolina,Ave,Cacatua,macho,11,892
+92,Carlos,Ave,Paraba Azul,hembra,13,774
+93,Eugenia,Ave,Paraba Azul,macho,3,716
+94,Homero,Perro,Mestizo,macho,13,109
+95,Miguel,Ave,Loro de cabeza Azul,hembra,9,517
+96,Dulce,Ave,Cacatua,hembra,3,505
+97,Óscar,Ave,Loro de cabeza Azul,macho,15,758
+98,Pedro,Ave,Perico,hembra,18,8
+99,Jorge,Perro,Chihuahua,macho,18,847
+100,Rolando,Perro,Chihuahua,macho,9,303
+101,Óliver,Gato,Mestizo,hembra,7,217
+102,Rubén,Gato,Siames,hembra,9,262
+103,Abril,Ave,Cacatua,macho,3,540
+104,Liliana,Ave,Loro de cabeza Azul,macho,4,66
+105,Natividad,Perro,Mestizo,macho,3,26
+106,Mitzy,Ave,Cacatua,hembra,5,341
+107,Andrés,Ave,Perico,hembra,15,182
+108,Martín,Perro,Chihuahua,hembra,14,865
+109,Gregorio,Perro,Mestizo,hembra,7,825
+110,Sessa,Gato,Egipcio,macho,7,80
+111,Camila,Ave,Cacatua,macho,20,296
+112,Ofelia,Gato,Persa,macho,14,277
+113,Ángela,Ave,Loro de cabeza Azul,hembra,13,494
+114,Miriam,Ave,Perico,macho,1,644
+115,Armando,Ave,Perico,hembra,15,893
+116,Rebeca,Perro,San Bernardo,macho,9,966
+117,Camila,Perro,Chihuahua,macho,1,908
+118,Yeni,Ave,Perico,hembra,17,925
+119,Emilia,Perro,San Bernardo,macho,5,885
+120,Soledad,Gato,Persa,hembra,16,966
+121,Aurora,Gato,Mestizo,hembra,9,535
+122,Mayte,Gato,Siames,macho,11,569
+123,Elsa,Gato,Siames,macho,10,573
+124,Silvia,Ave,Loro de cabeza Azul,hembra,10,639
+125,Maximiliano,Ave,Loro de cabeza Azul,hembra,8,363
+126,Tania,Gato,Egipcio,macho,18,862
+127,Karina,Perro,San Bernardo,hembra,21,223
+128,Teresa,Gato,Egipcio,hembra,17,656
+129,Pedro,Perro,San Bernardo,hembra,7,622
+130,Victoria,Gato,Mestizo,macho,1,653
+131,Carla,Ave,Perico,macho,12,839
+132,Renato,Gato,Egipcio,macho,15,340
+133,Emiliano,Perro,Pitbull,hembra,12,564
+134,Carla,Ave,Loro de cabeza Azul,macho,10,212
+135,Mariano,Gato,Mestizo,macho,8,978
+136,Ruby,Gato,Mestizo,macho,7,813
+137,Jaqueline,Perro,Pitbull,hembra,3,367
+138,Isaac,Perro,Pitbull,hembra,21,115
+139,Hermelinda,Ave,Perico,hembra,8,358
+140,Inés,Ave,Paraba Azul,macho,21,825
+141,Gregorio,Ave,Loro de cabeza Azul,hembra,11,88
+142,Guillermo,Perro,Mestizo,macho,3,212
+143,Abel,Perro,Mestizo,macho,15,244
+144,Mauro,Gato,Egipcio,hembra,20,21
+145,Aldo,Ave,Paraba Azul,macho,17,956
+146,Timoteo,Perro,Chihuahua,hembra,14,567
+147,Salvador,Perro,Mestizo,macho,18,774
+148,Julio,Ave,Perico,hembra,6,235
+149,Roberto,Ave,Loro de cabeza Azul,macho,6,193
+150,Patricia,Ave,Perico,macho,11,900
+151,Araceli,Gato,Egipcio,hembra,16,350
+152,Magdalena,Ave,Cacatua,hembra,6,122
+153,Marisol,Gato,Persa,macho,8,400
+154,Gerónimo,Perro,Chihuahua,hembra,10,980
+155,Araceli,Gato,Egipcio,hembra,20,641
+156,Víctor,Perro,Mestizo,hembra,15,310
+157,Clemente,Ave,Paraba Azul,hembra,18,117
+158,Marisela,Ave,Perico,macho,8,496
+159,Gerardo,Ave,Paraba Azul,macho,8,341
+160,Luisa,Gato,Egipcio,macho,17,36
+161,Guillermo,Perro,Pitbull,hembra,11,290
+162,Mariana,Gato,Siames,hembra,11,945
+163,Trinidad,Perro,San Bernardo,hembra,18,975
+164,Dulce María,Ave,Loro de cabeza Azul,macho,17,978
+165,Esperanza,Ave,Perico,macho,16,732
+166,Gerónimo,Ave,Loro de cabeza Azul,hembra,15,460
+167,Juan Carlos,Ave,Perico,hembra,9,349
+168,Luz,Gato,Egipcio,hembra,10,206
+169,Hernán,Perro,Pitbull,hembra,10,538
+170,Natalia,Ave,Loro de cabeza Azul,macho,16,277
+171,José Luis,Ave,Loro de cabeza Azul,hembra,8,479
+172,Gustavo,Perro,Mestizo,macho,1,305
+173,Judith,Perro,Chihuahua,macho,10,908
+174,Magdalena,Gato,Mestizo,macho,4,637
+175,Omar,Perro,Chihuahua,hembra,14,614
+176,Jacinto,Gato,Persa,macho,6,453
+177,María Cristina,Perro,Chihuahua,macho,12,801
+178,Isabela,Gato,Mestizo,macho,4,553
+179,Anabel,Gato,Egipcio,macho,13,392
+180,Dolores,Ave,Loro de cabeza Azul,hembra,3,831
+181,Wilfrido,Ave,Loro de cabeza Azul,hembra,13,154
+182,Josefina,Ave,Paraba Azul,hembra,8,598
+183,Nancy,Gato,Egipcio,hembra,18,995
+184,Caridad,Gato,Siames,macho,1,881
+185,Nelly,Perro,Chihuahua,hembra,10,946
+186,José Carlos,Ave,Perico,hembra,14,777
+187,Felix,Gato,Persa,macho,19,719
+188,Miguel,Perro,Mestizo,hembra,15,49
+189,Patricio,Gato,Egipcio,macho,4,262
+190,Noelia,Perro,Mestizo,macho,20,504
+191,Isabel,Gato,Mestizo,macho,19,871
+192,María del Carmen,Perro,San Bernardo,macho,8,725
+193,Micaela,Perro,Mestizo,hembra,21,560
+194,Berta,Gato,Mestizo,macho,18,375
+195,Josefina,Perro,San Bernardo,macho,12,313
+196,Socorro,Perro,San Bernardo,macho,4,325
+197,Débora,Ave,Cacatua,hembra,8,453
+198,Fabiola,Ave,Perico,macho,6,183
+199,Virginia,Ave,Paraba Azul,hembra,20,199
+200,Raquel,Ave,Cacatua,macho,9,815
+201,Ángela,Perro,San Bernardo,hembra,12,885
+202,Elvia,Ave,Perico,macho,1,272
+203,Porfirio,Perro,San Bernardo,hembra,4,618
+204,René,Ave,Paraba Azul,hembra,2,171
+205,Dalia,Ave,Paraba Azul,hembra,15,726
+206,Cornelio,Ave,Perico,macho,18,427
+207,Ángela,Gato,Persa,hembra,3,616
+208,Estela,Gato,Egipcio,hembra,2,13
+209,Dulce,Ave,Loro de cabeza Azul,hembra,12,42
+210,Pablo,Perro,Pitbull,macho,10,755
+211,Martín,Gato,Egipcio,macho,13,395
+212,Rolando,Gato,Siames,macho,14,933
+213,Sandra,Perro,Mestizo,macho,16,983
+214,César,Perro,San Bernardo,hembra,5,899
+215,Cornelio,Gato,Mestizo,hembra,19,388
+216,Indira,Perro,Mestizo,hembra,19,284
+217,Magdalena,Perro,Mestizo,hembra,10,605
+218,Yuridia,Gato,Mestizo,hembra,7,120
+219,Rolando,Perro,Chihuahua,hembra,2,891
+220,Conchita,Perro,Chihuahua,hembra,4,214
+221,Ariadna,Gato,Mestizo,macho,7,234
+222,María José,Ave,Paraba Azul,hembra,5,728
+223,Wendolin,Ave,Perico,macho,19,734
+224,Julio,Gato,Mestizo,hembra,17,792
+225,Estela,Ave,Paraba Azul,hembra,12,734
+226,Maximiliano,Perro,San Bernardo,macho,8,510
+227,Emilia,Perro,Pitbull,macho,18,451
+228,Josefina,Perro,Mestizo,macho,14,308
+229,Violeta,Perro,Chihuahua,macho,13,138
+230,Pedro,Perro,Mestizo,macho,6,790
+231,Jacinto,Gato,Mestizo,hembra,2,923
+232,Jacinto,Gato,Mestizo,hembra,12,348
+233,Pascual,Gato,Siames,macho,3,944
+234,María,Gato,Egipcio,hembra,18,533
+235,Francisca,Gato,Siames,hembra,15,386
+236,Helena,Perro,Chihuahua,macho,17,58
+237,Francisco,Perro,Chihuahua,hembra,6,630
+238,Adriana,Ave,Cacatua,macho,6,723
+239,Yolanda,Perro,Mestizo,macho,8,849
+240,Alfonso,Gato,Egipcio,hembra,20,928
+241,Javier,Gato,Siames,hembra,15,672
+242,Jacinto,Perro,Chihuahua,macho,7,240
+243,Silvia,Ave,Perico,macho,19,249
+244,Luz,Perro,Pitbull,hembra,14,765
+245,Rosalia,Perro,San Bernardo,hembra,3,338
+246,Rosa,Gato,Persa,macho,11,744
+247,Rodolfo,Ave,Paraba Azul,macho,10,104
+248,Margarita,Perro,Mestizo,macho,1,669
+249,Amador,Gato,Siames,macho,12,45
+250,Noemí,Gato,Siames,macho,4,622
+251,Soledad,Gato,Egipcio,hembra,12,610
+252,Marco Antonio,Ave,Loro de cabeza Azul,hembra,19,61
+253,Esparta,Gato,Persa,hembra,1,639
+254,Olga,Perro,San Bernardo,macho,4,319
+255,Minerva,Gato,Persa,macho,14,349
+256,Andrés,Perro,Pitbull,macho,10,919
+257,Gerardo,Gato,Egipcio,macho,21,782
+258,Flavio,Perro,San Bernardo,hembra,17,773
+259,Gerardo,Ave,Perico,macho,17,214
+260,Lucas,Perro,San Bernardo,hembra,16,109
+261,Emiliano,Perro,Mestizo,hembra,20,234
+262,Porfirio,Ave,Loro de cabeza Azul,hembra,11,842
+263,José María,Ave,Loro de cabeza Azul,hembra,11,561
+264,Carla,Ave,Perico,macho,12,913
+265,Alfonso,Perro,Pitbull,macho,8,182
+266,Judith,Ave,Loro de cabeza Azul,hembra,21,378
+267,Evelio,Gato,Persa,macho,10,621
+268,Bruno,Ave,Paraba Azul,macho,15,290
+269,Dolores,Gato,Persa,macho,16,447
+270,Soledad,Perro,Chihuahua,hembra,4,529
+271,María Teresa,Ave,Paraba Azul,macho,6,317
+272,José,Ave,Cacatua,hembra,16,43
+273,Ivonne,Perro,Mestizo,hembra,14,786
+274,Estela,Ave,Loro de cabeza Azul,hembra,6,47
+275,Óscar,Ave,Loro de cabeza Azul,hembra,13,738
+276,Adalberto,Perro,San Bernardo,hembra,12,939
+277,Adalberto,Gato,Mestizo,hembra,13,353
+278,Andrés,Gato,Mestizo,macho,20,518
+279,Asunción,Perro,San Bernardo,macho,4,691
+280,Marisol,Ave,Loro de cabeza Azul,macho,9,163
+281,Frida,Perro,Chihuahua,hembra,20,946
+282,Martín,Gato,Persa,macho,6,798
+283,Diego,Gato,Egipcio,hembra,11,129
+284,Marisela,Gato,Persa,hembra,11,754
+285,Verónica,Perro,Mestizo,macho,5,451
+286,Isabela,Ave,Paraba Azul,macho,12,84
+287,Israel,Perro,Chihuahua,macho,5,792
+288,Citlali,Ave,Perico,hembra,17,430
+289,Benjamín,Gato,Mestizo,hembra,7,597
+290,Luis,Gato,Persa,hembra,17,13
+291,Germán,Ave,Paraba Azul,hembra,5,168
+292,María Elena,Perro,Chihuahua,hembra,19,86
+293,Óliver,Gato,Mestizo,hembra,21,121
+294,Nadia,Perro,Chihuahua,macho,8,321
+295,Mateo,Perro,Mestizo,hembra,8,553
+296,Emiliano,Perro,Mestizo,macho,12,333
+297,Conchita,Gato,Mestizo,hembra,17,71
+298,Paola,Perro,Pitbull,macho,12,280
+299,Elias,Perro,San Bernardo,macho,10,569
+300,Benito,Ave,Paraba Azul,macho,20,824
+301,Bruno,Gato,Siames,macho,1,456
+302,Sessa,Gato,Persa,macho,14,949
+303,Ariadna,Ave,Cacatua,hembra,4,312
+304,Elisa,Ave,Perico,hembra,21,890
+305,Óscar,Ave,Cacatua,hembra,8,676
+306,Oswaldo,Perro,Mestizo,macho,1,106
+307,Rebeca,Perro,San Bernardo,macho,16,444
+308,Jacinto,Ave,Paraba Azul,hembra,10,21
+309,Sofía,Ave,Perico,macho,15,335
+310,Mariana,Gato,Egipcio,macho,17,775
+311,Eugenio,Gato,Persa,hembra,2,421
+312,Lilia,Ave,Cacatua,hembra,1,627
+313,Indira,Perro,Chihuahua,macho,10,136
+314,Delia,Perro,Chihuahua,hembra,2,87
+315,María,Gato,Siames,hembra,11,756
+316,Andrés,Perro,Pitbull,macho,5,584
+317,Modesto,Gato,Siames,hembra,9,259
+318,Olga,Ave,Cacatua,hembra,9,550
+319,Esperanza,Gato,Mestizo,hembra,12,58
+320,Teresa,Perro,Pitbull,hembra,9,990
+321,Marco Antonio,Ave,Paraba Azul,hembra,8,273
+322,Lucía,Perro,Mestizo,hembra,21,394
+323,Tomás,Ave,Paraba Azul,hembra,19,576
+324,Martín,Perro,Mestizo,macho,8,236
+325,Ruby,Ave,Loro de cabeza Azul,hembra,10,945
+326,Jacinto,Perro,Chihuahua,macho,17,979
+327,Débora,Ave,Perico,macho,18,947
+328,Gerónimo,Ave,Paraba Azul,hembra,13,216
+329,Mariana,Gato,Persa,macho,19,979
+330,Norma,Gato,Siames,macho,6,797
+331,Nadia,Ave,Perico,macho,19,830
+332,Inés,Ave,Cacatua,macho,10,341
+333,Abigail,Ave,Cacatua,hembra,15,727
+334,Alfredo,Ave,Paraba Azul,hembra,12,827
+335,Bernabé,Ave,Cacatua,hembra,10,356
+336,Barbara,Gato,Mestizo,macho,7,658
+337,Yuridia,Ave,Cacatua,hembra,8,672
+338,Eugenia,Gato,Mestizo,macho,8,301
+339,Aldo,Perro,Chihuahua,hembra,2,16
+340,Rosalia,Gato,Mestizo,macho,13,212
+341,Beatriz,Gato,Persa,macho,20,784
+342,Carlos,Gato,Mestizo,macho,16,660
+343,Nicolás,Gato,Egipcio,macho,12,524
+344,Ramón,Ave,Cacatua,macho,5,859
+345,Julio César,Perro,Pitbull,hembra,15,713
+346,Carla,Ave,Paraba Azul,hembra,18,819
+347,Catalina,Perro,San Bernardo,hembra,7,666
+348,Isabela,Gato,Mestizo,macho,10,197
+349,Martha,Perro,Pitbull,macho,11,881
+350,Nelly,Perro,Mestizo,macho,5,732
+351,Elvia,Ave,Cacatua,macho,19,412
+352,Luz,Gato,Siames,macho,3,870
+353,Jacinto,Perro,Chihuahua,macho,12,18
+354,Julio César,Ave,Cacatua,macho,20,292
+355,Andrea,Gato,Siames,macho,5,176
+356,Mario,Perro,Mestizo,hembra,5,190
+357,Eloisa,Ave,Perico,macho,21,565
+358,Ana Luisa,Perro,Pitbull,hembra,5,375
+359,Elisa,Perro,Mestizo,macho,5,739
+360,Verónica,Perro,Mestizo,macho,21,255
+361,Óliver,Perro,Mestizo,macho,19,359
+362,Mariana,Perro,Mestizo,macho,15,441
+363,Claudia,Ave,Cacatua,hembra,4,594
+364,Cecilia,Gato,Mestizo,macho,10,791
+365,María Teresa,Gato,Siames,hembra,10,730
+366,Daniela,Gato,Egipcio,macho,21,370
+367,Luis Manuel,Gato,Egipcio,hembra,10,66
+368,Zeferino,Gato,Egipcio,macho,12,687
+369,Arturo,Ave,Perico,hembra,3,681
+370,Juan,Ave,Loro de cabeza Azul,hembra,7,582
+371,Salma,Ave,Loro de cabeza Azul,macho,14,611
+372,Clemente,Ave,Loro de cabeza Azul,macho,20,539
+373,Tania,Ave,Cacatua,hembra,5,866
+374,Natalia,Perro,Pitbull,macho,12,655
+375,Juan Carlos,Perro,San Bernardo,macho,3,985
+376,Sandra,Gato,Egipcio,macho,21,8
+377,María Luisa,Perro,Pitbull,macho,21,58
+378,Silvano,Gato,Persa,macho,18,718
+379,Cristian,Gato,Persa,hembra,13,114
+380,Daniel,Perro,Chihuahua,hembra,4,498
+381,Clemente,Gato,Mestizo,macho,3,970
+382,Rocío,Ave,Paraba Azul,hembra,5,937
+383,Minerva,Gato,Mestizo,macho,10,590
+384,Margarita,Gato,Egipcio,hembra,15,135
+385,Caridad,Ave,Loro de cabeza Azul,hembra,8,722
+386,José Carlos,Perro,Pitbull,macho,14,447
+387,Humberto,Ave,Paraba Azul,macho,14,847
+388,Estela,Ave,Paraba Azul,hembra,16,855
+389,Nicolás,Perro,Mestizo,hembra,17,422
+390,Liliana,Perro,Pitbull,macho,19,869
+391,Estefanía,Gato,Mestizo,macho,2,518
+392,Teresa,Perro,Pitbull,hembra,1,19
+393,Marisol,Perro,Mestizo,macho,6,736
+394,Margarita,Perro,Mestizo,hembra,12,125
+395,Laura,Perro,Chihuahua,hembra,7,470
+396,Carla,Perro,San Bernardo,hembra,18,892
+397,Aida,Gato,Siames,macho,12,545
+398,Juan,Gato,Persa,hembra,4,129
+399,Ignacio,Gato,Mestizo,macho,13,397
+400,Paola,Ave,Cacatua,macho,14,810
+401,Elsa,Gato,Egipcio,macho,3,213
+402,María Eugenia,Perro,San Bernardo,macho,1,611
+403,Julio César,Perro,Pitbull,macho,10,67
+404,Amanda,Perro,San Bernardo,hembra,6,407
+405,Ana Luisa,Ave,Cacatua,macho,16,548
+406,Aldo,Perro,Chihuahua,macho,15,601
+407,Patricia,Gato,Siames,macho,21,493
+408,Ruby,Perro,Pitbull,macho,20,826
+409,Federico,Gato,Mestizo,macho,14,601
+410,Amador,Perro,Pitbull,hembra,9,716
+411,Elisa,Perro,San Bernardo,hembra,14,449
+412,Flavio,Perro,Chihuahua,macho,4,246
+413,Luis,Ave,Loro de cabeza Azul,macho,11,201
+414,Cynthia,Perro,San Bernardo,macho,1,1
+415,Porfirio,Perro,Pitbull,macho,7,737
+416,Mariano,Ave,Paraba Azul,macho,13,710
+417,Alfonso,Gato,Siames,hembra,1,546
+418,Bianca,Gato,Siames,hembra,2,883
+419,Jos,Gato,Mestizo,macho,16,719
+420,Mayte,Gato,Egipcio,hembra,19,304
+421,Manuel,Ave,Paraba Azul,macho,18,997
+422,Noemí,Perro,Pitbull,hembra,21,448
+423,Abigail,Gato,Siames,hembra,18,304
+424,Adalberto,Perro,Pitbull,macho,16,647
+425,Lucas,Ave,Loro de cabeza Azul,macho,17,55
+426,Jaqueline,Perro,San Bernardo,hembra,9,94
+427,Elvia,Gato,Siames,macho,11,21
+428,José Luis,Ave,Paraba Azul,macho,12,83
+429,Claudia,Perro,Chihuahua,macho,20,411
+430,Cornelio,Gato,Persa,macho,6,248
+431,Beatriz,Gato,Siames,hembra,1,806
+432,María José,Gato,Persa,macho,14,286
+433,Miriam,Gato,Egipcio,macho,11,595
+434,Abigail,Perro,Pitbull,macho,7,974
+435,Wilfrido,Perro,San Bernardo,hembra,20,633
+436,Irene,Ave,Loro de cabeza Azul,macho,11,282
+437,Evelio,Ave,Paraba Azul,hembra,1,465
+438,Zeferino,Perro,Chihuahua,hembra,6,721
+439,Raúl,Perro,Chihuahua,hembra,14,581
+440,Antonia,Perro,Pitbull,macho,8,148
+441,Paulina,Perro,Chihuahua,hembra,20,608
+442,Citlali,Gato,Egipcio,hembra,20,505
+443,Sofía,Gato,Mestizo,hembra,9,740
+444,Blanca,Perro,Chihuahua,macho,6,160
+445,Bianca,Ave,Paraba Azul,hembra,9,613
+446,Camila,Ave,Cacatua,macho,11,761
+447,Linda,Ave,Cacatua,hembra,3,260
+448,Abril,Gato,Persa,macho,7,834
+449,Darío,Perro,Mestizo,hembra,16,904
+450,María Teresa,Perro,Mestizo,macho,15,180
+451,Sergio,Perro,Chihuahua,macho,16,728
+452,Abraham,Gato,Mestizo,macho,5,922
+453,Clara,Gato,Egipcio,hembra,12,683
+454,Pedro,Ave,Loro de cabeza Azul,macho,4,940
+455,Bernabé,Ave,Cacatua,hembra,14,767
+456,María José,Ave,Paraba Azul,hembra,15,871
+457,Virginia,Ave,Loro de cabeza Azul,hembra,6,215
+458,Alejandro,Gato,Egipcio,hembra,19,163
+459,Emilio,Ave,Loro de cabeza Azul,macho,3,807
+460,René,Gato,Egipcio,macho,11,94
+461,Liliana,Gato,Persa,macho,9,77
+462,Alberto,Gato,Mestizo,hembra,9,423
+463,Conchita,Gato,Egipcio,macho,10,656
+464,Dalia,Gato,Egipcio,macho,12,217
+465,Iván,Ave,Paraba Azul,macho,13,716
+466,Bernardo,Perro,Chihuahua,macho,1,595
+467,Aurelio,Ave,Cacatua,hembra,9,770
+468,Leticia,Gato,Siames,macho,16,784
+469,Esteban,Gato,Mestizo,hembra,6,880
+470,Helena,Ave,Cacatua,hembra,13,281
+471,Salvador,Gato,Siames,macho,20,790
+472,Óliver,Perro,Chihuahua,hembra,7,162
+473,Gabino,Ave,Cacatua,macho,21,379
+474,Pilar,Perro,San Bernardo,macho,20,204
+475,Berta,Perro,Mestizo,hembra,12,533
+476,Claudia,Perro,Pitbull,hembra,14,797
+477,Alvaro,Perro,Pitbull,hembra,5,82
+478,Alma,Perro,Chihuahua,hembra,8,905
+479,Iván,Gato,Siames,hembra,7,481
+480,Mauricio,Gato,Siames,macho,11,467
+481,Reynaldo,Gato,Mestizo,hembra,7,267
+482,Marco Antonio,Perro,Chihuahua,macho,1,52
+483,Hernán,Perro,Pitbull,macho,4,267
+484,Ángela,Perro,San Bernardo,macho,13,21
+485,Elsa,Perro,San Bernardo,macho,17,535
+486,María Eugenia,Ave,Loro de cabeza Azul,hembra,6,672
+487,Raúl,Gato,Siames,hembra,16,893
+488,Esther,Perro,Pitbull,macho,21,315
+489,Abel,Ave,Cacatua,macho,8,656
+490,Estela,Ave,Paraba Azul,hembra,21,712
+491,María Luisa,Ave,Paraba Azul,hembra,2,467
+492,Ana,Gato,Egipcio,hembra,12,816
+493,Samuel,Ave,Paraba Azul,hembra,16,42
+494,Silvia,Gato,Mestizo,hembra,6,239
+495,Micaela,Perro,Chihuahua,hembra,19,556
+496,Ana María,Perro,Chihuahua,macho,4,946
+497,Abraham,Perro,Pitbull,macho,15,717
+498,Ernesto,Perro,San Bernardo,hembra,17,227
+499,Espartaco,Perro,San Bernardo,macho,10,541
+500,Celia,Perro,Chihuahua,macho,11,827
+501,Virginia,Gato,Mestizo,macho,21,531
+502,Reina,Gato,Persa,macho,6,315
+503,Omar,Ave,Cacatua,macho,4,439
+504,Ivonne,Gato,Egipcio,macho,12,182
+505,Alta  Gracia,Ave,Paraba Azul,macho,11,255
+506,Alfonso,Perro,San Bernardo,macho,10,452
+507,Agustín,Gato,Mestizo,hembra,19,177
+508,Celia,Gato,Mestizo,macho,14,208
+509,Eloy,Ave,Paraba Azul,hembra,9,697
+510,Isaac,Perro,Pitbull,macho,5,94
+511,Óscar,Perro,Pitbull,hembra,19,939
+512,Gilberto,Perro,Pitbull,macho,1,755
+513,Lucas,Perro,Pitbull,hembra,12,254
+514,José Luis,Ave,Loro de cabeza Azul,macho,21,322
+515,Reina,Gato,Siames,macho,4,218
+516,Jaime,Perro,Pitbull,macho,3,535
+517,Rosario,Ave,Cacatua,macho,3,92
+518,Gabriel,Perro,Chihuahua,macho,10,637
+519,Abel,Gato,Siames,hembra,15,200
+520,Frida,Gato,Persa,macho,21,922
+521,Adán,Gato,Mestizo,hembra,20,865
+522,Laura,Gato,Egipcio,macho,21,268
+523,Uriel,Perro,Mestizo,macho,18,908
+524,Natividad,Perro,Pitbull,macho,13,917
+525,Maximiliano,Ave,Perico,macho,14,770
+526,Emilio,Gato,Mestizo,macho,14,49
+527,Francisco Javier,Perro,Pitbull,hembra,13,506
+528,Barbara,Gato,Egipcio,macho,5,227
+529,Benjamín,Ave,Paraba Azul,hembra,14,114
+530,María Elena,Gato,Persa,hembra,8,715
+531,José Luis,Perro,Pitbull,hembra,6,116
+532,Germán,Perro,Pitbull,hembra,18,877
+533,Aurelio,Ave,Perico,macho,20,199
+534,Delia,Perro,San Bernardo,hembra,7,385
+535,María Elena,Perro,San Bernardo,hembra,2,378
+536,Felipe,Gato,Mestizo,hembra,10,602
+537,Espartaco,Perro,Mestizo,macho,14,760
+538,Mitzy,Perro,Pitbull,hembra,21,879
+539,José Luis,Ave,Cacatua,macho,4,773
+540,Pilar,Ave,Loro de cabeza Azul,macho,8,80
+541,Carlos,Perro,Mestizo,hembra,15,617
+542,Gloria,Perro,San Bernardo,hembra,9,13
+543,Elena,Perro,Mestizo,hembra,1,665
+544,Adela,Ave,Cacatua,hembra,14,360
+545,Alfredo,Perro,Mestizo,hembra,6,544
+546,Camilo,Gato,Siames,hembra,2,333
+547,Rodolfo,Perro,Pitbull,macho,6,793
+548,Octavio,Gato,Mestizo,hembra,12,169
+549,Juan,Ave,Perico,hembra,21,438
+550,Esparta,Gato,Egipcio,macho,4,135
+551,Alicia,Perro,Pitbull,macho,5,456
+552,Guillermina,Gato,Mestizo,macho,13,757
+553,Jaqueline,Perro,San Bernardo,macho,9,414
+554,Ivonne,Ave,Loro de cabeza Azul,hembra,10,857
+555,Pilar,Perro,Chihuahua,hembra,4,213
+556,Cristobal,Gato,Egipcio,macho,20,367
+557,Ángel,Perro,Mestizo,macho,5,668
+558,Eloisa,Gato,Egipcio,hembra,6,488
+559,Arcelia,Gato,Egipcio,macho,1,193
+560,Óliver,Perro,Mestizo,macho,9,355
+561,Genaro,Perro,Chihuahua,hembra,11,95
+562,Leonardo,Perro,Chihuahua,macho,16,511
+563,David,Gato,Siames,macho,12,419
+564,Pascual,Gato,Egipcio,macho,13,614
+565,Alvaro,Gato,Mestizo,hembra,8,614
+566,Aldo,Gato,Persa,macho,11,596
+567,Eloisa,Perro,Mestizo,hembra,2,319
+568,Nayeli,Perro,Mestizo,macho,3,777
+569,Bianca,Ave,Perico,hembra,4,686
+570,Alejandro,Ave,Perico,macho,13,627
+571,Benjamín,Perro,Mestizo,macho,7,135
+572,Marisol,Perro,Pitbull,hembra,16,743
+573,Aldo,Ave,Paraba Azul,hembra,7,480
+574,Mateo,Gato,Egipcio,hembra,21,637
+575,Zoé,Gato,Persa,macho,15,702
+576,Augusto,Gato,Siames,hembra,5,754
+577,Miguel Ángel,Perro,Chihuahua,macho,2,402
+578,Timoteo,Gato,Persa,hembra,11,871
+579,Javier,Perro,San Bernardo,hembra,19,88
+580,Itzel,Perro,Chihuahua,hembra,16,491
+581,Asunción,Gato,Persa,macho,14,863
+582,Perla,Gato,Persa,macho,5,264
+583,José,Ave,Perico,macho,10,421
+584,Luis Manuel,Ave,Cacatua,hembra,3,819
+585,Úrsula,Ave,Perico,hembra,15,184
+586,Mario,Perro,Pitbull,hembra,3,538
+587,Paola,Gato,Persa,hembra,13,279
+588,Micaela,Gato,Egipcio,hembra,11,450
+589,Claudio,Gato,Mestizo,hembra,12,962
+590,Iván,Ave,Perico,hembra,21,337
+591,Gustavo,Perro,Mestizo,macho,2,450
+592,Yuridia,Perro,Pitbull,hembra,9,539
+593,Barbara,Ave,Perico,hembra,3,673
+594,Espartaco,Ave,Loro de cabeza Azul,macho,3,981
+595,Emilia,Perro,Chihuahua,macho,11,473
+596,Frida,Gato,Siames,macho,21,898
+597,Jaime,Perro,Pitbull,hembra,7,796
+598,Salma,Ave,Paraba Azul,macho,11,982
+599,Aurelio,Ave,Loro de cabeza Azul,macho,5,79
+600,Emiliano,Ave,Cacatua,macho,3,19
+601,Delia,Gato,Siames,hembra,14,420
+602,Yuridia,Ave,Cacatua,hembra,6,163
+603,Yeni,Gato,Persa,macho,2,339
+604,Ernesto,Perro,Chihuahua,hembra,13,553
+605,Lorenzo,Perro,Pitbull,hembra,14,49
+606,Óscar,Ave,Paraba Azul,macho,13,816
+607,Celia,Ave,Loro de cabeza Azul,macho,7,432
+608,Ofelia,Perro,San Bernardo,macho,12,482
+609,Lucas,Gato,Mestizo,macho,21,149
+610,Omar,Gato,Egipcio,hembra,14,77
+611,Mauricio,Perro,Mestizo,macho,19,920
+612,Mónica,Gato,Egipcio,hembra,19,260
+613,Georgina,Gato,Persa,hembra,17,672
+614,Leonor,Perro,Pitbull,macho,3,515
+615,Nayeli,Gato,Mestizo,macho,2,957
+616,Graciela,Ave,Paraba Azul,macho,9,561
+617,Elena,Ave,Paraba Azul,macho,16,872
+618,Silvia,Gato,Siames,hembra,11,58
+619,Gabriela,Perro,Pitbull,hembra,17,37
+620,Marcela,Perro,Chihuahua,macho,3,354
+621,Víctor,Gato,Egipcio,macho,18,768
+622,Carolina,Ave,Loro de cabeza Azul,hembra,1,335
+623,Rocío,Perro,San Bernardo,hembra,2,292
+624,Héctor,Gato,Persa,macho,18,326
+625,Yolanda,Ave,Paraba Azul,macho,20,214
+626,Jerónimo,Gato,Siames,macho,7,497
+627,Úrsula,Ave,Perico,macho,15,117
+628,Liliana,Ave,Perico,hembra,2,851
+629,Germán,Gato,Mestizo,macho,6,315
+630,Daniela,Gato,Siames,macho,4,814
+631,Victoria,Perro,Chihuahua,hembra,13,968
+632,Ángel,Ave,Perico,macho,3,750
+633,Ricardo,Ave,Paraba Azul,hembra,16,412
+634,Emiliano,Gato,Egipcio,macho,4,768
+635,Eduardo,Ave,Loro de cabeza Azul,macho,4,172
+636,Enrique,Ave,Loro de cabeza Azul,macho,6,313
+637,Georgina,Ave,Loro de cabeza Azul,macho,3,787
+638,Rosalia,Perro,San Bernardo,macho,19,46
+639,María Eugenia,Gato,Egipcio,hembra,2,272
+640,Rocío,Gato,Mestizo,macho,8,691
+641,Isabela,Gato,Persa,hembra,5,414
+642,María Cristina,Perro,Pitbull,macho,8,134
+643,Vicente,Perro,Chihuahua,macho,17,506
+644,Rufino,Gato,Egipcio,hembra,9,465
+645,Gilberto,Gato,Persa,macho,20,955
+646,Claudia,Gato,Mestizo,macho,17,258
+647,Yolanda,Perro,Chihuahua,macho,8,335
+648,Antonia,Ave,Cacatua,hembra,21,619
+649,Violeta,Perro,San Bernardo,macho,12,994
+650,Mercedes,Ave,Paraba Azul,macho,12,610
+651,José Eduardo,Ave,Loro de cabeza Azul,macho,18,931
+652,Camila,Perro,San Bernardo,macho,10,46
+653,Alicia,Perro,Pitbull,macho,4,381
+654,Vanesa,Perro,Mestizo,hembra,19,864
+655,Wendolin,Perro,Mestizo,macho,9,633
+656,Jacobo,Gato,Egipcio,macho,3,223
+657,Armando,Gato,Mestizo,macho,17,183
+658,Marco Antonio,Perro,Chihuahua,hembra,13,67
+659,Noelia,Ave,Paraba Azul,macho,9,981
+660,Leonor,Gato,Mestizo,macho,3,99
+661,Bernabé,Gato,Egipcio,hembra,11,915
+662,Mauro,Perro,Pitbull,hembra,12,992
+663,Lorena,Ave,Cacatua,macho,17,268
+664,Eduardo,Gato,Mestizo,hembra,7,761
+665,Genaro,Gato,Siames,macho,20,461
+666,Camilo,Gato,Mestizo,hembra,19,587
+667,Dulce,Perro,San Bernardo,hembra,4,765
+668,Gerónimo,Ave,Paraba Azul,hembra,15,984
+669,Marco Antonio,Ave,Paraba Azul,macho,5,242
+670,Ariadna,Ave,Paraba Azul,hembra,3,713
+671,Esperanza,Perro,Mestizo,hembra,5,766
+672,Elisa,Gato,Persa,macho,8,72
+673,Abraham,Perro,Chihuahua,hembra,6,895
+674,Ana,Gato,Egipcio,hembra,6,970
+675,Wendolin,Perro,Mestizo,macho,19,252
+676,Catalina,Ave,Paraba Azul,macho,16,966
+677,Oswaldo,Perro,Chihuahua,hembra,21,292
+678,Bruno,Gato,Egipcio,macho,19,908
+679,Porfirio,Gato,Egipcio,macho,17,591
+680,Augusto,Perro,Pitbull,macho,4,371
+681,Pamela,Gato,Siames,macho,9,691
+682,Fabiola,Perro,Mestizo,macho,14,893
+683,David,Ave,Cacatua,hembra,15,666
+684,Tomás,Ave,Paraba Azul,hembra,11,899
+685,Julio,Perro,Mestizo,macho,21,108
+686,Santiago,Ave,Perico,macho,19,848
+687,Helena,Gato,Siames,hembra,6,502
+688,Alvaro,Perro,San Bernardo,macho,7,595
+689,Joaquín,Ave,Paraba Azul,macho,18,246
+690,Dolores,Gato,Mestizo,macho,14,435
+691,Ramón,Perro,Mestizo,hembra,5,207
+692,Eric,Ave,Perico,hembra,14,881
+693,Catalina,Perro,Pitbull,macho,7,658
+694,Genaro,Gato,Persa,macho,7,843
+695,Alvaro,Gato,Siames,macho,17,225
+696,Benjamín,Ave,Loro de cabeza Azul,macho,12,423
+697,Diego,Gato,Persa,macho,7,961
+698,María Luisa,Perro,Chihuahua,macho,3,823
+699,Rebeca,Ave,Loro de cabeza Azul,hembra,21,985
+700,María José,Ave,Cacatua,macho,14,384
+701,Lilia,Perro,Pitbull,macho,4,891
+702,Santiago,Perro,San Bernardo,macho,11,657
+703,Reina,Ave,Cacatua,macho,19,121
+704,Soledad,Gato,Siames,macho,1,587
+705,Violeta,Ave,Paraba Azul,hembra,20,533
+706,Eugenia,Ave,Perico,macho,7,604
+707,Cristian,Ave,Loro de cabeza Azul,hembra,21,100
+708,Esperanza,Perro,San Bernardo,hembra,6,263
+709,Ernesto,Ave,Loro de cabeza Azul,hembra,20,648
+710,Sara,Ave,Paraba Azul,hembra,5,885
+711,Estela,Gato,Persa,macho,14,670
+712,Natividad,Perro,San Bernardo,hembra,9,67
+713,José,Gato,Egipcio,macho,8,85
+714,Cynthia,Perro,Chihuahua,macho,14,292
+715,Nayeli,Gato,Mestizo,hembra,20,306
+716,René,Ave,Loro de cabeza Azul,macho,18,99
+717,Mario,Gato,Siames,hembra,21,799
+718,Claudio,Gato,Mestizo,hembra,3,920
+719,Liliana,Ave,Cacatua,macho,17,70
+720,Jacinto,Ave,Loro de cabeza Azul,macho,11,454
+721,Felipe,Perro,Pitbull,hembra,12,117
+722,Frida,Ave,Loro de cabeza Azul,hembra,20,176
+723,Yuridia,Ave,Cacatua,macho,17,696
+724,Eva,Gato,Mestizo,macho,16,690
+725,Homero,Gato,Persa,macho,18,634
+726,Jacobo,Ave,Perico,macho,2,66
+727,Julio César,Perro,Pitbull,macho,13,541
+728,Augusto,Perro,San Bernardo,macho,17,128
+729,Francisca,Perro,San Bernardo,hembra,20,992
+730,Ramón,Perro,Mestizo,macho,8,432
+731,Gilberto,Perro,Mestizo,macho,1,12
+732,Marisol,Ave,Loro de cabeza Azul,macho,4,379
+733,Paola,Perro,San Bernardo,hembra,6,634
+734,Karla,Perro,Chihuahua,hembra,16,987
+735,Amalia,Perro,Pitbull,macho,17,660
+736,Alfonso,Gato,Persa,macho,20,266
+737,Yeni,Gato,Siames,hembra,14,859
+738,Gilberto,Ave,Perico,macho,3,654
+739,Pedro,Ave,Loro de cabeza Azul,macho,11,215
+740,Aldo,Ave,Paraba Azul,hembra,2,252
+741,Virginia,Gato,Mestizo,hembra,2,832
+742,Germán,Perro,Chihuahua,macho,20,166
+743,Ana María,Ave,Perico,macho,13,439
+744,Alta  Gracia,Ave,Cacatua,hembra,11,410
+745,Luz,Gato,Persa,hembra,3,224
+746,Elias,Perro,Chihuahua,macho,14,617
+747,Francisco Javier,Perro,Chihuahua,hembra,21,484
+748,Natividad,Gato,Mestizo,hembra,8,21
+749,Mario,Perro,San Bernardo,hembra,4,475
+750,Horacio,Perro,Pitbull,hembra,8,80
+751,Abelardo,Ave,Cacatua,macho,4,790
+752,Aurora,Gato,Siames,hembra,8,54
+753,María Eugenia,Gato,Persa,macho,10,285
+754,Samuel,Ave,Paraba Azul,hembra,8,224
+755,Anabel,Perro,Chihuahua,macho,9,519
+756,Carlos,Ave,Perico,macho,13,479
+757,Arturo,Gato,Mestizo,macho,21,220
+758,Roberto,Gato,Siames,hembra,2,815
+759,Darío,Gato,Egipcio,hembra,2,948
+760,Espartaco,Perro,San Bernardo,hembra,14,819
+761,Nancy,Perro,Pitbull,hembra,11,477
+762,Magdalena,Ave,Perico,hembra,5,703
+763,Fidel,Perro,Pitbull,macho,16,44
+764,Sessa,Ave,Cacatua,macho,5,60
+765,Patricia,Ave,Perico,macho,1,971
+766,Salvador,Perro,San Bernardo,hembra,15,811
+767,Samuel,Perro,Chihuahua,hembra,7,714
+768,Hilda,Perro,Pitbull,macho,1,722
+769,Claudia,Perro,Chihuahua,macho,2,355
+770,Ilse,Ave,Loro de cabeza Azul,macho,9,853
+771,Omar,Gato,Siames,macho,13,468
+772,Aldo,Gato,Mestizo,hembra,9,98
+773,Abelardo,Ave,Loro de cabeza Azul,hembra,18,882
+774,Conchita,Ave,Loro de cabeza Azul,hembra,17,601
+775,Hermelinda,Gato,Mestizo,hembra,1,339
+776,Mariano,Gato,Mestizo,hembra,12,876
+777,Estela,Ave,Paraba Azul,macho,3,567
+778,Gerardo,Perro,Chihuahua,hembra,5,875
+779,Helena,Perro,Pitbull,hembra,15,917
+780,Juan Carlos,Gato,Mestizo,hembra,21,366
+781,Hermelinda,Gato,Siames,hembra,6,336
+782,Patricio,Perro,Chihuahua,hembra,16,334
+783,Rufino,Ave,Paraba Azul,macho,16,147
+784,Eduardo,Ave,Loro de cabeza Azul,hembra,14,442
+785,Miriam,Gato,Mestizo,hembra,11,777
+786,Débora,Gato,Egipcio,macho,4,402
+787,Bernardo,Perro,San Bernardo,hembra,5,323
+788,Francisca,Perro,San Bernardo,hembra,20,170
+789,Magdalena,Perro,Chihuahua,macho,20,133
+790,Wendolin,Ave,Perico,hembra,13,181
+791,Iván,Ave,Paraba Azul,macho,5,11
+792,Genaro,Perro,Pitbull,macho,18,980
+793,Ricardo,Perro,Mestizo,hembra,2,379
+794,César,Gato,Siames,macho,2,210
+795,Miriam,Perro,Mestizo,macho,6,420
+796,Alberto,Perro,San Bernardo,hembra,19,20
+797,Iván,Gato,Siames,macho,3,357
+798,Alfredo,Ave,Cacatua,hembra,7,103
+799,Gabriel,Gato,Persa,macho,15,562
+800,Serafín,Gato,Persa,macho,20,494
+801,Zoé,Ave,Cacatua,macho,21,501
+802,Clemente,Gato,Mestizo,macho,2,963
+803,Nelly,Ave,Loro de cabeza Azul,hembra,20,120
+804,Natalia,Perro,Chihuahua,macho,19,120
+805,Gabino,Gato,Persa,macho,3,919
+806,Ariadna,Gato,Egipcio,hembra,19,955
+807,Georgina,Gato,Mestizo,macho,13,515
+808,Jacobo,Perro,Mestizo,hembra,21,10
+809,Alonso,Gato,Siames,macho,12,31
+810,Ariadna,Perro,Mestizo,hembra,14,154
+811,María Eugenia,Gato,Mestizo,macho,17,788
+812,Cristian,Gato,Mestizo,macho,2,171
+813,Clara,Perro,Pitbull,macho,1,814
+814,Wilfrido,Ave,Perico,macho,10,782
+815,Gregorio,Perro,San Bernardo,hembra,6,732
+816,Dolores,Gato,Siames,macho,7,574
+817,Nayeli,Perro,Mestizo,macho,14,598
+818,Esperanza,Ave,Perico,hembra,6,684
+819,Pilar,Ave,Paraba Azul,macho,11,542
+820,Anabel,Perro,Chihuahua,hembra,9,919
+821,Federico,Ave,Perico,macho,1,82
+822,Gloria,Ave,Loro de cabeza Azul,hembra,16,865
+823,Abigail,Gato,Persa,macho,20,217
+824,Arturo,Gato,Persa,hembra,5,420
+825,Itzel,Perro,Pitbull,macho,5,508
+826,Isaac,Ave,Perico,hembra,5,808
+827,Clemente,Gato,Mestizo,hembra,13,114
+828,Barbara,Gato,Siames,macho,2,109
+829,Porfirio,Perro,San Bernardo,hembra,17,542
+830,Alicia,Gato,Siames,macho,3,416
+831,Elvia,Perro,Chihuahua,hembra,6,952
+832,Elvira,Gato,Persa,macho,13,381
+833,José Manuél,Perro,San Bernardo,macho,9,434
+834,Caridad,Perro,San Bernardo,macho,21,730
+835,Alberto,Ave,Perico,hembra,17,946
+836,Isabel,Ave,Loro de cabeza Azul,hembra,3,667
+837,Aldo,Ave,Perico,hembra,17,602
+838,Homero,Gato,Egipcio,hembra,6,747
+839,Santiago,Ave,Perico,macho,10,508
+840,Ignacio,Ave,Cacatua,macho,10,947
+841,Teresa,Gato,Egipcio,macho,3,236
+842,Pascual,Ave,Loro de cabeza Azul,macho,8,713
+843,Abelardo,Gato,Persa,hembra,5,80
+844,José Eduardo,Gato,Siames,hembra,4,950
+845,Alta  Gracia,Gato,Mestizo,hembra,20,276
+846,Teodoro,Perro,San Bernardo,macho,10,911
+847,Armando,Gato,Mestizo,hembra,18,343
+848,Lorena,Gato,Persa,macho,21,443
+849,José María,Ave,Cacatua,macho,18,455
+850,Raúl,Perro,Pitbull,macho,19,66
+851,Gloria,Ave,Loro de cabeza Azul,hembra,9,938
+852,Aldo,Ave,Paraba Azul,macho,17,767
+853,Héctor,Ave,Paraba Azul,macho,8,955
+854,Lourdes,Ave,Paraba Azul,hembra,21,526
+855,Claudio,Ave,Cacatua,macho,13,552
+856,Gerónimo,Perro,San Bernardo,macho,21,949
+857,Cecilia,Perro,Mestizo,hembra,8,649
+858,Amador,Perro,San Bernardo,macho,2,232
+859,Augusto,Perro,San Bernardo,hembra,8,793
+860,Zeferino,Gato,Mestizo,hembra,6,343
+861,Alberto,Perro,Chihuahua,macho,21,301
+862,Joaquín,Ave,Perico,macho,13,316
+863,Judith,Ave,Paraba Azul,hembra,1,650
+864,Jaime,Gato,Egipcio,macho,10,186
+865,Clara,Perro,Mestizo,hembra,5,222
+866,Nayeli,Gato,Siames,hembra,17,459
+867,Úrsula,Perro,Mestizo,hembra,6,95
+868,Alvaro,Gato,Persa,macho,15,431
+869,Carla,Perro,Pitbull,macho,17,34
+870,Zoé,Perro,Chihuahua,hembra,19,700
+871,Serafín,Gato,Persa,macho,5,561
+872,Óscar,Gato,Egipcio,macho,10,609
+873,Virginia,Gato,Mestizo,macho,9,550
+874,Estela,Gato,Egipcio,macho,14,68
+875,Isaac,Ave,Loro de cabeza Azul,hembra,10,179
+876,César,Perro,Chihuahua,macho,6,682
+877,Aurora,Perro,San Bernardo,hembra,20,327
+878,Timoteo,Ave,Loro de cabeza Azul,macho,6,594
+879,María Luisa,Gato,Persa,macho,20,894
+880,Francisco,Gato,Egipcio,macho,11,203
+881,Karina,Gato,Siames,macho,3,451
+882,Citlali,Perro,Mestizo,macho,18,492
+883,Teodoro,Ave,Loro de cabeza Azul,hembra,2,729
+884,Camila,Ave,Loro de cabeza Azul,hembra,12,794
+885,Minerva,Perro,San Bernardo,macho,12,284
+886,Carlota,Gato,Persa,hembra,14,432
+887,Luis,Gato,Persa,macho,21,672
+888,José Emilio,Perro,Chihuahua,macho,21,892
+889,Alicia,Gato,Mestizo,hembra,19,519
+890,Alicia,Ave,Perico,macho,18,867
+891,Cristobal,Ave,Loro de cabeza Azul,hembra,2,948
+892,Karla,Perro,Pitbull,hembra,3,757
+893,Amador,Perro,Mestizo,hembra,19,613
+894,Carlos,Perro,San Bernardo,hembra,10,408
+895,Carolina,Gato,Mestizo,macho,6,905
+896,Mauricio,Perro,Chihuahua,macho,17,694
+897,Julia,Ave,Paraba Azul,hembra,12,359
+898,Teodoro,Perro,Chihuahua,macho,16,138
+899,Florencia,Perro,Pitbull,macho,14,496
+900,Laura,Gato,Persa,hembra,10,975
+901,Amelia,Ave,Perico,macho,8,468
+902,Adalberto,Ave,Paraba Azul,macho,10,693
+903,Camila,Gato,Persa,macho,10,405
+904,Zacarías,Gato,Egipcio,macho,17,405
+905,Mario,Ave,Loro de cabeza Azul,macho,14,506
+906,Renato,Ave,Cacatua,hembra,4,166
+907,Soledad,Perro,Mestizo,hembra,16,762
+908,Lorena,Ave,Loro de cabeza Azul,macho,1,21
+909,Carlos,Gato,Persa,macho,4,224
+910,Amador,Perro,Pitbull,hembra,1,970
+911,Abel,Ave,Perico,hembra,17,40
+912,José Luis,Perro,Chihuahua,macho,8,673
+913,Salvador,Ave,Perico,hembra,7,100
+914,Paola,Perro,Chihuahua,hembra,15,99
+915,Ricardo,Gato,Persa,hembra,2,289
+916,Augusto,Ave,Cacatua,hembra,1,826
+917,María Teresa,Ave,Perico,macho,17,184
+918,Cristobal,Ave,Loro de cabeza Azul,hembra,10,261
+919,Ernesto,Gato,Mestizo,hembra,13,555
+920,Minerva,Gato,Persa,hembra,7,211
+921,Alonso,Perro,Chihuahua,macho,8,924
+922,Ilse,Gato,Siames,hembra,13,325
+923,Teresa,Gato,Egipcio,hembra,19,671
+924,Carolina,Perro,Pitbull,hembra,17,676
+925,Alfonso,Perro,Chihuahua,macho,7,54
+926,Judith,Ave,Perico,macho,15,359
+927,Magdalena,Gato,Siames,hembra,2,672
+928,Alejandro,Ave,Loro de cabeza Azul,hembra,9,57
+929,Cecilia,Ave,Paraba Azul,hembra,19,977
+930,Nayeli,Perro,Pitbull,macho,17,722
+931,Pascual,Perro,Chihuahua,hembra,17,219
+932,Esmeralda,Gato,Siames,hembra,16,676
+933,Magdalena,Ave,Cacatua,hembra,3,943
+934,Juana,Perro,Pitbull,hembra,7,570
+935,Ramiro,Perro,Pitbull,hembra,13,269
+936,Clemente,Perro,Mestizo,macho,20,59
+937,Héctor,Perro,Pitbull,hembra,8,909
+938,Bernardo,Perro,Pitbull,macho,3,923
+939,Francisca,Gato,Persa,macho,3,462
+940,Marcos,Gato,Egipcio,hembra,1,826
+941,Fernando,Gato,Mestizo,hembra,18,39
+942,Miriam,Gato,Siames,hembra,12,436
+943,Dulce,Perro,Mestizo,macho,10,439
+944,Isabel,Ave,Perico,macho,12,358
+945,Felipe,Gato,Siames,macho,11,93
+946,Anabel,Gato,Mestizo,hembra,7,576
+947,José María,Gato,Egipcio,macho,10,312
+948,Benito,Perro,Chihuahua,macho,2,695
+949,Jos,Perro,Chihuahua,hembra,10,840
+950,Laura,Ave,Loro de cabeza Azul,hembra,8,560
+951,Violeta,Ave,Loro de cabeza Azul,hembra,14,414
+952,Marisela,Perro,Chihuahua,hembra,12,751
+953,Jorge Luis,Perro,Mestizo,macho,18,106
+954,Emilia,Gato,Mestizo,hembra,8,611
+955,César,Ave,Cacatua,hembra,11,296
+956,Modesto,Perro,Chihuahua,macho,21,668
+957,Roberto,Ave,Perico,macho,6,120
+958,Eloy,Perro,Mestizo,hembra,6,844
+959,Pascual,Perro,San Bernardo,hembra,1,495
+960,Eugenia,Gato,Siames,macho,10,919
+961,Amelia,Ave,Loro de cabeza Azul,macho,12,920
+962,Horacio,Ave,Loro de cabeza Azul,macho,20,337
+963,Omar,Perro,Mestizo,macho,1,609
+964,Minerva,Gato,Persa,macho,15,386
+965,César,Ave,Paraba Azul,hembra,3,672
+966,Conchita,Gato,Egipcio,macho,17,305
+967,Joaquín,Ave,Perico,hembra,4,173
+968,José Carlos,Perro,Pitbull,hembra,4,681
+969,Patricia,Perro,Pitbull,hembra,16,932
+970,Gloria,Ave,Cacatua,hembra,8,244
+971,Isabela,Perro,Mestizo,macho,1,272
+972,Abigail,Gato,Persa,hembra,5,826
+973,Adalberto,Gato,Mestizo,macho,18,38
+974,Humberto,Ave,Perico,macho,17,635
+975,Miguel Ángel,Ave,Perico,macho,3,510
+976,María Cristina,Ave,Perico,macho,17,19
+977,Estefanía,Ave,Perico,hembra,1,687
+978,Caridad,Gato,Siames,macho,11,817
+979,Soledad,Ave,Paraba Azul,hembra,12,123
+980,Vanesa,Perro,Pitbull,macho,10,397
+981,Darío,Gato,Egipcio,hembra,6,485
+982,Isaac,Gato,Egipcio,hembra,9,16
+983,Rolando,Ave,Cacatua,hembra,13,960
+984,Mario,Gato,Egipcio,hembra,12,696
+985,Irene,Ave,Perico,macho,2,776
+986,Jaqueline,Perro,Pitbull,hembra,16,166
+987,Teresa,Perro,Pitbull,hembra,9,618
+988,Liliana,Ave,Cacatua,macho,9,190
+989,Olga,Gato,Persa,macho,6,774
+990,Mariano,Ave,Cacatua,hembra,3,564
+991,Asunción,Perro,San Bernardo,macho,2,858
+992,Rodolfo,Perro,Chihuahua,hembra,16,264
+993,Augusto,Gato,Siames,hembra,13,663
+994,Celia,Ave,Perico,hembra,11,213
+995,Arcelia,Gato,Egipcio,hembra,2,32
+996,Israel,Ave,Paraba Azul,hembra,13,212
+997,Citlali,Ave,Perico,hembra,16,323
+998,Óscar,Gato,Egipcio,macho,9,250
+999,Jonás,Gato,Egipcio,macho,10,428
+1000,Jos,Ave,Paraba Azul,macho,13,438
+1001,Úrsula,Ave,Paraba Azul,hembra,1,826
+1002,Mónica,Perro,Pitbull,macho,5,318
+1003,Frida,Ave,Perico,macho,15,837
+1004,Karina,Perro,Mestizo,macho,18,578
+1005,Mariano,Ave,Paraba Azul,macho,8,829
+1006,Gabriela,Perro,Pitbull,macho,16,691
+1007,Jorge,Perro,Mestizo,macho,18,403
+1008,Cecilia,Perro,Mestizo,hembra,15,76
+1009,Olivia,Ave,Perico,macho,1,255
+1010,Darío,Ave,Paraba Azul,hembra,20,831
+1011,Claudio,Ave,Loro de cabeza Azul,hembra,8,53
+1012,Alma,Ave,Cacatua,macho,8,124
+1013,Renato,Gato,Persa,macho,11,829
+1014,Diego,Perro,Chihuahua,macho,19,270
+1015,Marcela,Ave,Cacatua,hembra,8,706
+1016,Florencia,Ave,Loro de cabeza Azul,macho,21,851
+1017,Adriana,Ave,Perico,macho,13,743
+1018,Lorenzo,Ave,Loro de cabeza Azul,macho,12,27
+1019,Amelia,Perro,San Bernardo,macho,1,416
+1020,Ofelia,Ave,Cacatua,macho,2,118
+1021,Irene,Gato,Egipcio,macho,4,944
+1022,Magdalena,Ave,Loro de cabeza Azul,macho,5,609
+1023,Florencia,Ave,Loro de cabeza Azul,hembra,1,986
+1024,Joaquín,Perro,Mestizo,hembra,1,21
+1025,Gabino,Ave,Paraba Azul,macho,7,651
+1026,Gerardo,Gato,Mestizo,macho,9,355
+1027,Bernabé,Perro,San Bernardo,hembra,4,329
+1028,Rosa,Perro,Mestizo,macho,20,588
+1029,Gonzalo,Ave,Loro de cabeza Azul,macho,13,505
+1030,Antonia,Gato,Mestizo,hembra,12,963
+1031,Wendolin,Perro,Pitbull,hembra,13,723
+1032,Leonardo,Ave,Loro de cabeza Azul,macho,9,961
+1033,Rosario,Ave,Perico,macho,14,921
+1034,Jos,Ave,Loro de cabeza Azul,hembra,17,529
+1035,Fabiola,Ave,Paraba Azul,macho,15,861
+1036,Homero,Perro,Chihuahua,hembra,21,273
+1037,Reynaldo,Gato,Siames,macho,12,668
+1038,Clemente,Gato,Egipcio,macho,2,843
+1039,Gustavo,Perro,Pitbull,macho,12,769
+1040,Gabino,Perro,Chihuahua,hembra,11,990
+1041,Eugenio,Perro,Chihuahua,macho,3,487
+1042,Alicia,Perro,Chihuahua,macho,15,147
+1043,Mariano,Ave,Perico,hembra,18,76
+1044,Concepción,Ave,Loro de cabeza Azul,hembra,21,432
+1045,Socorro,Ave,Cacatua,hembra,21,728
+1046,Beatriz,Perro,San Bernardo,hembra,10,704
+1047,Soledad,Gato,Mestizo,macho,2,159
+1048,Eva,Ave,Paraba Azul,hembra,14,244
+1049,Emilio,Ave,Cacatua,hembra,18,54
+1050,Mariano,Perro,San Bernardo,macho,18,219
+1051,Lucía,Ave,Cacatua,macho,1,861
+1052,Norma,Perro,Pitbull,macho,14,987
+1053,Omar,Ave,Loro de cabeza Azul,macho,14,970
+1054,Ernesto,Ave,Loro de cabeza Azul,macho,4,415
+1055,Miguel,Gato,Siames,hembra,10,23
+1056,Carlos,Ave,Paraba Azul,macho,16,680
+1057,María del Carmen,Gato,Persa,hembra,21,16
+1058,Genaro,Perro,Chihuahua,hembra,20,975
+1059,Bianca,Gato,Mestizo,macho,11,710
+1060,Adalberto,Perro,San Bernardo,hembra,7,863
+1061,Caridad,Ave,Loro de cabeza Azul,macho,3,290
+1062,Úrsula,Perro,Mestizo,macho,6,25
+1063,Enrique,Gato,Mestizo,hembra,4,57
+1064,Leonel,Perro,Pitbull,macho,21,54
+1065,Jorge,Gato,Mestizo,macho,3,452
+1066,Carmen,Ave,Loro de cabeza Azul,hembra,9,246
+1067,Luis Miguel,Ave,Paraba Azul,hembra,8,626
+1068,Jesús,Ave,Paraba Azul,macho,19,576
+1069,Jesús,Gato,Egipcio,macho,10,770
+1070,María Luisa,Gato,Persa,hembra,13,31
+1071,José Eduardo,Gato,Persa,macho,5,339
+1072,Mario,Perro,San Bernardo,macho,16,692
+1073,Francisco,Perro,Chihuahua,macho,13,938
+1074,Adalberto,Perro,Chihuahua,macho,12,33
+1075,Sessa,Perro,Chihuahua,macho,1,501
+1076,Gustavo,Gato,Persa,hembra,12,964
+1077,Aurora,Ave,Perico,macho,3,409
+1078,Caridad,Perro,San Bernardo,hembra,15,129
+1079,Armando,Ave,Perico,macho,12,918
+1080,Juan,Gato,Mestizo,macho,15,723
+1081,Gustavo,Ave,Perico,macho,3,511
+1082,Samuel,Perro,Chihuahua,hembra,21,390
+1083,Luis Miguel,Ave,Cacatua,macho,15,528
+1084,Soledad,Gato,Siames,hembra,13,381
+1085,Humberto,Perro,Pitbull,macho,20,312
+1086,Rufino,Perro,Pitbull,hembra,20,562
+1087,Bernardo,Ave,Cacatua,hembra,7,842
+1088,Omar,Perro,Pitbull,macho,14,593
+1089,Florencia,Ave,Cacatua,macho,21,375
+1090,Samuel,Ave,Cacatua,macho,6,39
+1091,Rufino,Perro,Mestizo,hembra,11,714
+1092,Federico,Gato,Siames,macho,1,924
+1093,Pedro,Gato,Persa,macho,8,4
+1094,Elvira,Perro,Pitbull,hembra,11,301
+1095,Asunción,Gato,Persa,macho,1,44
+1096,Serafín,Ave,Cacatua,hembra,18,355
+1097,Helena,Perro,Chihuahua,macho,2,535
+1098,Mariana,Ave,Loro de cabeza Azul,hembra,6,662
+1099,Georgina,Gato,Persa,macho,13,66
+1100,Leticia,Gato,Egipcio,macho,17,334
+1101,Andrea,Gato,Mestizo,macho,8,591
+1102,Gabriela,Perro,San Bernardo,macho,8,662
+1103,Norma,Gato,Egipcio,hembra,8,686
+1104,Mauro,Gato,Siames,hembra,4,244
+1105,Sara,Gato,Egipcio,macho,1,843
+1106,Julio César,Perro,Chihuahua,macho,6,476
+1107,Abelardo,Perro,Chihuahua,macho,18,198
+1108,Israel,Ave,Perico,macho,17,739
+1109,Noemí,Perro,San Bernardo,hembra,2,588
+1110,Nadia,Gato,Mestizo,hembra,19,585
+1111,Antonio,Ave,Loro de cabeza Azul,hembra,19,103
+1112,Ángela,Ave,Perico,macho,19,729
+1113,Yolanda,Perro,Chihuahua,hembra,1,887
+1114,Cristobal,Perro,Mestizo,hembra,8,574
+1115,Mauro,Gato,Egipcio,hembra,10,970
+1116,Wilfrido,Gato,Persa,hembra,21,192
+1117,Ana,Perro,Pitbull,macho,8,930
+1118,Elvia,Ave,Cacatua,macho,19,796
+1119,Carlota,Perro,San Bernardo,macho,7,81
+1120,Emilio,Perro,Chihuahua,hembra,15,405
+1121,Clara,Perro,Chihuahua,macho,6,930
+1122,Bianca,Gato,Mestizo,hembra,7,606
+1123,Estela,Ave,Perico,hembra,7,962
+1124,Amalia,Ave,Cacatua,hembra,16,604
+1125,Iván,Gato,Persa,hembra,16,146
+1126,Pilar,Gato,Mestizo,macho,11,56
+1127,Noemí,Gato,Mestizo,hembra,14,619
+1128,Lorenzo,Perro,Pitbull,hembra,1,14
+1129,Liliana,Gato,Egipcio,macho,4,292
+1130,Jorge Luis,Ave,Cacatua,macho,5,957
+1131,Cristal,Perro,Chihuahua,hembra,20,895
+1132,Inés,Ave,Cacatua,macho,13,833
+1133,Lucas,Gato,Egipcio,hembra,19,880
+1134,Tania,Perro,Pitbull,macho,19,391
+1135,Berta,Gato,Persa,hembra,4,980
+1136,Genaro,Gato,Egipcio,hembra,11,968
+1137,Camila,Gato,Persa,hembra,10,66
+1138,Itzel,Gato,Mestizo,hembra,14,556
+1139,Pamela,Ave,Perico,macho,4,18
+1140,Miguel Ángel,Gato,Siames,macho,20,221
+1141,Antonia,Ave,Loro de cabeza Azul,macho,17,296
+1142,Mariano,Perro,San Bernardo,macho,16,744
+1143,María Cristina,Perro,Mestizo,macho,13,618
+1144,Abelardo,Ave,Perico,macho,1,831
+1145,Ramiro,Perro,Chihuahua,hembra,18,273
+1146,Óliver,Ave,Loro de cabeza Azul,macho,10,21
+1147,Marisol,Perro,Pitbull,hembra,1,701
+1148,Teresa,Gato,Persa,macho,18,458
+1149,Patricia,Perro,Chihuahua,macho,11,929
+1150,Estela,Gato,Persa,macho,2,130
+1151,Pedro,Perro,Chihuahua,macho,15,536
+1152,Alta  Gracia,Perro,Chihuahua,hembra,9,291
+1153,Florencia,Ave,Cacatua,hembra,10,997
+1154,Gabriela,Perro,Pitbull,macho,11,775
+1155,Elena,Ave,Cacatua,macho,19,364
+1156,Flavio,Ave,Loro de cabeza Azul,macho,9,463
+1157,Bernabé,Ave,Cacatua,macho,6,308
+1158,Irma,Ave,Perico,hembra,21,776
+1159,Espartaco,Gato,Persa,macho,1,34
+1160,Ilse,Ave,Perico,hembra,21,62
+1161,José Emilio,Ave,Cacatua,hembra,8,851
+1162,Adela,Ave,Loro de cabeza Azul,macho,14,941
+1163,Sessa,Perro,Mestizo,hembra,4,851
+1164,Genaro,Gato,Persa,hembra,9,611
+1165,Humberto,Gato,Mestizo,hembra,5,26
+1166,Alicia,Gato,Persa,macho,7,189
+1167,Juan,Perro,Mestizo,hembra,13,600
+1168,Felix,Ave,Perico,macho,17,229
+1169,Augusto,Ave,Loro de cabeza Azul,macho,5,278
+1170,Débora,Perro,Pitbull,hembra,4,897
+1171,Dulce María,Perro,Pitbull,macho,8,808
+1172,Conchita,Gato,Egipcio,hembra,15,969
+1173,Humberto,Perro,Pitbull,hembra,2,865
+1174,Cornelio,Perro,Chihuahua,macho,9,286
+1175,Esther,Gato,Siames,macho,7,206
+1176,Úrsula,Perro,San Bernardo,macho,20,104
+1177,Oswaldo,Gato,Mestizo,macho,9,680
+1178,Jonás,Gato,Siames,macho,7,658
+1179,Benito,Ave,Paraba Azul,hembra,15,581
+1180,Abelardo,Perro,San Bernardo,macho,2,749
+1181,Jorge Luis,Gato,Mestizo,macho,13,464
+1182,Isaac,Gato,Persa,macho,15,755
+1183,Noemí,Gato,Siames,hembra,12,815
+1184,Agustín,Perro,Chihuahua,hembra,9,844
+1185,Itzel,Gato,Mestizo,macho,1,332
+1186,Gerardo,Ave,Paraba Azul,hembra,11,988
+1187,Gustavo,Ave,Paraba Azul,macho,10,173
+1188,Alberto,Perro,San Bernardo,macho,16,181
+1189,Noelia,Gato,Siames,hembra,11,691
+1190,Leonel,Ave,Cacatua,macho,18,569
+1191,Rodrigo,Ave,Perico,hembra,20,801
+1192,Eva,Perro,Chihuahua,hembra,5,776
+1193,Abril,Gato,Egipcio,hembra,5,104
+1194,Pablo,Gato,Egipcio,hembra,17,857
+1195,Israel,Perro,Chihuahua,hembra,3,975
+1196,Pamela,Gato,Egipcio,hembra,14,22
+1197,Salvador,Gato,Persa,macho,11,928
+1198,Augusto,Gato,Egipcio,hembra,4,121
+1199,Pedro,Ave,Paraba Azul,hembra,17,355
+1200,Georgina,Gato,Egipcio,macho,6,869
+1201,Cornelio,Perro,Pitbull,macho,13,396
+1202,Humberto,Perro,Mestizo,hembra,11,54
+1203,Cynthia,Ave,Paraba Azul,hembra,4,37
+1204,Eduardo,Ave,Loro de cabeza Azul,hembra,7,956
+1205,Elisa,Ave,Cacatua,macho,21,984
+1206,Linda,Perro,San Bernardo,macho,17,883
+1207,Cristal,Gato,Egipcio,macho,9,917
+1208,Natalia,Ave,Cacatua,macho,16,216
+1209,Perla,Ave,Paraba Azul,macho,4,959
+1210,Conchita,Perro,San Bernardo,hembra,5,812
+1211,Berta,Gato,Siames,macho,2,153
+1212,María José,Perro,San Bernardo,macho,2,302
+1213,Lucía,Ave,Cacatua,macho,20,746
+1214,Rodolfo,Perro,San Bernardo,hembra,18,293
+1215,Lucía,Perro,Pitbull,hembra,14,606
+1216,Esther,Perro,Pitbull,hembra,21,584
+1217,Amanda,Ave,Cacatua,hembra,17,131
+1218,Marisol,Gato,Persa,macho,21,283
+1219,Norma,Gato,Mestizo,hembra,16,300
+1220,Norma,Perro,Mestizo,macho,7,833
+1221,Liliana,Perro,Mestizo,macho,4,57
+1222,Guadalupe,Perro,San Bernardo,macho,10,100
+1223,Humberto,Ave,Cacatua,hembra,15,193
+1224,Leonor,Perro,Chihuahua,hembra,11,104
+1225,Hermelinda,Perro,Chihuahua,hembra,20,376
+1226,Mariana,Perro,Mestizo,hembra,15,799
+1227,Alma,Ave,Cacatua,hembra,21,758
+1228,Catalina,Gato,Siames,hembra,11,138
+1229,Paulina,Perro,San Bernardo,macho,10,993
+1230,Cristian,Ave,Cacatua,macho,10,57
+1231,María Teresa,Ave,Paraba Azul,hembra,13,711
+1232,Jesús,Ave,Paraba Azul,hembra,8,734
+1233,Virginia,Ave,Cacatua,macho,12,9
+1234,Óscar,Ave,Cacatua,macho,10,263
+1235,Esperanza,Perro,Pitbull,macho,20,141
+1236,Nancy,Perro,Pitbull,macho,16,98
+1237,Flavio,Gato,Persa,hembra,8,139
+1238,Mariano,Ave,Loro de cabeza Azul,macho,9,866
+1239,Lorenzo,Gato,Mestizo,hembra,9,89
+1240,Salma,Gato,Mestizo,macho,10,497
+1241,Gerónimo,Gato,Siames,hembra,21,309
+1242,Violeta,Perro,San Bernardo,macho,4,646
+1243,Jos,Gato,Mestizo,macho,10,812
+1244,Catalina,Ave,Perico,hembra,1,877
+1245,Leonel,Ave,Paraba Azul,macho,13,700
+1246,Rosario,Perro,Mestizo,hembra,18,337
+1247,Horacio,Gato,Persa,macho,10,803
+1248,Carla,Ave,Paraba Azul,hembra,11,676
+1249,Lucas,Ave,Perico,hembra,4,451
+1250,Hermelinda,Ave,Loro de cabeza Azul,hembra,3,224
+1251,Camila,Perro,San Bernardo,macho,8,477
+1252,Julio,Gato,Siames,hembra,5,757
+1253,Marisol,Gato,Siames,macho,20,291
+1254,Aldonza,Gato,Persa,hembra,4,529
+1255,Octavio,Perro,Pitbull,macho,3,748
+1256,Camilo,Gato,Mestizo,macho,12,585
+1257,Reynaldo,Gato,Egipcio,macho,16,547
+1258,Virginia,Perro,Mestizo,macho,12,97
+1259,Ofelia,Gato,Egipcio,macho,16,794
+1260,Fernando,Perro,San Bernardo,hembra,7,447
+1261,Dolores,Gato,Egipcio,macho,7,257
+1262,Cristina,Perro,Mestizo,macho,3,907
+1263,Leticia,Perro,Chihuahua,hembra,6,767
+1264,Francisco,Ave,Paraba Azul,hembra,13,917
+1265,Miguel Ángel,Perro,San Bernardo,macho,6,309
+1266,Andrea,Ave,Paraba Azul,hembra,11,911
+1267,Alfredo,Ave,Perico,hembra,19,973
+1268,Gabriel,Ave,Perico,macho,10,632
+1269,Fidel,Perro,Mestizo,hembra,18,748
+1270,Florencia,Gato,Mestizo,macho,7,508
+1271,Judith,Gato,Persa,hembra,19,938
+1272,Esmeralda,Gato,Siames,hembra,20,238
+1273,José Emilio,Gato,Egipcio,macho,1,817
+1274,Serafín,Perro,Mestizo,macho,20,672
+1275,Leonardo,Gato,Persa,hembra,8,61
+1276,René,Gato,Siames,hembra,13,728
+1277,Javier,Perro,Pitbull,macho,17,152
+1278,Daniel,Perro,Chihuahua,macho,3,415
+1279,José Eduardo,Gato,Siames,hembra,9,376
+1280,José Eduardo,Gato,Egipcio,macho,6,852
+1281,Eloisa,Gato,Mestizo,macho,17,184
+1282,Vicente,Perro,Mestizo,macho,8,90
+1283,Concepción,Perro,Pitbull,hembra,1,809
+1284,Dulce,Perro,Mestizo,hembra,18,368
+1285,Salvador,Gato,Mestizo,macho,12,266
+1286,Sessa,Perro,Chihuahua,macho,15,355
+1287,Arturo,Gato,Persa,hembra,3,464
+1288,Paola,Perro,San Bernardo,macho,8,986
+1289,Mitzy,Ave,Perico,macho,10,524
+1290,Yeni,Ave,Perico,hembra,19,736
+1291,Zeferino,Gato,Mestizo,hembra,19,570
+1292,Aldo,Gato,Siames,macho,20,243
+1293,Germán,Ave,Loro de cabeza Azul,macho,19,381
+1294,Alma,Gato,Mestizo,hembra,3,113
+1295,Inés,Ave,Perico,macho,2,885
+1296,Carlota,Gato,Egipcio,macho,21,7
+1297,Jesús,Perro,Chihuahua,macho,2,948
+1298,Diana,Perro,Pitbull,macho,15,94
+1299,Gustavo,Ave,Cacatua,macho,15,142
+1300,José María,Gato,Egipcio,hembra,12,149
+1301,Elena,Perro,Mestizo,macho,5,701
+1302,María Elena,Ave,Loro de cabeza Azul,macho,10,812
+1303,Mónica,Ave,Loro de cabeza Azul,hembra,15,751
+1304,Esparta,Gato,Egipcio,macho,1,447
+1305,Claudia,Gato,Siames,macho,13,374
+1306,Eloisa,Gato,Persa,macho,2,819
+1307,Beatriz,Perro,Mestizo,macho,9,421
+1308,Antonia,Gato,Siames,hembra,20,273
+1309,Trinidad,Gato,Mestizo,hembra,10,383
+1310,Esmeralda,Perro,Chihuahua,macho,10,385
+1311,Rebeca,Perro,Mestizo,macho,18,26
+1312,Antonio,Gato,Siames,hembra,1,223
+1313,Camilo,Perro,Mestizo,macho,9,766
+1314,Virginia,Perro,Chihuahua,macho,16,845
+1315,Teodoro,Ave,Loro de cabeza Azul,macho,9,300
+1316,Ignacio,Gato,Egipcio,hembra,15,84
+1317,Isabela,Gato,Egipcio,hembra,11,545
+1318,Bernabé,Gato,Siames,hembra,19,913
+1319,Eugenia,Gato,Siames,macho,16,16
+1320,Evelio,Ave,Loro de cabeza Azul,macho,1,990
+1321,Sessa,Ave,Paraba Azul,macho,21,738
+1322,Leticia,Gato,Siames,macho,4,593
+1323,Ricardo,Perro,Chihuahua,hembra,6,580
+1324,Israel,Ave,Cacatua,hembra,3,330
+1325,Aldo,Gato,Egipcio,hembra,18,118
+1326,Laura,Ave,Loro de cabeza Azul,macho,20,66
+1327,Olga,Perro,Mestizo,macho,4,331
+1328,Aurora,Gato,Persa,macho,12,759
+1329,Elvira,Perro,San Bernardo,macho,1,940
+1330,Miguel Ángel,Perro,Mestizo,macho,18,975
+1331,Helena,Ave,Loro de cabeza Azul,macho,14,564
+1332,Indira,Gato,Egipcio,macho,12,852
+1333,Víctor,Perro,Chihuahua,macho,19,524
+1334,José Carlos,Gato,Egipcio,macho,21,373
+1335,Fabiola,Perro,Mestizo,macho,5,163
+1336,Rolando,Gato,Persa,macho,6,804
+1337,Miguel Ángel,Gato,Siames,hembra,5,256
+1338,Elvira,Perro,Pitbull,hembra,20,245
+1339,Yolanda,Gato,Persa,hembra,1,861
+1340,José Manuél,Perro,Chihuahua,hembra,7,74
+1341,Alta  Gracia,Perro,San Bernardo,hembra,6,832
+1342,Elvia,Ave,Cacatua,hembra,9,755
+1343,Natividad,Perro,Mestizo,macho,9,736
+1344,Diego,Ave,Paraba Azul,hembra,5,386
+1345,Aida,Gato,Siames,hembra,17,582
+1346,Linda,Perro,Mestizo,hembra,21,263
+1347,Perla,Ave,Perico,macho,18,46
+1348,Dalia,Perro,San Bernardo,macho,12,216
+1349,Angélica,Ave,Cacatua,macho,10,320
+1350,Rosario,Perro,Pitbull,macho,12,575
+1351,Francisca,Ave,Loro de cabeza Azul,macho,6,518
+1352,Rebeca,Perro,Chihuahua,hembra,11,364
+1353,Delia,Perro,Pitbull,hembra,15,509
+1354,Bianca,Gato,Siames,hembra,14,29
+1355,Pamela,Ave,Loro de cabeza Azul,hembra,1,672
+1356,Anabel,Ave,Loro de cabeza Azul,hembra,1,520
+1357,Perla,Ave,Cacatua,macho,18,816
+1358,Blanca,Perro,San Bernardo,macho,15,30
+1359,Rocío,Ave,Loro de cabeza Azul,macho,6,150
+1360,Eloy,Ave,Loro de cabeza Azul,hembra,15,122
+1361,Karla,Perro,San Bernardo,hembra,4,890
+1362,Abigail,Ave,Loro de cabeza Azul,hembra,8,845
+1363,Adalberto,Gato,Siames,hembra,2,392
+1364,Graciela,Gato,Siames,macho,10,799
+1365,Mauro,Gato,Persa,macho,17,828
+1366,Pamela,Gato,Mestizo,macho,8,870
+1367,Hilda,Gato,Persa,macho,15,713
+1368,Martín,Perro,Mestizo,macho,13,687
+1369,Liliana,Ave,Loro de cabeza Azul,macho,6,163
+1370,Felipe,Gato,Egipcio,macho,13,973
+1371,Zoé,Perro,Chihuahua,macho,18,167
+1372,Marisol,Ave,Paraba Azul,macho,14,483
+1373,Úrsula,Gato,Mestizo,macho,13,120
+1374,Juana,Gato,Persa,macho,1,516
+1375,Mitzy,Gato,Persa,macho,12,304
+1376,Abelardo,Gato,Persa,hembra,1,378
+1377,Elisa,Ave,Perico,hembra,11,804
+1378,Asunción,Gato,Siames,hembra,16,358
+1379,Isabel,Perro,Mestizo,hembra,16,813
+1380,Octavio,Ave,Loro de cabeza Azul,macho,2,632
+1381,Martha,Gato,Mestizo,hembra,10,942
+1382,Sofía,Perro,Mestizo,hembra,21,911
+1383,José Carlos,Ave,Loro de cabeza Azul,macho,18,966
+1384,Eugenia,Ave,Cacatua,hembra,9,366
+1385,Guadalupe,Gato,Egipcio,macho,9,4
+1386,Citlali,Gato,Mestizo,hembra,7,261
+1387,Luisa,Perro,Mestizo,hembra,20,779
+1388,Aurora,Ave,Paraba Azul,hembra,18,774
+1389,Mauro,Gato,Persa,macho,7,935
+1390,Araceli,Perro,Chihuahua,hembra,9,854
+1391,Alonso,Perro,Pitbull,hembra,20,445
+1392,Conchita,Gato,Persa,hembra,2,10
+1393,Luis Manuel,Gato,Siames,macho,11,710
+1394,Armando,Ave,Paraba Azul,macho,8,456
+1395,Elvira,Perro,Chihuahua,hembra,3,981
+1396,Marcos,Ave,Perico,macho,10,642
+1397,María del Carmen,Perro,Pitbull,hembra,9,505
+1398,Graciela,Gato,Siames,macho,21,785
+1399,Lilia,Perro,Mestizo,macho,1,566
+1400,Diana,Perro,Pitbull,macho,11,3
+1401,Mario,Ave,Loro de cabeza Azul,macho,14,456
+1402,María Teresa,Gato,Mestizo,hembra,19,890
+1403,Leticia,Ave,Paraba Azul,macho,3,898
+1404,Renato,Gato,Mestizo,macho,3,870
+1405,René,Perro,Chihuahua,macho,20,171
+1406,Rolando,Gato,Persa,macho,21,54
+1407,Lilia,Perro,Mestizo,macho,5,615
+1408,Ricardo,Gato,Egipcio,hembra,1,616
+1409,Aurelio,Gato,Persa,macho,15,894
+1410,María Teresa,Perro,San Bernardo,hembra,10,698
+1411,Mariano,Perro,Chihuahua,hembra,20,406
+1412,Gerónimo,Gato,Siames,hembra,19,315
+1413,Barbara,Perro,Mestizo,hembra,12,203
+1414,Luisa,Perro,Chihuahua,macho,13,615
+1415,Diana,Ave,Loro de cabeza Azul,hembra,15,62
+1416,Gloria,Perro,Chihuahua,hembra,16,10
+1417,Gilberto,Gato,Mestizo,macho,11,931
+1418,Reina,Gato,Mestizo,macho,11,730
+1419,Ariadna,Gato,Egipcio,hembra,21,143
+1420,Ana Luisa,Perro,Chihuahua,hembra,13,217
+1421,Jaime,Ave,Paraba Azul,hembra,7,505
+1422,Darío,Gato,Persa,macho,11,12
+1423,Socorro,Perro,Mestizo,macho,20,716
+1424,Rosalia,Gato,Siames,macho,2,451
+1425,Óliver,Gato,Siames,macho,20,275
+1426,Ramón,Perro,Mestizo,macho,1,647
+1427,Verónica,Gato,Mestizo,macho,11,80
+1428,Julia,Perro,San Bernardo,macho,16,155
+1429,Hernán,Ave,Loro de cabeza Azul,macho,16,919
+1430,Linda,Perro,Mestizo,macho,7,487
+1431,Raquel,Gato,Siames,macho,14,476
+1432,Luis Manuel,Perro,Chihuahua,macho,18,900
+1433,Benjamín,Ave,Perico,macho,3,284
+1434,Ariadna,Ave,Cacatua,hembra,15,674
+1435,Francisco Javier,Ave,Paraba Azul,macho,9,711
+1436,Zoé,Perro,San Bernardo,macho,1,678
+1437,Leonor,Perro,San Bernardo,hembra,2,21
+1438,Vicente,Ave,Perico,macho,8,390
+1439,Gonzalo,Ave,Paraba Azul,hembra,17,192
+1440,Gustavo,Ave,Perico,macho,1,59
+1441,Julio César,Perro,Mestizo,macho,19,693
+1442,Frida,Ave,Loro de cabeza Azul,macho,9,187
+1443,Concepción,Perro,Pitbull,hembra,14,275
+1444,Rebeca,Ave,Cacatua,hembra,1,239
+1445,María del Carmen,Gato,Siames,macho,17,318
+1446,Miriam,Perro,Chihuahua,hembra,15,183
+1447,Jesús,Perro,San Bernardo,macho,7,768
+1448,Anel,Ave,Perico,macho,16,101
+1449,Octavio,Perro,Chihuahua,hembra,20,700
+1450,Guillermo,Gato,Mestizo,macho,17,420
+1451,Berta,Perro,Chihuahua,hembra,12,104
+1452,Patricia,Perro,Mestizo,hembra,15,267
+1453,Lucas,Perro,Mestizo,hembra,17,244
+1454,Débora,Gato,Siames,hembra,12,890
+1455,Yeni,Perro,Chihuahua,hembra,2,878
+1456,Rosa,Gato,Persa,hembra,8,467
+1457,Marcela,Perro,Mestizo,macho,13,292
+1458,Germán,Perro,San Bernardo,macho,10,307
+1459,Wendolin,Perro,San Bernardo,hembra,14,412
+1460,Eloisa,Gato,Mestizo,hembra,15,159
+1461,Jorge Luis,Gato,Egipcio,hembra,10,166
+1462,Guadalupe,Ave,Cacatua,macho,1,552
+1463,Sandra,Perro,Pitbull,macho,20,475
+1464,Barbara,Perro,Pitbull,hembra,4,234
+1465,Camila,Perro,Mestizo,macho,11,472
+1466,Catalina,Perro,Pitbull,hembra,17,998
+1467,Gloria,Perro,San Bernardo,macho,16,318
+1468,Eugenia,Gato,Persa,hembra,17,442
+1469,José,Perro,Pitbull,macho,13,729
+1470,Modesto,Perro,Mestizo,hembra,16,602
+1471,Iván,Gato,Egipcio,macho,1,268
+1472,Rubén,Gato,Mestizo,hembra,1,48
+1473,Miriam,Perro,Pitbull,macho,5,591
+1474,Anabel,Perro,San Bernardo,macho,14,462
+1475,Ana,Ave,Perico,hembra,21,601
+1476,Marcos,Ave,Paraba Azul,hembra,10,291
+1477,Uriel,Gato,Mestizo,macho,17,207
+1478,Sara,Gato,Persa,macho,6,64
+1479,Beatriz,Gato,Persa,macho,3,407
+1480,Luz,Perro,San Bernardo,macho,5,362
+1481,Cornelio,Perro,Pitbull,hembra,16,295
+1482,Victoria,Ave,Paraba Azul,hembra,13,765
+1483,Renato,Gato,Egipcio,hembra,18,662
+1484,Citlali,Ave,Cacatua,macho,7,685
+1485,Trinidad,Gato,Siames,hembra,18,844
+1486,Enrique,Perro,Pitbull,macho,15,180
+1487,Juan,Perro,Chihuahua,macho,17,798
+1488,Elsa,Gato,Mestizo,macho,5,152
+1489,Marisol,Ave,Perico,macho,1,864
+1490,Juana,Ave,Paraba Azul,macho,4,489
+1491,Elisa,Ave,Paraba Azul,hembra,21,482
+1492,Lorenzo,Ave,Loro de cabeza Azul,hembra,17,83
+1493,Claudia,Gato,Mestizo,macho,3,25
+1494,Elsa,Perro,Pitbull,hembra,10,160
+1495,Ricardo,Gato,Persa,hembra,5,955
+1496,Humberto,Perro,Chihuahua,hembra,21,155
+1497,Amanda,Ave,Cacatua,macho,16,79
+1498,Yolanda,Ave,Loro de cabeza Azul,hembra,13,12
+1499,Ángela,Gato,Siames,macho,10,624
+1500,Andrés,Gato,Persa,hembra,11,648
+1501,Alonso,Gato,Mestizo,hembra,6,495
+1502,María Teresa,Ave,Paraba Azul,macho,6,122
+1503,Camila,Gato,Siames,macho,4,49
+1504,Gregorio,Ave,Perico,hembra,4,926
+1505,Karla,Perro,Mestizo,macho,3,439
+1506,Amanda,Perro,Pitbull,hembra,2,315
+1507,Marco Antonio,Gato,Mestizo,macho,10,749
+1508,José Carlos,Gato,Persa,macho,6,728
+1509,Araceli,Ave,Loro de cabeza Azul,macho,14,926
+1510,Violeta,Ave,Perico,hembra,21,817
+1511,Emilio,Gato,Persa,macho,21,523
+1512,Arcelia,Gato,Persa,macho,12,121
+1513,Wilfrido,Gato,Egipcio,macho,15,941
+1514,Humberto,Perro,Mestizo,macho,5,983
+1515,Teresa,Perro,San Bernardo,hembra,4,909
+1516,Amelia,Ave,Perico,hembra,7,620
+1517,Elvia,Ave,Cacatua,macho,18,943
+1518,Bianca,Perro,Chihuahua,macho,21,385
+1519,Verónica,Perro,Pitbull,hembra,5,526
+1520,Vicente,Perro,Mestizo,hembra,6,69
+1521,Itzel,Gato,Persa,macho,21,32
+1522,Óliver,Ave,Perico,hembra,11,711
+1523,Karla,Gato,Egipcio,macho,4,148
+1524,Martha,Gato,Egipcio,hembra,13,238
+1525,Estela,Perro,Pitbull,macho,8,537
+1526,Wilfrido,Perro,San Bernardo,hembra,1,434
+1527,Reynaldo,Gato,Siames,macho,15,49
+1528,Homero,Ave,Paraba Azul,macho,1,677
+1529,Fidel,Gato,Persa,hembra,6,177
+1530,Luz,Gato,Mestizo,hembra,13,264
+1531,Susana,Perro,Mestizo,hembra,10,94
+1532,Omar,Perro,Chihuahua,hembra,11,630
+1533,Ilse,Perro,Mestizo,hembra,6,585
+1534,Rafaél,Perro,Mestizo,hembra,1,363
+1535,Ariadna,Gato,Mestizo,hembra,18,654
+1536,Carlota,Gato,Egipcio,hembra,1,306
+1537,Nelly,Perro,Mestizo,macho,13,956
+1538,Alicia,Gato,Persa,macho,11,480
+1539,Bernabé,Gato,Mestizo,macho,14,449
+1540,Emilio,Gato,Egipcio,macho,3,876
+1541,Itzel,Gato,Mestizo,hembra,6,296
+1542,Felix,Gato,Mestizo,macho,17,945
+1543,Antonio,Gato,Siames,hembra,20,946
+1544,Modesto,Gato,Egipcio,macho,17,783
+1545,Gregorio,Gato,Siames,macho,3,767
+1546,Delia,Ave,Perico,hembra,4,229
+1547,Ignacio,Gato,Persa,macho,20,816
+1548,Jorge Luis,Perro,Chihuahua,hembra,2,637
+1549,Ernesto,Gato,Mestizo,hembra,11,917
+1550,Beatriz,Ave,Perico,hembra,18,871
+1551,Delia,Ave,Loro de cabeza Azul,macho,2,22
+1552,Gabriel,Gato,Mestizo,hembra,20,18
+1553,Humberto,Gato,Siames,hembra,16,124
+1554,Samuel,Gato,Persa,macho,4,927
+1555,Karina,Gato,Egipcio,hembra,18,200
+1556,Alejandro,Ave,Perico,hembra,9,872
+1557,José Carlos,Ave,Loro de cabeza Azul,macho,7,672
+1558,Luis Manuel,Perro,Chihuahua,macho,12,765
+1559,Ana Luisa,Ave,Perico,macho,7,668
+1560,Abel,Perro,Pitbull,hembra,5,253
+1561,Karina,Perro,San Bernardo,macho,19,799
+1562,Hugo,Perro,Pitbull,macho,16,376
+1563,Margarita,Perro,Pitbull,hembra,14,766
+1564,Miriam,Gato,Siames,macho,10,813
+1565,Zacarías,Ave,Paraba Azul,macho,4,632
+1566,Ramiro,Gato,Egipcio,hembra,10,408
+1567,Adán,Perro,Chihuahua,hembra,13,929
+1568,Graciela,Perro,Pitbull,hembra,18,497
+1569,Fernando,Gato,Egipcio,macho,6,699
+1570,Linda,Ave,Perico,macho,3,206
+1571,Jesús,Ave,Loro de cabeza Azul,hembra,5,702
+1572,María,Perro,Chihuahua,macho,10,186
+1573,José,Ave,Perico,macho,12,62
+1574,José Emilio,Ave,Cacatua,hembra,11,369
+1575,Elvia,Ave,Loro de cabeza Azul,hembra,15,223
+1576,Graciela,Gato,Persa,hembra,18,644
+1577,Alvaro,Perro,Chihuahua,macho,10,306
+1578,Leonardo,Perro,San Bernardo,macho,10,656
+1579,María Eugenia,Gato,Mestizo,macho,18,916
+1580,Alonso,Perro,Chihuahua,hembra,12,405
+1581,Carlos,Perro,Pitbull,macho,11,753
+1582,Martín,Perro,Mestizo,macho,17,948
+1583,Juan Carlos,Perro,San Bernardo,macho,11,88
+1584,Lourdes,Ave,Paraba Azul,hembra,21,687
+1585,Abigail,Perro,Chihuahua,macho,20,472
+1586,Amelia,Ave,Perico,macho,21,989
+1587,Silvia,Ave,Paraba Azul,hembra,9,836
+1588,Héctor,Perro,Chihuahua,macho,3,862
+1589,Indira,Ave,Perico,macho,13,697
+1590,Ofelia,Perro,San Bernardo,macho,19,770
+1591,Luisa,Gato,Siames,hembra,2,744
+1592,Luis,Ave,Perico,hembra,10,808
+1593,Linda,Ave,Paraba Azul,hembra,11,870
+1594,Zacarías,Gato,Persa,hembra,10,449
+1595,Lorena,Ave,Perico,hembra,2,549
+1596,Natividad,Ave,Loro de cabeza Azul,hembra,9,430
+1597,Wendolin,Gato,Siames,hembra,16,253
+1598,Bernardo,Gato,Persa,hembra,7,625
+1599,Concepción,Gato,Mestizo,macho,10,369
+1600,Juana,Gato,Persa,macho,14,534
+1601,Mauro,Gato,Siames,hembra,5,519
+1602,Rodolfo,Gato,Mestizo,macho,18,177
+1603,Raquel,Ave,Paraba Azul,macho,4,813
+1604,Rafaél,Gato,Mestizo,hembra,15,383
+1605,Delia,Gato,Egipcio,hembra,7,652
+1606,Rolando,Gato,Siames,macho,4,941
+1607,Eloisa,Gato,Persa,macho,1,547
+1608,Estefanía,Ave,Loro de cabeza Azul,hembra,20,487
+1609,Iván,Ave,Paraba Azul,macho,21,217
+1610,Tomás,Gato,Mestizo,macho,15,407
+1611,Arturo,Perro,Chihuahua,hembra,16,386
+1612,Timoteo,Perro,San Bernardo,macho,16,532
+1613,Alberto,Perro,Pitbull,macho,14,986
+1614,Irma,Perro,Pitbull,macho,14,374
+1615,Julio César,Perro,San Bernardo,hembra,1,463
+1616,Felix,Gato,Egipcio,hembra,13,875
+1617,Clara,Perro,Mestizo,macho,6,3
+1618,Nancy,Perro,Pitbull,macho,8,397
+1619,Dalia,Ave,Paraba Azul,hembra,18,788
+1620,Emiliano,Ave,Cacatua,macho,10,593
+1621,Patricia,Ave,Cacatua,hembra,15,319
+1622,Julio,Gato,Mestizo,hembra,12,470
+1623,José,Ave,Cacatua,hembra,7,805
+1624,Micaela,Gato,Mestizo,macho,8,872
+1625,Anel,Gato,Siames,macho,10,635
+1626,Lilia,Perro,Mestizo,hembra,21,198
+1627,Eloisa,Gato,Mestizo,hembra,21,628
+1628,Gonzalo,Ave,Perico,macho,3,43
+1629,Marcela,Gato,Persa,hembra,12,730
+1630,Juan,Perro,Chihuahua,hembra,11,393
+1631,Adán,Perro,Chihuahua,hembra,15,675
+1632,Úrsula,Gato,Siames,macho,3,735
+1633,Pamela,Gato,Mestizo,hembra,11,731
+1634,Alonso,Ave,Perico,macho,3,115
+1635,Evelio,Perro,Chihuahua,hembra,7,798
+1636,Alvaro,Perro,Chihuahua,macho,19,250
+1637,Manuel,Ave,Paraba Azul,macho,19,626
+1638,Blanca,Ave,Cacatua,macho,16,666
+1639,Vanesa,Ave,Loro de cabeza Azul,macho,14,889
+1640,Ruby,Perro,Pitbull,macho,3,539
+1641,Ángela,Gato,Mestizo,macho,10,391
+1642,Beatriz,Gato,Siames,macho,8,777
+1643,Carlota,Gato,Siames,macho,17,146
+1644,Estela,Perro,Pitbull,hembra,4,254
+1645,Carmen,Ave,Loro de cabeza Azul,macho,18,779
+1646,Estefanía,Perro,Chihuahua,hembra,10,976
+1647,Clara,Ave,Cacatua,macho,13,341
+1648,Mauricio,Perro,San Bernardo,hembra,7,514
+1649,Itzel,Ave,Perico,macho,6,904
+1650,Ruby,Ave,Perico,macho,5,576
+1651,Gabino,Perro,San Bernardo,macho,15,595
+1652,Helena,Ave,Paraba Azul,hembra,21,121
+1653,Miriam,Ave,Loro de cabeza Azul,hembra,9,789
+1654,María José,Ave,Perico,macho,8,885
+1655,Daniel,Perro,San Bernardo,hembra,16,80
+1656,Bruno,Ave,Cacatua,macho,7,504
+1657,Jesús,Gato,Mestizo,macho,6,935
+1658,Aurora,Gato,Siames,hembra,1,742
+1659,Angélica,Perro,Pitbull,macho,13,109
+1660,Alvaro,Gato,Mestizo,hembra,2,910
+1661,Diego,Ave,Loro de cabeza Azul,hembra,4,796
+1662,Olga,Gato,Siames,macho,17,448
+1663,Federico,Perro,Pitbull,hembra,10,801
+1664,Jos,Gato,Persa,hembra,9,85
+1665,Alonso,Ave,Perico,macho,7,102
+1666,Ariadna,Perro,Pitbull,hembra,8,579
+1667,Nelly,Ave,Paraba Azul,macho,15,928
+1668,Eva,Ave,Loro de cabeza Azul,macho,11,520
+1669,Paola,Gato,Mestizo,macho,12,328
+1670,Dulce María,Gato,Egipcio,macho,8,202
+1671,Lorenzo,Gato,Persa,macho,14,279
+1672,Eugenio,Perro,Pitbull,macho,14,395
+1673,Ramón,Gato,Mestizo,macho,8,460
+1674,Úrsula,Ave,Cacatua,macho,7,153
+1675,Minerva,Perro,Chihuahua,hembra,14,35
+1676,Pilar,Perro,Mestizo,hembra,19,596
+1677,Soledad,Ave,Paraba Azul,macho,1,101
+1678,Cristina,Perro,San Bernardo,hembra,8,583
+1679,Alejandro,Ave,Perico,macho,8,350
+1680,Nancy,Perro,Chihuahua,macho,13,150
+1681,Natalia,Perro,Pitbull,hembra,16,601
+1682,Benito,Ave,Loro de cabeza Azul,hembra,1,515
+1683,Esperanza,Gato,Siames,hembra,10,816
+1684,Claudio,Perro,Chihuahua,macho,9,325
+1685,Esmeralda,Gato,Mestizo,macho,6,356
+1686,Hilda,Gato,Siames,hembra,9,253
+1687,Serafín,Ave,Paraba Azul,hembra,4,426
+1688,Vanesa,Ave,Paraba Azul,hembra,9,89
+1689,Marco Antonio,Ave,Loro de cabeza Azul,macho,17,973
+1690,Bernardo,Perro,Chihuahua,hembra,9,348
+1691,Silvia,Perro,Chihuahua,macho,6,586
+1692,Bianca,Gato,Persa,hembra,13,878
+1693,María José,Gato,Mestizo,hembra,7,557
+1694,Silvia,Gato,Siames,hembra,1,733
+1695,Jerónimo,Perro,Pitbull,hembra,12,783
+1696,Jaime,Ave,Loro de cabeza Azul,hembra,4,61
+1697,Rubén,Gato,Persa,macho,2,247
+1698,Pilar,Perro,Pitbull,macho,5,966
+1699,Natalia,Ave,Cacatua,hembra,20,271
+1700,Darío,Ave,Perico,hembra,10,862
+1701,Paola,Gato,Persa,hembra,10,946
+1702,Arturo,Gato,Mestizo,hembra,5,759
+1703,María,Ave,Paraba Azul,macho,10,447
+1704,Andrés,Perro,Chihuahua,macho,15,57
+1705,Socorro,Perro,Pitbull,hembra,18,378
+1706,Abigail,Ave,Paraba Azul,macho,13,189
+1707,Tomás,Perro,Pitbull,macho,13,148
+1708,Víctor,Perro,Chihuahua,macho,17,250
+1709,Alvaro,Perro,Mestizo,hembra,15,433
+1710,Antonio,Perro,San Bernardo,macho,18,387
+1711,Araceli,Gato,Persa,macho,13,686
+1712,Eugenio,Ave,Paraba Azul,hembra,7,300
+1713,Manuel,Ave,Perico,macho,14,350
+1714,Sofía,Perro,Pitbull,macho,21,603
+1715,Sessa,Perro,Pitbull,macho,14,804
+1716,Alejandra,Perro,Pitbull,hembra,7,810
+1717,Sara,Perro,Pitbull,macho,1,288
+1718,Victoria,Ave,Paraba Azul,macho,14,749
+1719,Guillermina,Perro,San Bernardo,hembra,3,100
+1720,Silvia,Ave,Loro de cabeza Azul,macho,15,859
+1721,Ana,Gato,Mestizo,hembra,8,272
+1722,Antonia,Perro,Mestizo,hembra,21,974
+1723,César,Perro,Mestizo,macho,21,820
+1724,Yolanda,Perro,Pitbull,hembra,5,387
+1725,Itzel,Gato,Egipcio,hembra,6,386
+1726,Camila,Gato,Egipcio,macho,11,326
+1727,Leonardo,Perro,Chihuahua,macho,19,300
+1728,Leonor,Perro,Chihuahua,hembra,10,218
+1729,Ana Luisa,Gato,Mestizo,hembra,9,546
+1730,Lourdes,Ave,Paraba Azul,hembra,15,837
+1731,Alejandro,Gato,Siames,hembra,12,392
+1732,Miguel Ángel,Ave,Perico,hembra,3,665
+1733,Gregorio,Perro,Mestizo,macho,15,448
+1734,Leticia,Gato,Mestizo,hembra,6,305
+1735,Horacio,Perro,San Bernardo,macho,21,462
+1736,Laura,Perro,San Bernardo,hembra,7,809
+1737,Esther,Perro,San Bernardo,hembra,6,41
+1738,Citlali,Perro,Chihuahua,hembra,19,657
+1739,Reynaldo,Ave,Loro de cabeza Azul,macho,2,554
+1740,Virginia,Gato,Siames,hembra,14,643
+1741,Francisco Javier,Ave,Perico,hembra,9,333
+1742,Andrea,Perro,Pitbull,macho,21,992
+1743,Bernabé,Ave,Perico,hembra,14,906
+1744,Patricia,Perro,Pitbull,hembra,6,750
+1745,Mitzy,Perro,Pitbull,hembra,19,340
+1746,José,Perro,Chihuahua,hembra,20,491
+1747,Adela,Perro,Chihuahua,macho,5,624
+1748,Omar,Gato,Egipcio,macho,8,795
+1749,Vicente,Ave,Perico,hembra,20,682
+1750,César,Ave,Paraba Azul,hembra,12,531
+1751,Esperanza,Gato,Persa,hembra,4,391
+1752,Amelia,Gato,Siames,hembra,8,718
+1753,Reina,Gato,Egipcio,hembra,20,910
+1754,Camila,Gato,Siames,macho,2,493
+1755,Iván,Gato,Egipcio,hembra,13,115
+1756,Iván,Gato,Persa,macho,16,909
+1757,Alonso,Gato,Egipcio,macho,15,414
+1758,Eloy,Ave,Perico,macho,13,776
+1759,Ilse,Gato,Persa,hembra,14,60
+1760,Benjamín,Perro,Mestizo,macho,21,482
+1761,María Cristina,Gato,Egipcio,hembra,4,77
+1762,Diego,Ave,Cacatua,macho,13,566
+1763,Leonor,Perro,Pitbull,hembra,9,739
+1764,Yuridia,Perro,Mestizo,hembra,4,939
+1765,Hermelinda,Gato,Mestizo,hembra,4,486
+1766,Carmen,Ave,Perico,hembra,7,71
+1767,Bernardo,Perro,San Bernardo,hembra,11,696
+1768,Abelardo,Gato,Egipcio,macho,14,901
+1769,Antonio,Ave,Loro de cabeza Azul,macho,3,533
+1770,Caridad,Gato,Egipcio,hembra,15,960
+1771,Porfirio,Gato,Persa,hembra,21,235
+1772,Úrsula,Ave,Paraba Azul,macho,18,56
+1773,Elvira,Ave,Perico,macho,19,173
+1774,Hilda,Perro,Pitbull,macho,9,599
+1775,Vanesa,Gato,Persa,hembra,21,942
+1776,Verónica,Gato,Mestizo,macho,17,643
+1777,Isabel,Ave,Cacatua,hembra,7,568
+1778,Lilia,Gato,Egipcio,macho,6,166
+1779,Omar,Gato,Mestizo,macho,12,553
+1780,Abigail,Gato,Mestizo,hembra,9,254
+1781,Oswaldo,Gato,Persa,hembra,18,20
+1782,Aldonza,Ave,Paraba Azul,macho,18,403
+1783,Daniel,Ave,Paraba Azul,hembra,3,288
+1784,Ruby,Perro,Pitbull,macho,16,150
+1785,Carlos,Perro,Chihuahua,hembra,10,593
+1786,Amanda,Ave,Perico,hembra,5,925
+1787,Wilfrido,Perro,Pitbull,hembra,17,368
+1788,Irma,Gato,Siames,hembra,14,833
+1789,Noemí,Ave,Paraba Azul,hembra,17,303
+1790,Antonio,Ave,Perico,hembra,7,730
+1791,Carolina,Perro,Mestizo,macho,5,646
+1792,Alicia,Perro,Pitbull,macho,14,790
+1793,Gabriel,Perro,Chihuahua,hembra,4,658
+1794,Jonás,Gato,Mestizo,macho,15,891
+1795,Carlota,Perro,Mestizo,hembra,6,40
+1796,Roberto,Perro,San Bernardo,hembra,11,8
+1797,Flavio,Gato,Siames,macho,9,721
+1798,Aida,Ave,Cacatua,macho,9,250
+1799,Gerónimo,Perro,Pitbull,macho,19,941
+1800,Amelia,Gato,Siames,macho,8,634
+1801,Renato,Ave,Perico,macho,9,38
+1802,Barbara,Gato,Mestizo,hembra,18,799
+1803,Sessa,Perro,Mestizo,hembra,1,726
+1804,Francisco,Perro,San Bernardo,macho,12,548
+1805,Roberto,Gato,Egipcio,hembra,6,277
+1806,Paola,Gato,Mestizo,macho,20,584
+1807,Zeferino,Ave,Loro de cabeza Azul,macho,11,770
+1808,Eugenia,Gato,Mestizo,macho,6,10
+1809,Julio César,Perro,Chihuahua,hembra,4,625
+1810,Federico,Ave,Cacatua,hembra,19,43
+1811,Antonio,Gato,Mestizo,hembra,4,591
+1812,Dalia,Ave,Cacatua,macho,16,276
+1813,Cristal,Perro,Pitbull,macho,13,677
+1814,Javier,Ave,Cacatua,hembra,8,164
+1815,Estefanía,Perro,Chihuahua,macho,9,865
+1816,Elsa,Perro,Chihuahua,hembra,19,375
+1817,Ramón,Gato,Persa,macho,21,140
+1818,Zoé,Gato,Siames,macho,13,225
+1819,Clara,Perro,Chihuahua,hembra,7,954
+1820,Ana,Ave,Cacatua,hembra,6,484
+1821,Adriana,Perro,San Bernardo,macho,11,856
+1822,Leonardo,Ave,Paraba Azul,hembra,4,419
+1823,Carla,Gato,Mestizo,hembra,8,765
+1824,Socorro,Perro,San Bernardo,macho,2,319
+1825,Francisco,Gato,Mestizo,macho,15,336
+1826,Bianca,Gato,Persa,macho,8,350
+1827,Paulina,Perro,San Bernardo,macho,12,835
+1828,Hugo,Gato,Siames,macho,17,784
+1829,Uriel,Perro,Pitbull,hembra,9,891
+1830,Irene,Perro,Chihuahua,hembra,17,434
+1831,José Emilio,Perro,San Bernardo,macho,10,299
+1832,Cristina,Gato,Siames,macho,20,526
+1833,Carlota,Ave,Cacatua,hembra,6,523
+1834,Ramiro,Ave,Loro de cabeza Azul,hembra,3,419
+1835,Zeferino,Ave,Paraba Azul,macho,3,587
+1836,Óscar,Perro,Mestizo,hembra,17,198
+1837,Jaime,Gato,Mestizo,macho,5,993
+1838,Rosa,Ave,Loro de cabeza Azul,hembra,12,188
+1839,Humberto,Gato,Persa,macho,15,896
+1840,Alta  Gracia,Gato,Persa,macho,7,507
+1841,Jaqueline,Perro,Pitbull,macho,20,544
+1842,Zoé,Gato,Siames,hembra,6,259
+1843,Nadia,Ave,Loro de cabeza Azul,hembra,14,201
+1844,Pilar,Gato,Mestizo,macho,18,208
+1845,Helena,Gato,Egipcio,hembra,13,206
+1846,Rocío,Ave,Cacatua,macho,4,988
+1847,Aida,Ave,Paraba Azul,hembra,10,846
+1848,Natividad,Ave,Paraba Azul,macho,20,636
+1849,Karina,Ave,Paraba Azul,hembra,21,974
+1850,Tania,Gato,Siames,hembra,7,723
+1851,Frida,Ave,Cacatua,hembra,13,626
+1852,Isabela,Ave,Paraba Azul,hembra,9,446
+1853,Berta,Ave,Loro de cabeza Azul,hembra,16,33
+1854,Carmen,Perro,Mestizo,hembra,7,552
+1855,Octavio,Perro,Mestizo,hembra,12,477
+1856,Amador,Ave,Cacatua,macho,6,546
+1857,Magdalena,Gato,Siames,macho,5,223
+1858,Vanesa,Ave,Cacatua,hembra,2,911
+1859,Emilia,Perro,Mestizo,hembra,2,72
+1860,Teresa,Perro,Mestizo,macho,14,631
+1861,Judith,Perro,Mestizo,hembra,21,83
+1862,Aldo,Gato,Persa,macho,6,571
+1863,Adalberto,Perro,Chihuahua,macho,18,466
+1864,Francisco,Gato,Mestizo,hembra,13,957
+1865,Ángela,Gato,Siames,macho,4,966
+1866,Jesús,Ave,Paraba Azul,macho,11,624
+1867,Rufino,Gato,Mestizo,hembra,16,523
+1868,Aldonza,Ave,Cacatua,macho,7,332
+1869,María Eugenia,Perro,San Bernardo,hembra,5,243
+1870,Dolores,Perro,Pitbull,macho,7,369
+1871,Hugo,Ave,Perico,hembra,18,953
+1872,Esperanza,Ave,Paraba Azul,macho,5,550
+1873,Micaela,Gato,Mestizo,hembra,13,520
+1874,Oswaldo,Perro,Pitbull,hembra,8,714
+1875,Benjamín,Ave,Paraba Azul,macho,15,599
+1876,Indira,Gato,Siames,hembra,6,986
+1877,Abril,Ave,Paraba Azul,hembra,3,664
+1878,Irma,Perro,Mestizo,macho,9,77
+1879,Nancy,Gato,Persa,hembra,1,251
+1880,Israel,Gato,Siames,hembra,20,313
+1881,Aurora,Ave,Perico,macho,5,913
+1882,Ruby,Perro,Mestizo,macho,2,340
+1883,Ernesto,Perro,San Bernardo,macho,3,962
+1884,Elvia,Gato,Egipcio,hembra,9,894
+1885,Paulina,Perro,San Bernardo,hembra,2,787
+1886,Eloisa,Ave,Perico,hembra,13,627
+1887,Juana,Ave,Perico,macho,13,398
+1888,Josefina,Gato,Siames,hembra,19,167
+1889,Francisco,Ave,Perico,hembra,10,872
+1890,Silvia,Gato,Mestizo,macho,19,335
+1891,Antonia,Ave,Perico,macho,8,687
+1892,Elsa,Ave,Loro de cabeza Azul,hembra,10,862
+1893,Victoria,Perro,San Bernardo,macho,8,665
+1894,Mariana,Gato,Mestizo,hembra,3,237
+1895,Bernabé,Gato,Siames,hembra,10,112
+1896,Eduardo,Ave,Perico,macho,16,141
+1897,Miguel Ángel,Perro,Chihuahua,hembra,21,393
+1898,Darío,Perro,San Bernardo,hembra,4,325
+1899,Sonia,Ave,Loro de cabeza Azul,hembra,13,798
+1900,Benjamín,Gato,Persa,hembra,2,310
+1901,Zeferino,Gato,Mestizo,macho,8,712
+1902,Ángel,Gato,Mestizo,macho,9,118
+1903,Pablo,Gato,Egipcio,hembra,11,121
+1904,Estela,Ave,Cacatua,hembra,20,742
+1905,Clara,Perro,Pitbull,macho,1,368
+1906,Alejandro,Gato,Mestizo,hembra,9,863
+1907,Verónica,Ave,Loro de cabeza Azul,macho,8,39
+1908,Esparta,Ave,Paraba Azul,macho,5,791
+1909,Guillermina,Gato,Persa,macho,17,364
+1910,Patricio,Ave,Loro de cabeza Azul,macho,4,150
+1911,Mariana,Perro,Pitbull,hembra,2,532
+1912,Julia,Perro,Chihuahua,hembra,8,202
+1913,Clemente,Gato,Mestizo,macho,21,599
+1914,Magdalena,Perro,Chihuahua,hembra,18,4
+1915,Luis,Perro,Chihuahua,macho,2,417
+1916,Paola,Ave,Cacatua,macho,16,359
+1917,Ricardo,Perro,Mestizo,hembra,8,699
+1918,Marco Antonio,Perro,Pitbull,macho,9,234
+1919,María Elena,Perro,San Bernardo,hembra,2,187
+1920,Amalia,Ave,Perico,macho,4,275
+1921,Arcelia,Perro,Chihuahua,hembra,17,188
+1922,Benjamín,Gato,Mestizo,macho,21,51
+1923,Hugo,Ave,Perico,hembra,10,89
+1924,Ramón,Perro,San Bernardo,macho,10,124
+1925,Enrique,Gato,Egipcio,hembra,14,448
+1926,Daniel,Gato,Egipcio,macho,1,752
+1927,Cornelio,Ave,Cacatua,hembra,20,446
+1928,Abril,Perro,Pitbull,hembra,6,823
+1929,José Carlos,Perro,San Bernardo,macho,9,999
+1930,Juan,Ave,Loro de cabeza Azul,hembra,6,251
+1931,Alberto,Ave,Paraba Azul,hembra,15,721
+1932,Jos,Perro,Chihuahua,macho,5,389
+1933,Pamela,Perro,Pitbull,macho,3,316
+1934,Caridad,Perro,San Bernardo,hembra,10,877
+1935,Conchita,Gato,Mestizo,hembra,3,668
+1936,Julio,Ave,Loro de cabeza Azul,hembra,8,913
+1937,Samuel,Perro,Mestizo,hembra,13,199
+1938,Octavio,Ave,Perico,macho,3,118
+1939,Abel,Gato,Egipcio,macho,10,148
+1940,Ana María,Perro,San Bernardo,hembra,8,675
+1941,Rosa,Ave,Perico,macho,7,15
+1942,Tomás,Perro,San Bernardo,macho,1,967
+1943,Alma,Ave,Perico,hembra,15,1000
+1944,Héctor,Gato,Siames,macho,4,27
+1945,Eugenio,Gato,Persa,macho,2,606
+1946,Alfonso,Gato,Mestizo,macho,7,312
+1947,Enrique,Perro,Chihuahua,hembra,7,870
+1948,Nicolás,Ave,Perico,macho,1,990
+1949,Elsa,Gato,Siames,macho,8,414
+1950,Adalberto,Perro,Mestizo,hembra,8,976
+1951,Magdalena,Ave,Loro de cabeza Azul,macho,5,597
+1952,Salvador,Ave,Paraba Azul,hembra,15,492
+1953,David,Perro,San Bernardo,hembra,5,876
+1954,René,Gato,Egipcio,hembra,10,895
+1955,Abraham,Perro,San Bernardo,hembra,9,49
+1956,Renato,Ave,Cacatua,macho,21,660
+1957,Germán,Perro,Chihuahua,macho,8,401
+1958,Estela,Gato,Mestizo,macho,21,66
+1959,Gloria,Ave,Perico,hembra,20,952
+1960,Minerva,Ave,Loro de cabeza Azul,macho,10,599
+1961,Estefanía,Perro,Mestizo,hembra,20,879
+1962,Ramiro,Gato,Mestizo,hembra,4,977
+1963,Ofelia,Perro,Chihuahua,hembra,11,949
+1964,Pablo,Ave,Perico,macho,2,358
+1965,Horacio,Ave,Paraba Azul,macho,18,588
+1966,Camila,Perro,Pitbull,hembra,1,440
+1967,Olga,Perro,Pitbull,hembra,17,988
+1968,Juan Carlos,Gato,Mestizo,macho,1,747
+1969,Mariano,Perro,Mestizo,hembra,8,728
+1970,Aurelio,Ave,Paraba Azul,macho,20,250
+1971,Marisela,Perro,San Bernardo,macho,4,62
+1972,Lucas,Ave,Cacatua,macho,17,251
+1973,Mariana,Perro,Mestizo,hembra,7,602
+1974,Alberto,Gato,Egipcio,macho,3,251
+1975,Laura,Perro,Chihuahua,hembra,11,627
+1976,Rosario,Perro,San Bernardo,hembra,7,929
+1977,Abel,Perro,Mestizo,hembra,1,318
+1978,Antonia,Gato,Mestizo,macho,4,824
+1979,Ivonne,Gato,Egipcio,hembra,18,954
+1980,Augusto,Gato,Siames,macho,14,261
+1981,Abelardo,Perro,Chihuahua,hembra,20,489
+1982,Benito,Ave,Perico,macho,21,861
+1983,Alejandro,Gato,Egipcio,hembra,6,259
+1984,Julia,Perro,Chihuahua,macho,12,140
+1985,Pascual,Gato,Siames,hembra,17,133
+1986,Omar,Gato,Mestizo,macho,15,972
+1987,Micaela,Perro,Mestizo,macho,2,899
+1988,Micaela,Ave,Cacatua,macho,16,289
+1989,Genaro,Perro,San Bernardo,hembra,13,140
+1990,Jesús,Perro,Mestizo,hembra,3,783
+1991,Pablo,Perro,Chihuahua,hembra,3,458
+1992,Amanda,Ave,Cacatua,macho,18,39
+1993,Silvia,Gato,Siames,hembra,14,696
+1994,Alicia,Gato,Persa,macho,10,408
+1995,Eduardo,Ave,Perico,macho,13,788
+1996,Julio,Ave,Loro de cabeza Azul,macho,20,849
+1997,Flavio,Ave,Perico,hembra,7,301
+1998,Dulce,Ave,Cacatua,hembra,1,193
+1999,Maximiliano,Gato,Persa,hembra,18,4
+2000,Aurora,Perro,Chihuahua,hembra,20,995
