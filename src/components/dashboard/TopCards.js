@@ -1,3 +1,4 @@
+import React from "react";
 import { Card, CardBody } from "reactstrap";
 
 const TopCards = (props) => {
@@ -9,7 +10,7 @@ const TopCards = (props) => {
             <i className={props.icon}></i>
           </div>
           <div className="ms-3">
-            <h3 className="mb-0 font-weight-bold">{props.earning}</h3>
+            <h3 className="mb-0 font-weight-bold">{props.value}</h3>
             <small className="text-muted">{props.subtitle}</small>
           </div>
         </div>

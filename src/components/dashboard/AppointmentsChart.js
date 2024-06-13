@@ -1,14 +1,14 @@
-// SalesChart.js
+// AppointmentsChart.js
 import React, { useEffect, useState } from 'react';
 import { Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
 import Chart from "react-apexcharts";
 
-const SalesChart = () => {
+const AppointmentsChart = () => {
   const [chartData, setChartData] = useState({ series: [], options: {} });
 
   useEffect(() => {
     // Cargar los datos del archivo HTML
-    fetch('./reporte.html')
+    fetch('/reporte_citas.html')
       .then(response => response.text())
       .then(html => {
         // Crear un elemento temporal para extraer el script del HTML
@@ -21,13 +21,22 @@ const SalesChart = () => {
         // Acceder a los datos desde window.reporteData
         const data = window.reporteData;
         if (data) {
+          // Crear las series para el gráfico
+          const series = [
+            {
+              name: 'Citas Atendidas',
+              data: data.citas_atendidas
+            },
+            {
+              name: 'Citas Canceladas',
+              data: data.citas_canceladas
+            }
+          ];
+
           setChartData({
-            series: [
-              { name: "Reservas", data: data.reservas },
-              { name: "Sin Reserva", data: data.sinReserva }
-            ],
+            series: series,
             options: {
-              chart: { type: "area" },
+              chart: { type: "line" },
               xaxis: { categories: data.fechas }
             }
           });
@@ -39,12 +48,12 @@ const SalesChart = () => {
   return (
     <Card>
       <CardBody>
-        <CardTitle tag="h5">Comparación de Atenciones</CardTitle>
+        <CardTitle tag="h5">Citas Atendidas y Canceladas por Día</CardTitle>
         <CardSubtitle className="text-muted" tag="h6">
-          Reservas vs Atención sin Cita
+          Comparación de Citas
         </CardSubtitle>
         <Chart
-          type="area"
+          type="line"
           width="100%"
           height="390"
           options={chartData.options}
@@ -55,4 +64,4 @@ const SalesChart = () => {
   );
 };
 
-export default SalesChart;
+export default AppointmentsChart;
