@@ -1,14 +1,14 @@
-// SalesChart.js
+// PetsChart.js
 import React, { useEffect, useState } from 'react';
 import { Card, CardBody, CardSubtitle, CardTitle } from "reactstrap";
 import Chart from "react-apexcharts";
 
-const SalesChart = () => {
+const PetsChartPie = () => {
   const [chartData, setChartData] = useState({ series: [], options: {} });
 
   useEffect(() => {
     // Cargar los datos del archivo HTML
-    fetch('./reporte.html')
+    fetch('/reporte_pets.html')
       .then(response => response.text())
       .then(html => {
         // Crear un elemento temporal para extraer el script del HTML
@@ -18,17 +18,19 @@ const SalesChart = () => {
         // Ejecutar el script para obtener los datos
         eval(scriptContent);
 
-        // Acceder a los datos desde window.reporteData
-        const data = window.reporteData;
+        // Acceder a los datos desde window.reportePetsData
+        const data = window.reportePetsData;
         if (data) {
           setChartData({
-            series: [
-              { name: "Reservas", data: data.reservas },
-              { name: "Sin Reserva", data: data.sinReserva }
-            ],
+            series: data.counts,
             options: {
-              chart: { type: "area" },
-              xaxis: { categories: data.fechas }
+              chart: { type: 'pie' },
+              labels: data.species,
+              legend: { position: 'bottom' },
+              title: {
+                text: '',
+                align: 'center'
+              }
             }
           });
         }
@@ -39,12 +41,12 @@ const SalesChart = () => {
   return (
     <Card>
       <CardBody>
-        <CardTitle tag="h5">Comparación de Atenciones</CardTitle>
+        <CardTitle tag="h5">Atenciones por Especie</CardTitle>
         <CardSubtitle className="text-muted" tag="h6">
-          Reservas vs Atención sin Cita
+        
         </CardSubtitle>
         <Chart
-          type="area"
+          type="pie"
           width="100%"
           height="390"
           options={chartData.options}
@@ -55,4 +57,4 @@ const SalesChart = () => {
   );
 };
 
-export default SalesChart;
+export default PetsChartPie;
