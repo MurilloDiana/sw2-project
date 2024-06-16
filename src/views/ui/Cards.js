@@ -12,47 +12,81 @@ import {
 } from "reactstrap";
 import Blog from "../../components/dashboard/Blog";
 //import bg1 from "../../assets/images/bg/bg1.jpg";
-//import bg2 from "../../assets/images/bg/bg2.jpg";
-//import bg3 from "../../assets/images/bg/bg3.jpg";
-//import bg4 from "../../assets/images/bg/bg4.jpg";
-import  bg5 from "../../assets/images/logo_n.png";
+import bg2 from "../../assets/images/test-tube.png";
+import bg3 from "../../assets/images/injection.png";
+import bg4 from "../../assets/images/analysis.png";
+import  bg5 from "../../assets/images/visite.png";
+import { useState } from "react";
+import VacModal from "../ModalVac";
+import AnModal from "../ModalAn";
+import DiagModal from "../ModalDiag";
+
 const BlogData = [
   {
-    image: bg5,
-    title: "This is simple blog",
-    subtitle: "2 comments, 1 Like",
+    image: bg4,
+    title: "Analisis de la mascota",
+    //subtitle: "2 comments, 1 Like",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "Es un control de los analisis que se receto al paciente para determinar un tratamiento.",
     btnbg: "primary",
+    modalType:'analysis'
+  },
+  {
+    image: bg3,
+    title: "Control de Vacunas",
+    //subtitle: "2 comments, 1 Like",
+    description:
+      "Nos proporcionara una vista de las vacunas que el paciente se le puso en el transcurso del tiempo.",
+    btnbg: "primary",
+    modalType:'vaccination',
+  },
+  {
+    image: bg2,
+    title: "Diagnosticos",
+    //subtitle: "2 comments, 1 Like",
+    description:
+      "Se presentara una descripcion de los diagnosticos que se hizo a una mascota.",
+    btnbg: "primary",
+    modalType: 'diagnosis',
   },
   {
     image: bg5,
-    title: "Lets be simple blog",
-    subtitle: "2 comments, 1 Like",
+    title: "Visitas",
+    //subtitle: "2 comments, 1 Like",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+      "Se mantiene un orden de las visitas que se tienen del paciente.",
     btnbg: "primary",
-  },
-  {
-    image: bg5,
-    title: "Don't Lamp blog",
-    subtitle: "2 comments, 1 Like",
-    description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
-    btnbg: "primary",
-  },
-  {
-    image: bg5,
-    title: "Simple is beautiful",
-    subtitle: "2 comments, 1 Like",
-    description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
-    btnbg: "primary",
+    modalType: 'visite',
   },
 ];
 
 const Cards = () => {
-  
+  const [isVacunaModelOpen,setVacunaModelOpen] =useState(false);
+  const [isAnalisiModalOpen,setAnalisiModalOpen] =useState(false);
+  const [isDiagnosticModalOpen,setDiagnosticModalOpen] =useState(false);
+
+  const toggleVacunaModel = () => setVacunaModelOpen(!isVacunaModelOpen);
+  const toggleAnalysisModal =()=> setAnalisiModalOpen(!isAnalisiModalOpen);
+  const toggleDiagnosisModal =()=> setDiagnosticModalOpen(!isDiagnosticModalOpen);
+
+  const handleButtonClick = (modalType) => {
+    switch (modalType) {
+      case 'analysis':
+        toggleAnalysisModal();
+        break;
+      case 'vaccination':
+        toggleVacunaModel();
+        break;
+      case 'diagnosis':
+        toggleDiagnosisModal();
+        break;
+      case 'visite':
+        toggleDiagnosisModal();
+        break;
+      default:
+        break;
+    }
+  };
   
   return (
     <div>
@@ -64,215 +98,21 @@ const Cards = () => {
       <Row>
         {BlogData.map((blg, index) => (
           <Col sm="6" lg="6" xl="3" key={index}>
-            <Blog
-              image={blg.image}
-              title={blg.title}
-              subtitle={blg.subtitle}
-              text={blg.description}
-              color={blg.btnbg}
-            />
+           <Card>
+              <CardImg top width="100%" src={blg.image} alt={blg.title} />
+              <CardBody>
+                <CardTitle tag="h5">{blg.title}</CardTitle>
+                <CardText>{blg.description}</CardText>
+                <Button color={blg.btnbg} onClick={() => handleButtonClick(blg.modalType)}>Ver Más</Button>
+              </CardBody>
+            </Card>
           </Col>
         ))}
       </Row>
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Card-2*/}
-      {/* --------------------------------------------------------------------------------*/}
-      <Row>
-        <h5 className="mb-3 mt-3">Alignment Text</h5>
-        <Col md="6" lg="4">
-          <Card body>
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button color="light-warning">Go somewhere</Button>
-            </div>
-          </Card>
-        </Col>
-        <Col md="6" lg="4">
-          <Card body className="text-center">
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button color="light-danger">Go somewhere</Button>
-            </div>
-          </Card>
-        </Col>
-        <Col md="6" lg="4">
-          <Card body className="text-end">
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button color="light-success">Go somewhere</Button>
-            </div>
-          </Card>
-        </Col>
-      </Row>
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Card-2*/}
-      {/* --------------------------------------------------------------------------------
-      <Row>
-        <h5 className="mb-3 mt-3">Colored Card</h5>
-        <Col md="6" lg="3">
-          <Card body color="primary" inverse>
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button>Button</Button>
-            </div>
-          </Card>
-        </Col>
-        <Col md="6" lg="3">
-          <Card body color="info" inverse>
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button>Button</Button>
-            </div>
-          </Card>
-        </Col>
-        <Col md="6" lg="3">
-          <Card body color="success" inverse>
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button>Button</Button>
-            </div>
-          </Card>
-        </Col>
-        <Col md="6" lg="3">
-          <Card body color="danger" inverse>
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button>Button</Button>
-            </div>
-          </Card>
-        </Col>
-        <Col md="6" lg="3">
-          <Card body color="light-warning">
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button>Button</Button>
-            </div>
-          </Card>
-        </Col>
-        <Col md="6" lg="3">
-          <Card body color="light-info">
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button>Button</Button>
-            </div>
-          </Card>
-        </Col>
-        <Col md="6" lg="3">
-          <Card body color="light-success">
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button>Button</Button>
-            </div>
-          </Card>
-        </Col>
-        <Col md="6" lg="3">
-          <Card body color="light-danger">
-            <CardTitle tag="h5">Special Title Treatment</CardTitle>
-            <CardText>
-              With supporting text below as a natural lead-in to additional
-              content.
-            </CardText>
-            <div>
-              <Button>Button</Button>
-            </div>
-          </Card>
-        </Col>
-      </Row>*/}
-      {/* --------------------------------------------------------------------------------*/}
-      {/* Card-Group*/}
-      {/* --------------------------------------------------------------------------------
-      <Row>
-        <h5 className="mb-3 mt-3">Card Group</h5>
-        <Col>
-          <CardGroup>
-            <Card>
-              <CardImg alt="Card image cap" src={bg1} top width="100%" />
-              <CardBody>
-                <CardTitle tag="h5">Card title</CardTitle>
-                <CardSubtitle className="mb-2 text-muted" tag="h6">
-                  Card subtitle
-                </CardSubtitle>
-                <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </CardText>
-                <Button>Button</Button>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardImg alt="Card image cap" src={bg2} top width="100%" />
-              <CardBody>
-                <CardTitle tag="h5">Card title</CardTitle>
-                <CardSubtitle className="mb-2 text-muted" tag="h6">
-                  Card subtitle
-                </CardSubtitle>
-                <CardText>
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
-                </CardText>
-                <Button>Button</Button>
-              </CardBody>
-            </Card>
-            <Card>
-              <CardImg alt="Card image cap" src={bg3} top width="100%" />
-              <CardBody>
-                <CardTitle tag="h5">Card title</CardTitle>
-                <CardSubtitle className="mb-2 text-muted" tag="h6">
-                  Card subtitle
-                </CardSubtitle>
-                <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer
-                  content than the first to show that equal height action.
-                </CardText>
-                <Button>Button</Button>
-              </CardBody>
-            </Card>
-          </CardGroup>
-        </Col>
-      </Row>*/}
-    </div>
+      <VacModal isOpen={isVacunaModelOpen} toggle={toggleVacunaModel} />
+      <AnModal isOpen={isAnalisiModalOpen} toggle={toggleAnalysisModal} />
+      <DiagModal isOpen={isDiagnosticModalOpen} toggle={toggleDiagnosisModal}/>
+     </div>
   );
 };
 
