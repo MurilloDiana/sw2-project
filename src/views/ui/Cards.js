@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   Card,
   CardImg,
@@ -10,13 +11,13 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import { useParams } from "react-router-dom"; 
 import Blog from "../../components/dashboard/Blog";
 //import bg1 from "../../assets/images/bg/bg1.jpg";
 import bg2 from "../../assets/images/test-tube.png";
 import bg3 from "../../assets/images/injection.png";
 import bg4 from "../../assets/images/analysis.png";
 import  bg5 from "../../assets/images/visite.png";
-import { useState } from "react";
 import VacModal from "../ModalVac";
 import AnModal from "../ModalAn";
 import DiagModal from "../ModalDiag";
@@ -61,6 +62,7 @@ const BlogData = [
 ];
 
 const Cards = () => {
+  const { id } = useParams(); // Obtener el ID de la mascota desde la URL
   const [isVacunaModelOpen,setVacunaModelOpen] =useState(false);
   const [isAnalisiModalOpen,setAnalisiModalOpen] =useState(false);
   const [isDiagnosticModalOpen,setDiagnosticModalOpen] =useState(false);
@@ -109,9 +111,9 @@ const Cards = () => {
           </Col>
         ))}
       </Row>
-      <VacModal isOpen={isVacunaModelOpen} toggle={toggleVacunaModel} />
-      <AnModal isOpen={isAnalisiModalOpen} toggle={toggleAnalysisModal} />
-      <DiagModal isOpen={isDiagnosticModalOpen} toggle={toggleDiagnosisModal}/>
+      <VacModal isOpen={isVacunaModelOpen} toggle={toggleVacunaModel} petId={id}/>
+      <AnModal isOpen={isAnalisiModalOpen} toggle={toggleAnalysisModal} petId={id}/>
+      <DiagModal isOpen={isDiagnosticModalOpen} toggle={toggleDiagnosisModal} petId={id}/>
      </div>
   );
 };

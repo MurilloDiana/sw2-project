@@ -37,7 +37,7 @@ const ThemeRoutes = [
       { path: "/citas", exact: true, element: <Badges /> },
       { path: "/asistencia", exact: true, element: <Buttons /> },
       //{ path: "/cards", exact: true, element: <Cards /> },
-      { path: "/historial", exact: true, element: <Cards /> },
+      { path: "/historial/:id", exact: true, element: <Cards /> }, // Ruta dinámica
       { path: "/grid", exact: true, element: <Grid /> },
       { path: "/table", exact: true, element: <Tables /> },
       { path: "/forms", exact: true, element: <Forms /> },
