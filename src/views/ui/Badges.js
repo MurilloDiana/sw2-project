@@ -12,6 +12,8 @@ const Badges = () => {
   const [modalAsignacion, setModalAsignacion] = useState(false);
   const [selectedAtencion, setSelectedAtencion] = useState(null);
   const [visits, setVisits] = useState([]);
+  const [pendingVisits, setPendingVisits] = useState([]);
+  const [attendedVisits, setAttendedVisits] = useState([]);
 
   const { data: visitsData, loading: visitsLoading, error: visitsError } = useQuery(GET_ALL_VISITS);
   const { data: usersData, loading: usersLoading, error: usersError } = useQuery(GET_ALL_USERS);
@@ -20,6 +22,10 @@ const Badges = () => {
   useEffect(() => {
     if (visitsData && visitsData.getAllVisits) {
       setVisits(visitsData.getAllVisits);
+      const pending = visitsData.getAllVisits.filter(visit => visit.status !== 'Atendido');
+      const attended = visitsData.getAllVisits.filter(visit => visit.status === 'Atendido');
+      setPendingVisits(pending);
+      setAttendedVisits(attended);
     }
   }, [visitsData]);
 
@@ -39,6 +45,15 @@ const Badges = () => {
 
   const handleNewVisit = (newVisit) => {
     setVisits([...visits, newVisit]);
+    if (newVisit.status !== 'Atendido') {
+      setPendingVisits([...pendingVisits, newVisit]);
+    }
+  };
+
+  const handleUpdateStatus = (id, status) => {
+    setVisits(visits.map(visit => visit.id === id ? { ...visit, status } : visit));
+    setPendingVisits(pendingVisits.filter(visit => visit.id !== id));
+    setAttendedVisits(attendedVisits.concat(visits.filter(visit => visit.id === id).map(visit => ({ ...visit, status }))));
   };
 
   const formatDate = (dateString) => {
@@ -95,7 +110,7 @@ const Badges = () => {
       <Card>
         <CardBody>
           <CardTitle>
-            <h4>Listado de Atenciones</h4>
+            <h4>Atenciones Pendientes</h4>
           </CardTitle>
           <Table responsive>
             <thead>
@@ -110,7 +125,7 @@ const Badges = () => {
               </tr>
             </thead>
             <tbody>
-              {visits.map((atencion, index) => (
+              {pendingVisits.map((atencion, index) => (
                 <tr key={index}>
                   <td>{index + 1}</td>
                   <td className="px-3">{formatDate(atencion.date)}</td>
@@ -121,6 +136,43 @@ const Badges = () => {
                   <td>
                     <Button color="primary" style={{ marginRight: '10px' }} onClick={() => handleViewClick(atencion)}>Ver Valoración</Button>
                     <Button color="secondary" onClick={() => handleAsignacionClick(atencion)}>Consulta</Button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        </CardBody>
+      </Card>
+      <Card style={{ marginTop: '20px' }}>
+        <CardBody>
+          <CardTitle>
+            <h4>Atenciones Atendidas</h4>
+          </CardTitle>
+          <Table responsive>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th className="px-3">Fecha</th>
+                <th className="px-5">Descripción</th>
+                <th>Paciente</th>
+                <th>Doctor</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {attendedVisits.map((atencion, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td className="px-3">{formatDate(atencion.date)}</td>
+                  <td className="px-5">{atencion.reason}</td>
+                  <td>{petsData ? petsData.getAllPets.find(pet => pet.id === atencion.idPatient)?.name : 'Desconocido'}</td>
+                  <td>{usersData ? usersData.getAllUsers.find(user => user.id === atencion.idDoctor)?.names : 'Desconocido'}</td>
+                  <td>{atencion.status}</td>
+                  <td>
+                    <Button color="primary" style={{ marginRight: '10px' }} onClick={() => handleViewClick(atencion)}>Ver Valoración</Button>
+                    {/*<Button color="secondary" onClick={() => handleAsignacionClick(atencion)}>Consulta</Button>*/}
+
                   </td>
                 </tr>
               ))}
@@ -141,6 +193,7 @@ const Badges = () => {
             isOpen={modalAsignacion}
             toggle={toggleModalAsignacion}
             atencion={selectedAtencion}
+            onUpdateStatus={handleUpdateStatus}
           />
         </>
       )}

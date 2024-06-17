@@ -29,21 +29,6 @@ const navigation = [
     href: "/citas",
     icon: "bi bi-calendar-plus",
   },
- /* {
-    title: "Buttons",
-    href: "/buttons",
-    icon: "bi bi-hdd-stack",
-  },*/
-  /*{
-    title: "Cards",
-    href: "/cards",
-    icon: "bi bi-card-text",
-  },*/
-  /*{
-    title: "Historial",
-    href: "/historial",
-    icon: "bi bi-clipboard-heart" ,
-  },*/
   {
     title: "Grid",
     href: "/grid",

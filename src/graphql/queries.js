@@ -144,7 +144,6 @@ export const GET_CONSULTATIONS_BY_ID_PATIENT = gql`
   }
 `;
 
-
 export const GET_ALL_VACCINES = gql`
   query GetAllVaccines {
     getAllVaccines {
@@ -171,7 +170,6 @@ export const GET_VACCINE_BY_ID_PATIENT = gql`
   }
 `;
 
-
 export const GET_ROLE_BY_NAME = gql`
   query GetRoleByName($name: String!) {
     getRolByName(name: $name) {
@@ -181,7 +179,6 @@ export const GET_ROLE_BY_NAME = gql`
   }
 `;
 
-// Obtener usuarios por roleId
 export const GET_USERS_BY_ROLE_ID = gql`
   query GetUsersByRoleId($roleId: String!) {
     getAllUsers {
@@ -189,6 +186,32 @@ export const GET_USERS_BY_ROLE_ID = gql`
       names
       lastNames
       roleId
+    }
+  }
+`;
+
+export const GET_ALL_ANALYSIS = gql`
+  query GetAllAnalysis {
+    getAllAnalysis {
+      id
+      patientId
+      analysisType
+      results
+      analysisDate
+      notes
+    }
+  }
+`;
+
+export const GET_ANALYSIS_BY_ID_PATIENT = gql`
+  query GetAnalysisByIdPatient($id: ID!) {
+    getAnalysisByIdPatient(id: $id) {
+      id
+      patientId
+      analysisType
+      results
+      analysisDate
+      notes
     }
   }
 `;
@@ -334,6 +357,19 @@ export const CREATE_VACCINE = gql`
       administeredDate
       nextAdministeredDate
       doses
+    }
+  }
+`;
+
+export const CREATE_ANALYSIS = gql`
+  mutation CreateAnalysis($analysisRequest: AnalysisRequest!) {
+    createAnalysis(analysisRequest: $analysisRequest) {
+      id
+      patientId
+      analysisType
+      results
+      analysisDate
+      notes
     }
   }
 `;
