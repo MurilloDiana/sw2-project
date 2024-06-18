@@ -19,25 +19,35 @@ const ModalAnalisis = ({ isOpen, toggle, petId }) => {
   // Función para formatear la fecha
   const formatDate = (dateString) => {
     if (!dateString) return 'Fecha inválida';
-    try {
-      // Intentar parsear la fecha
-      const date = new Date(dateString);
-      if (isNaN(date.getTime())) {
-        throw new Error('Invalid Date');
-      }
+
+    const date = new Date(dateString);
+    if (!isNaN(date.getTime())) {
       return date.toLocaleDateString('es-ES', {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        timeZoneName: 'short'
       });
-    } catch (error) {
-      console.error('Error parsing date:', dateString, error);
-      return 'Fecha inválida';
     }
+
+    // Si la conversión directa falla, intenta procesar el formato esperado
+    const parts = dateString.split(' ');
+    if (parts.length === 6) {
+      const [dayName, monthName, day, time, zone, year] = parts;
+      const monthIndex = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'].indexOf(monthName);
+      if (monthIndex !== -1) {
+        const isoDateString = `${year}-${String(monthIndex + 1).padStart(2, '0')}-${day}`;
+        const parsedDate = new Date(isoDateString);
+        if (!isNaN(parsedDate.getTime())) {
+          return parsedDate.toLocaleDateString('es-ES', {
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+          });
+        }
+      }
+    }
+
+    return 'Fecha inválida';
   };
 
   // Renderizado del modal

@@ -21,6 +21,7 @@ import  bg5 from "../../assets/images/visite.png";
 import VacModal from "../ModalVac";
 import AnModal from "../ModalAn";
 import DiagModal from "../ModalDiag";
+import VisitsModal from "../ModalVisit";
 
 const BlogData = [
   {
@@ -66,10 +67,12 @@ const Cards = () => {
   const [isVacunaModelOpen,setVacunaModelOpen] =useState(false);
   const [isAnalisiModalOpen,setAnalisiModalOpen] =useState(false);
   const [isDiagnosticModalOpen,setDiagnosticModalOpen] =useState(false);
+  const [isVisitModalOpen,setVisitModalOpen] =useState(false);
 
   const toggleVacunaModel = () => setVacunaModelOpen(!isVacunaModelOpen);
   const toggleAnalysisModal =()=> setAnalisiModalOpen(!isAnalisiModalOpen);
   const toggleDiagnosisModal =()=> setDiagnosticModalOpen(!isDiagnosticModalOpen);
+  const toggleVisitModal =()=> setVisitModalOpen(!isVisitModalOpen);
 
   const handleButtonClick = (modalType) => {
     switch (modalType) {
@@ -83,7 +86,7 @@ const Cards = () => {
         toggleDiagnosisModal();
         break;
       case 'visite':
-        toggleDiagnosisModal();
+        toggleVisitModal();
         break;
       default:
         break;
@@ -114,6 +117,7 @@ const Cards = () => {
       <VacModal isOpen={isVacunaModelOpen} toggle={toggleVacunaModel} petId={id}/>
       <AnModal isOpen={isAnalisiModalOpen} toggle={toggleAnalysisModal} petId={id}/>
       <DiagModal isOpen={isDiagnosticModalOpen} toggle={toggleDiagnosisModal} petId={id}/>
+      <VisitsModal isOpen={isVisitModalOpen} toggle={toggleVisitModal} petId={id}/>
      </div>
   );
 };

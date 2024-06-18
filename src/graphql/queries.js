@@ -125,6 +125,18 @@ export const GET_VISITS_BY_DOCTOR = gql`
   }
 `;
 
+export const GET_VISITS_BY_PATIENT_ID = gql`
+  query GetVisitsByPatientId($id: ID!) {
+    getVisitsByPatientId(id: $id) {
+      id
+      date
+      reason
+      idDoctor
+      status
+    }
+  }
+`;
+
 export const GET_CONSULTATIONS_BY_ID_PATIENT = gql`
   query GetConsultationsByIdPatient($id: ID!) {
     getConsultationsByIdPatient(id: $id) {
